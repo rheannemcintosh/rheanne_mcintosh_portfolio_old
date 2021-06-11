@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Experience;
 
 class ExperienceController extends Controller
 {
@@ -23,7 +24,7 @@ class ExperienceController extends Controller
      */
     public function create()
     {
-        //
+        return view('experiences.create');
     }
 
     /**
@@ -34,7 +35,18 @@ class ExperienceController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        Experience::create([
+            'employer_name' => $request->get('employer_name'),
+            'role' => $request->get('role'),
+            'employment_type' => $request->get('employment_type'),
+            'start_date' =>  $request->get('start_date'),
+            'end_date' =>  $request->get('end_date'),
+            'location' => $request->get('location'),
+            'country' => $request->get('country'),
+            'example' => false,
+        ]);
+
+        return 'YAY! Saved :)';
     }
 
     /**
