@@ -1,38 +1,59 @@
-<form action="{{ route('experiences.store') }}" method="post">@csrf
-    <div>
-        <label for="employer_name">Employer</label>
-        <input name="employer_name"type="text">
+<x-app-layout>
+    <x-slot name="header">
+        <h2 class="font-semibold text-xl text-gray-800 leading-tight">
+            {{ __('Create Experience') }}
+        </h2>
+    </x-slot>
+    <div class="py-12">
+        <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
+            <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
+                <form action="{{ route('experiences.store') }}" method="post">@csrf
+                    <div class="shadow overflow-hidden sm:rounded-md">
+                        <div class="px-4 py-5 bg-white sm:p-6">
+                            <div class="grid grid-cols-6 gap-6">
+                                <div class="col-span-6 sm:col-span-3">
+                                    <label for="employer_name" class="block text-sm font-medium text-gray-700">Employer</label>
+                                    <input name="employer_name" type="text" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+                                </div>
+                                <div class="col-span-6 sm:col-span-3">
+                                    <label for="role" class="block text-sm font-medium text-gray-700">Role</label>
+                                    <input name="role" type="text" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+                                </div>
+                                <div class="col-span-6 sm:col-span-3">
+                                    <label for="start_date" class="block text-sm font-medium text-gray-700">Start Date</label>
+                                    <input name="start_date" type="date" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+                                </div>
+                                <div class="col-span-6 sm:col-span-3">
+                                    <label for="end_date" class="block text-sm font-medium text-gray-700">End Date</label>
+                                    <input name="end_date" type="date" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+                                </div> 
+                                <div class="col-span-6 sm:col-span-6 lg:col-span-2">
+                                    <label for="location" class="block text-sm font-medium text-gray-700">Location</label>
+                                    <input type="text" name="location" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+                                </div>
+                                <div class="col-span-6 sm:col-span-3 lg:col-span-2">
+                                    <label for="country" class="block text-sm font-medium text-gray-700">Country</label>
+                                    <select name="country" class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                                        <option value="Full Time">United Kingdom</option>
+                                    </select>
+                                </div>
+                                <div class="col-span-6 sm:col-span-3 lg:col-span-2">
+                                    <label for="employment_type" class="block text-sm font-medium text-gray-700">Type</label>
+                                    <select name="employment_type" class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                                        <option value="Full Time">Full Time</option>
+                                        <option value="Part Time">Part Time</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="px-4 py-3 bg-gray-50 text-right sm:px-6">
+                            <button type="submit" class="inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                                Submit
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
     </div>
-    <div>
-        <label for="role">Role</label>
-        <input name="role" type="text">
-    </div>
-    <div>
-        <label for="employment_type">Type</label>
-        <select name="employment_type">
-            <option value="Full Time">Full Time</option>
-            <option value="Part Time">Part Time</option>
-        </select>
-    </div>
-    <div>
-        <label for="start_date">Start Date</label>
-        <input for="start_date" type="date">
-    </div>
-    <div>
-        <label for="end_date">End Date</label>
-        <input for="end_date" type="date">
-    </div>
-    <div>
-        <label for="location">Location</label>
-        <input name="location" type="text">
-    </div>
-    <div>
-        <label for="country">Country</label>
-        <select name="country">
-            <option value="United Kingdom">United Kingdom</option>
-        </select>
-    </div>
-    <div>
-        <button>Submit</button>
-    </div>
-</form>
+</x-app-layout>
