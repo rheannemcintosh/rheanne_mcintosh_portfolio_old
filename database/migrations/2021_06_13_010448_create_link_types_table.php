@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateLinksTypesTable extends Migration
+class CreateLinkTypesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,7 +13,7 @@ class CreateLinksTypesTable extends Migration
      */
     public function up()
     {
-        Schema::create('links_types', function (Blueprint $table) {
+        Schema::create('link_types', function (Blueprint $table) {
             $table->id();
             $table->string('type');
             $table->timestamps();
@@ -27,6 +27,6 @@ class CreateLinksTypesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('links_types');
+        Schema::dropIfExists('link_types');
     }
 }
