@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ExperienceController;
+use App\Http\Controllers\ExperienceDetailController;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,6 +20,7 @@ Route::get('/', function () {
 });
 
 Route::resource('experiences', ExperienceController::class);
+Route::resource('experiences/details', ExperienceDetailController::class);
 
 Route::get('/dashboard', function () {
     return view('dashboard');
