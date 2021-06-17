@@ -24,4 +24,12 @@ class ExperienceDetail extends Model
     protected $fillable = [
         'detail',
     ];
+
+    /**
+     * Get the Experience that is connected to the detail.
+     */
+    public function experience()
+    {
+        return $this->belongsTo(Experience::class);
+    }
 }

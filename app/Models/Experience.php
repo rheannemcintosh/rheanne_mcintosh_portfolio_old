@@ -31,4 +31,12 @@ class Experience extends Model
         'country',
         'example',
     ];
+
+    /**
+     * Get the details for each experience.
+     */
+    public function details()
+    {
+        return $this->hasMany(ExperienceDetail::class);
+    }
 }
