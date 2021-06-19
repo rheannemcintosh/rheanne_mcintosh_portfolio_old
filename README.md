@@ -1,5 +1,26 @@
 # Rheanne McIntosh Portfolio
 
+<!-- Completion Checklist | (Add Completion) -->
+<!-- :black_square_button: for not complete -->
+<!-- :white_check_mark: for complete -->
+## Completion Checklist
+:black_square_button: Upload Code
+
+:black_square_button: Format Code
+
+:black_square_button: Update README
+
+:black_square_button: Update Repository
+
+:black_square_button: Post on Instagram
+
+:black_square_button: Update Wiki
+
+<!-- Repository Notes -->
+## Notes
+- **Language:** PHP
+- **Author:** Rheanne McIntosh
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
 
 <p align="center">
