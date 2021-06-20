@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ExperienceController;
 use App\Http\Controllers\ExperienceDetailController;
+use App\Http\Controllers\LinkController;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,6 +19,8 @@ use App\Http\Controllers\ExperienceDetailController;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/links', [LinkController::class, 'index']);
 
 Route::resource('experiences', ExperienceController::class);
 Route::resource('experiences/details', ExperienceDetailController::class);
