@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateExperiencesEmployers extends Migration
+class CreateExperienceEmployers extends Migration
 {
     /**
      * Run the migrations.
@@ -13,11 +13,9 @@ class CreateExperiencesEmployers extends Migration
      */
     public function up()
     {
-        Schema::create('experiences_employers', function (Blueprint $table) {
+        Schema::create('experience_employers', function (Blueprint $table) {
             $table->id();
             $table->text('employer_name');
-            $table->text('role');
-            $table->text('employment_type');
             $table->date('start_date');
             $table->date('end_date');
             $table->text('location');
