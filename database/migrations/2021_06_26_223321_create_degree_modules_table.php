@@ -15,6 +15,11 @@ class CreateDegreeModulesTable extends Migration
     {
         Schema::create('degree_modules', function (Blueprint $table) {
             $table->id();
+            $table->foreignId('degree_id')->constrained();
+            $table->text('name');
+            $table->text('description');
+            $table->string('grade');
+            $table->string('stage');
             $table->timestamps();
         });
     }
