@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\CVController;
 use App\Http\Controllers\ExperienceController;
 use App\Http\Controllers\ExperienceDetailController;
 use App\Http\Controllers\LinkController;
@@ -21,6 +22,8 @@ Route::get('/', function () {
 });
 
 Route::get('/links', [LinkController::class, 'index']);
+
+Route::get('/cv', [CVController::class, 'index']);
 
 Route::resource('experiences', ExperienceController::class);
 Route::resource('experiences/details', ExperienceDetailController::class);
