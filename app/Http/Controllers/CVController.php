@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Degree;
 
 class CVController extends Controller
 {
@@ -13,6 +14,8 @@ class CVController extends Controller
      */
     public function index()
     {
-        return view('cv.index');
+        $degrees = Degree::all();
+
+        return view('cv.index', compact('degrees'));
     }
 }
