@@ -58,6 +58,11 @@
                             </h3>
                         </div>
                         <div class="border-t border-gray-200">
+                            @foreach ($degrees as $degree)
+                                <h4>{{ $degree->university_name }} | {{ $degree->degree_type }} {{$degree->degree_name }}</h4>
+                                <h5>{{ $degree->degree_classification }}</h5>
+                                <h6>{{ $degree->start_date->format('Y') }} - {{ $degree->end_date->format('Y') }}</h6>
+                            @endforeach
                             <p>----- Insert Education -----</p>
                         </div>
                     </div>
