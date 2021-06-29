@@ -36,4 +36,12 @@ class Degree extends Model
      * @var array
      */
     protected $dates = ['start_date', 'end_date'];
+
+    /**
+     * Get the modules for each degree.
+     */
+    public function modules()
+    {
+        return $this->hasMany(Module::class);
+    }
 }
