@@ -22,6 +22,7 @@ class Module extends Model
      * @var array
      */
     protected $fillable = [
+        'degree_id',
         'name',
         'description',
         'grade',
