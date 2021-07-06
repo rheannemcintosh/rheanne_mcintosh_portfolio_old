@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateCoursesTable extends Migration
+class CreateTreehouseCoursesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,12 +13,14 @@ class CreateCoursesTable extends Migration
      */
     public function up()
     {
-        Schema::create('courses', function (Blueprint $table) {
+        Schema::create('treehouse_courses', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('course_website_id')->constrained();
-            $table->string('title');
-            $table->string('subject');
-            $table->text('description');
+            $table->string('track');
+            $table->string('course');
+            $table->text('url');
+            $table->string('language');
+            $table->string('badge');
+            $table->date('date_achieved');
             $table->timestamps();
         });
     }
@@ -30,6 +32,6 @@ class CreateCoursesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('courses');
+        Schema::dropIfExists('treehouse_courses');
     }
 }
