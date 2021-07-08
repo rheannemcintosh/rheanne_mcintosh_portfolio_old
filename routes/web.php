@@ -17,16 +17,30 @@ use App\Http\Controllers\LinkController;
 |
 */
 
+/**
+ * Rheanne McIntosh Home Page Routes
+ */
 Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/links', [LinkController::class, 'index']);
-
+/**
+ * About Me / CV Routes
+ */
 Route::get('/cv', [CVController::class, 'index']);
 
-Route::resource('experiences', ExperienceController::class);
-Route::resource('experiences/details', ExperienceDetailController::class);
+Route::resource('/experiences', ExperienceController::class);
+Route::resource('/experiences/details', ExperienceDetailController::class);
+
+Route::get('/certificatess', [CertificateController::class, 'index']);
+Route::get('/education', [EducationController::class, 'index']);
+Route::get('/links', [LinkController::class, 'index']);
+Route::get('/skills', [SkillController::class, 'index']);
+
+/**
+ * Contact Page Routes
+ */
+Route::get('/contact', [ContactController::class, 'index']);
 
 Route::get('/dashboard', function () {
     return view('dashboard');
