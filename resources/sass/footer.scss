@@ -1,0 +1,31 @@
+footer {
+    background-color: $rm-medium-blue;
+    color: $rm-white;
+    padding: 40px 0;
+}
+
+footer .copyright {
+    color: $rm-light-grey;
+    margin: 10px;
+    text-align: center;
+    font-size: 14px;
+}
+
+footer .social-media {
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+footer .social-media ion-icon {
+    opacity: 0.75;
+    margin: 0 10px;
+    font-size: 35px;
+}
+
+footer .social-media ion-icon:hover {
+    opacity: 0.9;
+}
+
+.site-footer, .page-wrap:after {
+    height: 175px;
+}
