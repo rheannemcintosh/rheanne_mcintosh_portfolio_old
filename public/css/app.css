@@ -1,3 +1,53 @@
+footer {
+  background-color: #0F2344;
+  color: #FFFFFF;
+  padding: 40px 0;
+}
+
+footer .copyright {
+  color: #F7FAFC;
+  margin: 10px;
+  text-align: center;
+  font-size: 14px;
+}
+
+footer .social-media {
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+footer .social-media ion-icon {
+  opacity: 0.75;
+  margin: 0 10px;
+  font-size: 35px;
+}
+
+footer .social-media ion-icon:hover {
+  opacity: 0.9;
+}
+
+.site-footer, .page-wrap:after {
+  height: 175px;
+}
+
+* {
+  margin: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+.page-wrap {
+  min-height: 100%;
+  /* equal to footer height */
+  margin-bottom: -175px;
+}
+
+.page-wrap:after {
+  content: "";
+  display: block;
+}
 /*! tailwindcss v2.1.4 | MIT License | https://tailwindcss.com */
 
 /*! modern-normalize v1.1.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
