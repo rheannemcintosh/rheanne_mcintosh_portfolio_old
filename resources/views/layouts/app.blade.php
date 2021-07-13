@@ -10,6 +10,8 @@
         <!-- Fonts -->
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap">
 
+        <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+
         <!-- Styles -->
         <link rel="stylesheet" href="{{ asset('css/app.css') }}">
 
@@ -32,5 +34,6 @@
                 {{ $slot }}
             </main>
         </div>
+        @include('includes.footer')
     </body>
 </html>
