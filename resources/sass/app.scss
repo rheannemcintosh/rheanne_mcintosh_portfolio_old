@@ -1,5 +1,7 @@
 @import 'colours';
 @import 'footer';
+@import 'nav';
+@import 'fonts';
 
 * {
     margin: 0;
@@ -7,6 +9,12 @@
 html, body {
     height: 100%;
 }
+
+body {
+    background-color: $rm-dark-grey;
+    font-family: 'Nunito';
+}
+
 .page-wrap {
     min-height: 100%;
     /* equal to footer height */
