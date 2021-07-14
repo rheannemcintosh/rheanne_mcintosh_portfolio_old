@@ -1,0 +1,121 @@
+header {
+    height: 92px;
+    margin-bottom: 10px
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+}
+
+div.logo {
+    line-height: 60px;
+    position: fixed;
+    float: left;
+    margin: 16px 46px;
+}
+
+img.logo {
+    width: 60px;
+    height: 60px;
+}
+
+nav ul {
+    background: rgba(0, 0, 0, 0);
+    margin: 0;
+    padding: 0, 40px, 0, 0;
+    line-height: 60px;
+    text-align: right;
+    list-style: none;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 16px 35px;
+}
+
+nav ul li a {
+    padding: 5px 20px;
+}
+
+nav div.menu ul li a:hover {
+    color: $rm-white;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+nav div.menu ul li.rm-c-dark-blue a:hover {
+    background-color: $rm-dark-blue;
+}
+
+nav div.menu ul li.rm-c-light-teal a:hover {
+    background-color: $rm-light-teal;
+}
+
+nav div.menu ul li.rm-c-yellow a:hover {
+    background-color: $rm-yellow;
+}
+
+nav div.menu ul li.rm-c-dark-teal a:hover {
+    background-color: $rm-dark-teal;
+}
+
+nav.scroll ul {
+    background: $rm-dark-grey;
+}
+
+.menu-icon {
+    line-height: 60px;
+    width: 100%;
+    background: $rm-dark-grey;
+    text-align: right;
+    box-sizing: border-box;
+    padding: 15px 24px;
+    cursor: pointer;
+    color: $rm-dark-blue;
+    display: none;
+}
+
+@media(max-width: 786px) {
+
+    .logo {
+        position: fixed;
+        top: 0;
+        margin-top: 16px;
+    }
+
+    nav ul {
+        max-height: 0px;
+        background: $rm-dark-grey;
+    }
+
+    nav.scroll ul {
+        background: $rm-dark-grey;
+    }
+
+    .showing {
+        max-height: 34em;
+        padding:0px;
+    }
+
+    nav ul li {
+        box-sizing: border-box;
+        width: 100%;
+        padding: 10px;
+        text-align: center;
+    }
+
+    nav div.menu ul li a:hover {
+        color: $rm-white;
+        border-radius: 20px;
+        padding: 5px 50px;
+        text-decoration: none;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+}
