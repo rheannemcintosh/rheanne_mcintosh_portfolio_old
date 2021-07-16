@@ -1,9 +1,10 @@
-<nav>
+<nav class="shadow">
     <div class="menu-icon">
         <i class="fa fa-bars fa-2x"></i>
     </div>
 
     <div class="logo">
+        <!-- This logo image will be updated in the future -->
         <img class="logo" src="{{url('/images/logo.png')}}" alt="Image"/>
     </div>
 
