@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ContactController;
 use App\Http\Controllers\CVController;
 use App\Http\Controllers\ExperienceController;
 use App\Http\Controllers\ExperienceDetailController;
