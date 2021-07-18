@@ -7,6 +7,8 @@
     <!-- Body -->
     <body class="font-sans antialiased">
 
+    @include('includes.nav')
+
         <div class="page-wrap min-h-screen">
 
 
@@ -16,7 +18,7 @@
 
                 <div class="container w-full min-h-full px-4">
                 <!-- Navigation -->
-                @include('includes.nav')
+
 
                 </div>
 
