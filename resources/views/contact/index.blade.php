@@ -1,4 +1,51 @@
 <x-app-layout>
+    <div class="container mx-auto bg-green-800 p-4">
+        <div class="bg-yellow-300 p-4 lg:px-24">
+            <form action="#" method="POST">
+                <div class="bg-blue-100 shadow rounded-md p-8">
+                    <h1 class="text-5xl mb-4">Contact Me!</h1>
+                    <p class="mb-8"> Feel free to contact me below! Whether it be for freelance work, job opportunities, fellow nerds or if you just want a chat!</p>
+                    <div class="px-8">
+                        <div id="name" class="grid sm:grid-cols-2 grid-cols-1 gap-4">
+                            <div id="firstname">
+                                <label for="firstname" class="block">Full Name</label>
+                                <input type="text" name="firstname" class="w-full rounded-md shadow-md">
+                            </div>
+                            <div id="lastname">
+                                <label for="lastname">Last Name</label>
+                                <input type="text" class="w-full rounded-md shadow-md">
+                            </div>
+                        </div>
+                        <div id="subject">
+                        </div>
+                        <div id="email">
+                            <label for="email">Email</label>
+                            <input type="text" name="email" class="w-full rounded-md shadow-md">
+                        </div>
+                        <div id="subject">
+                            <label for="subject">Email</label>
+                            <input type="text" name="subject" class="w-full rounded-md shadow-md">
+                        </div>
+                        <div id="reason">
+                            <fieldset>
+                                <input type="checkbox">
+                                <label>Checkbox 1</label>
+                                <input type="checkbox">
+                                <label>Checkbox 2</label>
+                                <input type="checkbox">
+                                <label>Checkbox 3</label>
+                            </fieldset>
+                        </div>
+                        <div id="message">
+                            <label for="message">Message</label>
+                            <textarea name="message" class="w-full rounded-md shadow-md"></textarea>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
     <h1>Contact Me!</h1>
     <p>ftuygih</p>
         <div class="md:grid md:grid-cols-3 md:gap-6">
