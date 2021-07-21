@@ -9,6 +9,16 @@ module.exports = {
 
     theme: {
         extend: {
+            colors: {
+                rmgrey: {
+                    light: '#F7FAFC',
+                    DEFAULT: '#EAEAEA',
+                    dark: '#D8D8D8',
+                },
+                rhe: {
+                    DEFAULT: '#DBAB3A',
+                }
+            },
             fontFamily: {
                 sans: ['Nunito', ...defaultTheme.fontFamily.sans],
             },
