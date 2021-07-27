@@ -15,6 +15,10 @@ class CreateSqaSubjectsTable extends Migration
     {
         Schema::create('sqa_subjects', function (Blueprint $table) {
             $table->id();
+            $table->string('subject');
+            $table->string('level');
+            $table->string('Grade');
+            $table->integer('SCQF');
             $table->timestamps();
         });
     }
