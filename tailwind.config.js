@@ -15,6 +15,16 @@ module.exports = {
                     DEFAULT: '#EAEAEA',
                     dark: '#D8D8D8',
                 },
+                rmBlue: {
+                    light: '#193965',
+                    DEFAULT: '#0F2344',
+                    dark: '#0B1928'
+                },
+                rmTeal: {
+                    light: '#377F8A',
+                    DEFAULT: '#295D6F',
+                    dark: '#184249',
+                },
                 rhe: {
                     DEFAULT: '#DBAB3A',
                 }
