@@ -31,6 +31,7 @@ module.exports = {
             },
             fontFamily: {
                 sans: ['Nunito', ...defaultTheme.fontFamily.sans],
+                bebas: ['Bebas Neue', ...defaultTheme.fontFamily.sans],
             },
         },
     },
