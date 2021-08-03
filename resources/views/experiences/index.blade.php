@@ -14,7 +14,7 @@
                     </p>
                 </div>
                 <div class="mt-4">
-                    <h1 class="bg-rmBlue-light text-white font-bebas text-6xl">Experience</h1>
+                    <h1 class="pt-2 pl-2 pt-10 bg-rmBlue-light text-white font-bebas text-6xl">Experience</h1>
                     <!--
                     <div class="mt-4 bg-blue-50">
                         <h1>Visualsoft Ltd.</h1>
