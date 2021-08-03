@@ -1,95 +1,138 @@
 <x-app-layout>
-    <x-slot name="header">
-        <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-            {{ __('CV') }}
-        </h2>
-    </x-slot>
-
-    <div class="py-12">  
-        <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
-            <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
-                
-                <!-- This example requires Tailwind CSS v2.0+ -->
-                <div class="bg-white shadow overflow-hidden sm:rounded-lg">
-                    <div class="px-4 py-5 sm:px-6">
-                        <div class="px-4 py-5 sm:px-6">
-                            <h3 class="text-lg leading-6 font-medium text-gray-900">
-                                Rheanne McIntosh
-                            </h3>
+    <div class="container mx-auto p-4 bg-red-500">
+        <div class="p-4 lg:px-24 bg-green-700">
+            <div class="bg-rmgrey shadow rounded-md p-8">
+                <div class="bg-yellow-400">
+                <h1>Hi, I'm Rheanne</h1>
+                <p>
+                    Summary About Rheanne: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+                </div>
+                <div class="mt-4">
+                    <h1 class="pt-2 pl-2 bg-rmBlue-light text-white font-bebas text-6xl">Experience</h1>
+                    <!--
+                    <div class="mt-4 bg-blue-50">
+                        <h1>Visualsoft Ltd.</h1>
+                        <h2>Developer (Product Discovery)</h2>
+                        <h3>May 2021 - Present</h3>
+                    </div>
+                    -->
+                    <div class="mt-4">
+                        <h1 class="font-bebas font-medium text-rmBlue-light text-5xl">University of Aberdeen</h1>
+                        <h2 class="font-bebas font-medium text-rmTeal text-3xl">Junior Software Developer</h2>
+                        <h3 class="font-bebas text-xl italic">July 2019 - May 2021</h3>
+                        <div class="px-5 py-2">
+                            <ul class="px-5 list-disc list-outside">
+                                <li>Develop new, efficient and well-tested applications using the Laravel framework, and integrate the applications with existing systems.</li>
+                                <li>Manage the implementation of accessibility considerations by supervising a new employee and following Web Content Accessibility Guidelines.</li>
+                                <li>Assist with the migration from PHP 5.6 to 7.4 for a number of applications.</li>
+                                <li>Design, develop and implement new functionalities for current CodeIgniter applications.</li>
+                                <li>Oversee an audit on the department’s documentation and wiki to ensure it is up-to-date, relevant and straightforward to understand for newly hired employees.</li>
+                                <li>Provide daily support to a variety of users and participate in the training of a large number of users.</li>
+                                <li>Modifiy and upgrade existing applications to correct coding errors; upgrade interfaces; and, improve overall performance.</li>
+                                <li>Implement and test enhancement feature requests to improve product functionality and extend performance.</li>
+                                <li>Use the CodeIgniter framework to build APIs for a variety of applications</li>
+                                <li>Complete QA on an array of products, ensuring code conforms to PSR standards, and unit testing is implemented successfully.</li>
+                            </ul>
                         </div>
-                        <div class="border-t border-gray-200">
-                            <p>----- Insert Summary -----</p>
+                    </div>
+                </div>
+                <div class="mt-4 bg-yellow-400">
+                    <h1 class="text-3xl">Education</h1>
+                    <div class="mt-4 bg-blue-50">
+                        <h1>BSc (Hons) Computing (Graphics and Animation) | 1st Class Honours</h1>
+                        <h2>Robert Gordon University</h2>
+                        <h3>2014 - 2018</h3>
+                    </div>
+                    <div class="mt-4 bg-blue-50">
+                        <h1>Bridge of Don Academy</h1>
+                        <h3>2008 - 2014</h3>
+                    </div>
+                </div>
+
+
+            <div class="py-12">
+                <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
+                    <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
+
+                        <!-- This example requires Tailwind CSS v2.0+ -->
+                        <div class="bg-white shadow overflow-hidden sm:rounded-lg">
+                            <div class="px-4 py-5 sm:px-6">
+                                <div class="px-4 py-5 sm:px-6">
+                                    <h3 class="text-lg leading-6 font-medium text-gray-900">
+                                        Rheanne McIntosh
+                                    </h3>
+                                </div>
+                                <div class="border-t border-gray-200">
+                                    <p>----- Insert Summary -----</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
 
-    <div class="py-12">  
-        <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
-            <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
-                <!-- This example requires Tailwind CSS v2.0+ -->
-                <div class="bg-white shadow overflow-hidden sm:rounded-lg">
-                    <div class="px-4 py-5 sm:px-6">
-                        <div class="px-4 py-5 sm:px-6">
-                            <h3 class="text-lg leading-6 font-medium text-gray-900">
-                                Experience
-                            </h3>
-                        </div>
-                        <div class="border-t border-gray-200">
-                            <p>----- Insert Experience -----</p>
+            <div class="py-12">
+                <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
+                    <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
+                        <!-- This example requires Tailwind CSS v2.0+ -->
+                        <div class="bg-white shadow overflow-hidden sm:rounded-lg">
+                            <div class="px-4 py-5 sm:px-6">
+                                <div class="px-4 py-5 sm:px-6">
+                                    <h3 class="text-lg leading-6 font-medium text-gray-900">
+                                        Experience
+                                    </h3>
+                                </div>
+                                <div class="border-t border-gray-200">
+                                    <p>----- Insert Experience -----</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
 
-    <div class="py-12">  
-        <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
-            <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
-                <!-- This example requires Tailwind CSS v2.0+ -->
-                <div class="bg-white shadow overflow-hidden sm:rounded-lg">
-                    <div class="px-4 py-5 sm:px-6">
-                        <div class="px-4 py-5 sm:px-6">
-                            <h3 class="text-lg leading-6 font-medium text-gray-900">
-                                Education
-                            </h3>
-                        </div>
-                        <div class="border-t border-gray-200">
-                            @foreach ($degrees as $degree)
-                                <h4>{{ $degree->university_name }} | {{ $degree->degree_type }} {{$degree->degree_name }}</h4>
-                                <h5>{{ $degree->degree_classification }}</h5>
-                                <h6>{{ $degree->start_date->format('Y') }} - {{ $degree->end_date->format('Y') }}</h6>
-                            @endforeach
-                            <p>----- Insert Education -----</p>
+            <div class="py-12">
+                <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
+                    <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
+                        <!-- This example requires Tailwind CSS v2.0+ -->
+                        <div class="bg-white shadow overflow-hidden sm:rounded-lg">
+                            <div class="px-4 py-5 sm:px-6">
+                                <div class="px-4 py-5 sm:px-6">
+                                    <h3 class="text-lg leading-6 font-medium text-gray-900">
+                                        Education
+                                    </h3>
+                                </div>
+                                <div class="border-t border-gray-200">
+
+                                    <p>----- Insert Education -----</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
 
-    <div class="py-12">  
-        <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
-            <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
-                <!-- This example requires Tailwind CSS v2.0+ -->
-                <div class="bg-white shadow overflow-hidden sm:rounded-lg">
-                    <div class="px-4 py-5 sm:px-6">
-                        <div class="px-4 py-5 sm:px-6">
-                            <h3 class="text-lg leading-6 font-medium text-gray-900">
-                                Certificates
-                            </h3>
-                        </div>
-                        <div class="border-t border-gray-200">
-                            <p>----- Insert Certificates -----</p>
+            <div class="py-12">
+                <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
+                    <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
+                        <!-- This example requires Tailwind CSS v2.0+ -->
+                        <div class="bg-white shadow overflow-hidden sm:rounded-lg">
+                            <div class="px-4 py-5 sm:px-6">
+                                <div class="px-4 py-5 sm:px-6">
+                                    <h3 class="text-lg leading-6 font-medium text-gray-900">
+                                        Certificates
+                                    </h3>
+                                </div>
+                                <div class="border-t border-gray-200">
+                                    <p>----- Insert Certificates -----</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+            </div>
         </div>
     </div>
-
-
 </x-app-layout>
