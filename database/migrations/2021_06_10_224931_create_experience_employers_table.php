@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateExperienceEmployers extends Migration
+class CreateExperienceEmployersTable extends Migration
 {
     /**
      * Run the migrations.
@@ -15,6 +15,7 @@ class CreateExperienceEmployers extends Migration
     {
         Schema::create('experience_employers', function (Blueprint $table) {
             $table->id();
+            $table->foreignId('experience_id')->constrained();
             $table->text('employer_name');
             $table->date('start_date');
             $table->date('end_date');

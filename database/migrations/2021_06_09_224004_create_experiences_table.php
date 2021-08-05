@@ -15,7 +15,6 @@ class CreateExperiencesTable extends Migration
     {
         Schema::create('experiences', function (Blueprint $table) {
             $table->id();
-            $table->integer('experience_employers_id');
             $table->text('role');
             $table->text('employment_type');
             $table->date('start_date');
