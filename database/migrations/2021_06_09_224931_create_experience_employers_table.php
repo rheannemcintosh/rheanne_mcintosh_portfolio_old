@@ -15,10 +15,9 @@ class CreateExperienceEmployersTable extends Migration
     {
         Schema::create('experience_employers', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('experience_id')->constrained();
             $table->text('employer_name');
             $table->date('start_date');
-            $table->date('end_date');
+            $table->date('end_date')->nullable();
             $table->text('location');
             $table->text('country');
             $table->boolean('example');
