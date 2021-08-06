@@ -17,7 +17,7 @@ class CreateExperienceEmployersTable extends Migration
             $table->id();
             $table->text('employer_name');
             $table->date('start_date');
-            $table->date('end_date');
+            $table->date('end_date')->nullable();
             $table->text('location');
             $table->text('country');
             $table->boolean('example');
