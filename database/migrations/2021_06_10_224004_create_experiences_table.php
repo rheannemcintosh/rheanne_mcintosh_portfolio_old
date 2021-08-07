@@ -19,7 +19,7 @@ class CreateExperiencesTable extends Migration
             $table->text('role');
             $table->text('employment_type');
             $table->date('start_date');
-            $table->date('end_date');
+            $table->date('end_date')->nullable();
             $table->boolean('example');
             $table->timestamps();
         });
