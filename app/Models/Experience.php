@@ -14,7 +14,7 @@ class Experience extends Model
      * 
      * @var string
      */
-    protected $table = 'experiences_employers';
+    protected $table = 'experiences';
 
     /**
      * The attributes that are mass assignable.
@@ -22,13 +22,11 @@ class Experience extends Model
      * @var array
      */
     protected $fillable = [
-        'employer_name',
+        'experience_employer_id',
         'role',
         'employment_type',
         'start_date',
         'end_date',
-        'location',
-        'country',
         'example',
     ];
 
