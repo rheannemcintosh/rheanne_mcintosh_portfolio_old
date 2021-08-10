@@ -31,6 +31,13 @@ class Experience extends Model
     ];
 
     /**
+     * The attributes that should be mutated to dates.
+     *
+     * @var array
+     */
+    protected $dates = ['start_date', 'end_date'];
+
+    /**
      * Get the details for each experience.
      */
     public function details()
