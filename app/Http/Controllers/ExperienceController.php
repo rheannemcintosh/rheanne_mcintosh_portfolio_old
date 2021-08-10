@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Experience;
+use App\Models\ExperienceEmployer;
 
 class ExperienceController extends Controller
 {
@@ -14,9 +15,10 @@ class ExperienceController extends Controller
      */
     public function index()
     {
+        $employers   = ExperienceEmployer::all();
         $experiences = Experience::all();
-
-        return view('experiences.index', compact('experiences'));
+        
+        return view('experiences.index', compact('experiences', 'employers'));
     }
 
     /**
