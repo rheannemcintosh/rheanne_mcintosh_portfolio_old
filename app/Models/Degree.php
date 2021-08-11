@@ -28,6 +28,7 @@ class Degree extends Model
         'degree_classification',
         'start_date',
         'end_date',
+        'cv_flag',
     ];
 
     /**

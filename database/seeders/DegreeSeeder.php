@@ -23,6 +23,7 @@ class DegreeSeeder extends Seeder
             'degree_classification' => '1st Class',
             'start_date' => '2014-09-01 00:00:00',
             'end_date' => '2018-06-01 00:00:00',
+            'cv_flag' => true,
         ]);
     }
 }
