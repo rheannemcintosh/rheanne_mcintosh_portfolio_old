@@ -22,6 +22,7 @@ class ExperienceSeeder extends Seeder
           'employment_type' => 'Full Time',
           'start_date' => '2021-06-01 00:00:00',
           'end_date' => null,
+          'cv_flag' => true,
           'example' => false,
         ]);
 
@@ -31,6 +32,7 @@ class ExperienceSeeder extends Seeder
           'employment_type' => 'Full Time',
           'start_date' => '2019-07-01 00:00:00',
           'end_date' => '2021-05-27 00:00:00',
+          'cv_flag' => true,
           'example' => false,
         ]);
 
@@ -40,6 +42,7 @@ class ExperienceSeeder extends Seeder
           'employment_type' => 'Full Time',
           'start_date' => '2001-01-01 00:00:00',
           'end_date' => '2001-01-01 00:00:00',
+          'cv_flag' => false,
           'example' => false,
         ]);
 
@@ -49,6 +52,7 @@ class ExperienceSeeder extends Seeder
           'employment_type' => 'Full Time',
           'start_date' => '2001-01-01 00:00:00',
           'end_date' => '2001-01-01 00:00:00',
+          'cv_flag' => false,
           'example' => false,
         ]);
 
@@ -58,6 +62,7 @@ class ExperienceSeeder extends Seeder
           'employment_type' => 'Full Time',
           'start_date' => '2001-01-01 00:00:00',
           'end_date' => '2001-01-01 00:00:00',
+          'cv_flag' => false,
           'example' => false,
         ]);
 
@@ -67,6 +72,7 @@ class ExperienceSeeder extends Seeder
           'employment_type' => 'Part Time',
           'start_date' => '2001-01-01 00:00:00',
           'end_date' => '2001-01-01 00:00:00',
+          'cv_flag' => false,
           'example' => false,
         ]);
 
@@ -76,6 +82,7 @@ class ExperienceSeeder extends Seeder
           'employment_type' => 'Part Time',
           'start_date' => '2001-01-01 00:00:00',
           'end_date' => '2001-01-01 00:00:00',
+          'cv_flag' => false,
           'example' => false,
         ]);
 
@@ -85,6 +92,7 @@ class ExperienceSeeder extends Seeder
           'employment_type' => 'Part Time',
           'start_date' => '2001-01-01 00:00:00',
           'end_date' => '2001-01-01 00:00:00',
+          'cv_flag' => false,
           'example' => false,
         ]);
 
@@ -94,6 +102,7 @@ class ExperienceSeeder extends Seeder
           'employment_type' => 'Part Time',
           'start_date' => '2001-01-01 00:00:00',
           'end_date' => '2001-01-01 00:00:00',
+          'cv_flag' => false,
           'example' => false,
         ]);
 
@@ -103,6 +112,7 @@ class ExperienceSeeder extends Seeder
           'employment_type' => 'Part Time',
           'start_date' => '2001-01-01 00:00:00',
           'end_date' => '2001-01-01 00:00:00',
+          'cv_flag' => false,
           'example' => false,
         ]);
 

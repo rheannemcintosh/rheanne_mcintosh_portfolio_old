@@ -27,6 +27,7 @@ class Experience extends Model
         'employment_type',
         'start_date',
         'end_date',
+        'cv_flag',
         'example',
     ];
 

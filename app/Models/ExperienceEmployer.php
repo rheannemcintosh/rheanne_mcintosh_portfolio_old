@@ -28,6 +28,7 @@ class ExperienceEmployer extends Model
       'end_date',
       'location',
       'country',
+      'cv_flag',
       'example',
     ];
 

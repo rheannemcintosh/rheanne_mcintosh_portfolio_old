@@ -20,6 +20,7 @@ class CreateExperienceEmployersTable extends Migration
             $table->date('end_date')->nullable();
             $table->text('location');
             $table->text('country');
+            $table->boolean('cv_flag');
             $table->boolean('example');
             $table->timestamps();
         });

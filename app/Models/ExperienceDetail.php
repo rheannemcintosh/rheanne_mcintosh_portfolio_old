@@ -23,6 +23,7 @@ class ExperienceDetail extends Model
      */
     protected $fillable = [
         'detail',
+        'cv_flag,'
     ];
 
     /**
