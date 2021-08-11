@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Experience;
+use App\Models\ExperienceEmployer;
 use Illuminate\Http\Request;
 use App\Models\Degree;
 
@@ -14,8 +16,9 @@ class CVController extends Controller
      */
     public function index()
     {
-        $degrees = Degree::all();
+        $employers   = ExperienceEmployer::where('cv_flag', '=', true)->get();
+        $experiences = Experience::where('cv_flag', '=', true)->get();
 
-        return view('cv.index', compact('degrees'));
+        return view('cv.index', compact('experiences', 'employers'));
     }
 }
