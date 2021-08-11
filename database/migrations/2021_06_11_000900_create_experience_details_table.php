@@ -17,6 +17,7 @@ class CreateExperienceDetailsTable extends Migration
             $table->id();
             $table->text('detail');
             $table->foreignId('experience_id')->constrained();
+            $table->boolean('cv_flag');
             $table->timestamps();
         });
     }

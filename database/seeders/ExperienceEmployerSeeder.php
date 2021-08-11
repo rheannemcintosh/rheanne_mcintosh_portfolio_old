@@ -22,6 +22,7 @@ class ExperienceEmployerSeeder extends Seeder
         'end_date' => null,
         'location' => 'Remote (Stockton-on-Tees)',
         'country' => 'UK',
+        'cv_flag' => true,
         'example' => false,
       ]);
 
@@ -31,6 +32,7 @@ class ExperienceEmployerSeeder extends Seeder
         'end_date' => '2021-05-27 00:00:00',
         'location' => 'Polwarth, Aberdeen',
         'country' => 'UK',
+        'cv_flag' => true,
         'example' => false,
       ]);
 
@@ -40,6 +42,7 @@ class ExperienceEmployerSeeder extends Seeder
         'end_date' => '2014-09-01 00:00:00',
         'location' => 'Garthdee, Aberdeen',
         'country' => 'UK',
+        'cv_flag' => false,
         'example' => false,
       ]);
 
@@ -49,6 +52,7 @@ class ExperienceEmployerSeeder extends Seeder
         'end_date' => '2014-09-01 00:00:00',
         'location' => 'Bridge of Don, Aberdeen',
         'country' => 'UK',
+        'cv_flag' => false,
         'example' => false,
       ]);
 
@@ -58,6 +62,7 @@ class ExperienceEmployerSeeder extends Seeder
         'end_date' => '2014-09-01 00:00:00',
         'location' => 'Bridge of Don, Aberdeen',
         'country' => 'UK',
+        'cv_flag' => false,
         'example' => false,
       ]);
 
@@ -67,6 +72,7 @@ class ExperienceEmployerSeeder extends Seeder
         'end_date' => '2014-09-01 00:00:00',
         'location' => 'Bridge of Don, Aberdeen',
         'country' => 'UK',
+        'cv_flag' => false,
         'example' => false,
       ]);
     }
