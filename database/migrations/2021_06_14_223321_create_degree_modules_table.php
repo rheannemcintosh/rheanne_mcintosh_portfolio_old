@@ -20,6 +20,7 @@ class CreateDegreeModulesTable extends Migration
             $table->text('description');
             $table->string('grade');
             $table->string('stage');
+            $table->boolean('cv_flag');
             $table->timestamps();
         });
     }

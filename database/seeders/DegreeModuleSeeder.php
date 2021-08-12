@@ -22,6 +22,7 @@ class DegreeModuleSeeder extends Seeder
             'description' => '',
             'grade' => 'A',
             'stage' => '4',
+            'cv_flag' => true,
         ]);
 
         Module::create([
@@ -30,6 +31,7 @@ class DegreeModuleSeeder extends Seeder
             'description' => '',
             'grade' => 'A',
             'stage' => '4',
+            'cv_flag' => true,
         ]);
 
         Module::create([
@@ -38,6 +40,7 @@ class DegreeModuleSeeder extends Seeder
             'description' => '',
             'grade' => 'A',
             'stage' => '4',
+            'cv_flag' => true,
         ]);
 
         Module::create([
@@ -46,6 +49,7 @@ class DegreeModuleSeeder extends Seeder
             'description' => '',
             'grade' => 'A',
             'stage' => '4',
+            'cv_flag' => true,
         ]);
 
         Module::create([
@@ -54,6 +58,7 @@ class DegreeModuleSeeder extends Seeder
             'description' => '',
             'grade' => 'B',
             'stage' => '4',
+            'cv_flag' => true,
         ]);
 
         Module::create([
@@ -62,6 +67,7 @@ class DegreeModuleSeeder extends Seeder
             'description' => '',
             'grade' => 'A',
             'stage' => '4',
+            'cv_flag' => true,
         ]);
     }
 }

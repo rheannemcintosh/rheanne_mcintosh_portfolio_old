@@ -21,6 +21,7 @@ class CreateDegreesTable extends Migration
             $table->string('degree_classification');
             $table->date('start_date');
             $table->date('end_date');
+            $table->boolean('cv_flag');
             $table->timestamps();
         });
     }
