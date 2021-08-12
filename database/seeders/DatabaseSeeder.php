@@ -18,6 +18,7 @@ class DatabaseSeeder extends Seeder
             ExperienceSeeder::class,
             ExperienceDetailSeeder::class,
             DegreeSeeder::class,
+            DegreeModuleSeeder::class,
         ]);
     }
 }
