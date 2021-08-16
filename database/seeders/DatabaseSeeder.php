@@ -19,6 +19,7 @@ class DatabaseSeeder extends Seeder
             ExperienceDetailSeeder::class,
             DegreeSeeder::class,
             DegreeModuleSeeder::class,
+            CertificateSeeder::class,
         ]);
     }
 }
