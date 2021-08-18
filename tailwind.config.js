@@ -33,6 +33,9 @@ module.exports = {
                 sans: ['Nunito', ...defaultTheme.fontFamily.sans],
                 bebas: ['Bebas Neue', ...defaultTheme.fontFamily.sans],
             },
+            fontSize: {
+                '10xl': '14rem',
+            }
         },
     },
 
