@@ -71,6 +71,56 @@
                 </div>
                 <!-- End of Education Section -->
 
+                <!-- Start of Personal Development Section -->
+                <div class="mt-4">
+                    <h1 class="pt-2 pl-2 bg-rmBlue-light text-white font-bebas text-6xl">Personal Development</h1>
+                    <div class="mt-4">
+                        <h1 class="font-bebas font-medium text-rmBlue-light text-5xl"><a href="https://teamtreehouse.com/">Team Treehouse</a></h1>
+                        <h3 class="font-bebas text-xl italic">
+                            2013 - Present
+                        </h3>
+                        <div class="px-5 py-2">
+                            <ul class="px-5 list-disc list-outside">
+                                <li><!-- Example List--></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="mt-4">
+                        <h1 class="font-bebas font-medium text-rmBlue-light text-5xl">Zero to Mastery</h1>
+                        <h3 class="font-bebas text-xl italic">
+                            2021 - Present
+                        </h3>
+                        <div class="px-5 py-2">
+                            <ul class="px-5 list-disc list-outside">
+                                <li><!-- Example List --></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="mt-4">
+                        <h1 class="font-bebas font-medium text-rmBlue-light text-5xl">UDEMY</h1>
+                        <h3 class="font-bebas text-xl italic">
+                            2020 - Present
+                        </h3>
+                        <div class="px-5 py-2">
+                            <ul class="px-5 list-disc list-outside">
+                                <li><!-- Example List --></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="mt-4">
+                        <h1 class="font-bebas font-medium text-rmBlue-light text-5xl">CodeCademy</h1>
+                        <h3 class="font-bebas text-xl italic">
+                            2021 - Present
+                        </h3>
+                        <div class="px-5 py-2">
+                            <ul class="px-5 list-disc list-outside">
+                                <li><!-- Example List --></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- End of Personal Development Section -->
+
             <div class="py-12">
                 <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
                     <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
