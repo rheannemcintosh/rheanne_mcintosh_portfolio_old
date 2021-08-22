@@ -20,6 +20,7 @@ class DatabaseSeeder extends Seeder
             DegreeSeeder::class,
             DegreeModuleSeeder::class,
             CertificateSeeder::class,
+            CodecademyPathSeeder::class,
         ]);
     }
 }
