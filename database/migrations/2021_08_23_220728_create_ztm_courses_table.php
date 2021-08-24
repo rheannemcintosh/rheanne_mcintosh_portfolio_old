@@ -15,6 +15,11 @@ class CreateZtmCoursesTable extends Migration
     {
         Schema::create('ztm_courses', function (Blueprint $table) {
             $table->id();
+            $table->string('course');
+            $table->string('description');
+            $table->string('instructor');
+            $table->float('length');
+            $table->integer('percentage');
             $table->timestamps();
         });
     }
