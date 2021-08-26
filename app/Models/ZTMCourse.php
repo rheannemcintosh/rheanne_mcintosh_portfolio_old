@@ -22,5 +22,10 @@ class ZTMCourse extends Model
      * @var array
      */
     protected $fillable = [
+        'course',
+        'description',
+        'instructor',
+        'length',
+        'percentage',
     ];
 }
