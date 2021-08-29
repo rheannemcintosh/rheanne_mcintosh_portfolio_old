@@ -6,6 +6,7 @@ use App\Models\Experience;
 use App\Models\ExperienceEmployer;
 use Illuminate\Http\Request;
 use App\Models\Degree;
+use App\Models\ZTMCourse;
 
 class CVController extends Controller
 {
@@ -19,7 +20,8 @@ class CVController extends Controller
         $degrees     = Degree::where('cv_flag', '=', true)->get();
         $employers   = ExperienceEmployer::where('cv_flag', '=', true)->get();
         $experiences = Experience::where('cv_flag', '=', true)->get();
+        $ztmCourses  = ZTMCourse::all();
 
-        return view('cv.index', compact('degrees', 'experiences', 'employers'));
+        return view('cv.index', compact('degrees', 'experiences', 'employers', 'ztmCourses'));
     }
 }

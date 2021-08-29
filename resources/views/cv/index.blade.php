@@ -92,7 +92,9 @@
                         </h3>
                         <div class="px-5 py-2">
                             <ul class="px-5 list-disc list-outside">
-                                <li><!-- Example List --></li>
+                                @foreach ($ztmCourses as $ztmCourse)
+                                    <li>{{ $ztmCourse->course }}</li>
+                                @endforeach
                             </ul>
                         </div>
                     </div>
