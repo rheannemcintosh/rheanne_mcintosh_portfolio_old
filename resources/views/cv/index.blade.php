@@ -116,7 +116,9 @@
                         </h3>
                         <div class="px-5 py-2">
                             <ul class="px-5 list-disc list-outside">
-                                <li><!-- Example List --></li>
+                                @foreach ($codecademy as $path)
+                                    <li>{{ $path->name }}</li>
+                                @endforeach
                             </ul>
                         </div>
                     </div>
