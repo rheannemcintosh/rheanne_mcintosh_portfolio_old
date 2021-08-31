@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\CodecademyPath;
 use App\Models\Experience;
 use App\Models\ExperienceEmployer;
+use App\Models\TreehouseCourse;
 use Illuminate\Http\Request;
 use App\Models\Degree;
 use App\Models\ZTMCourse;
@@ -23,7 +24,8 @@ class CVController extends Controller
         $experiences = Experience::where('cv_flag', '=', true)->get();
         $codecademy  = CodecademyPath::all();
         $ztmCourses  = ZTMCourse::all();
+        $treehouseCourses = TreehouseCourse::all();
 
-        return view('cv.index', compact('degrees', 'experiences', 'employers', 'ztmCourses', 'codecademy'));
+        return view('cv.index', compact('degrees', 'experiences', 'employers', 'ztmCourses', 'codecademy', 'treehouseCourses'));
     }
 }
