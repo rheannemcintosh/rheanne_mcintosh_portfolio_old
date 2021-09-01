@@ -101,17 +101,6 @@
                         </div>
                     </div>
                     <div class="mt-4">
-                        <h1 class="font-bebas font-medium text-rmBlue-light text-5xl">UDEMY</h1>
-                        <h3 class="font-bebas text-xl italic">
-                            2020 - Present
-                        </h3>
-                        <div class="px-5 py-2">
-                            <ul class="px-5 list-disc list-outside">
-                                <li><!-- Example List --></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="mt-4">
                         <h1 class="font-bebas font-medium text-rmBlue-light text-5xl">CodeCademy</h1>
                         <h3 class="font-bebas text-xl italic">
                             2021 - Present
