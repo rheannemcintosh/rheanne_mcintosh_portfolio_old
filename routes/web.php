@@ -6,6 +6,7 @@ use App\Http\Controllers\CVController;
 use App\Http\Controllers\ExperienceController;
 use App\Http\Controllers\ExperienceDetailController;
 use App\Http\Controllers\LinkController;
+use App\Http\Controllers\PortfolioController;
 
 /*
 |--------------------------------------------------------------------------
@@ -37,6 +38,11 @@ Route::get('/certificatess', [CertificateController::class, 'index']);
 Route::get('/education', [EducationController::class, 'index']);
 Route::get('/links', [LinkController::class, 'index']);
 Route::get('/skills', [SkillController::class, 'index']);
+
+/**
+ * Portfolio
+ */
+Route::get('/portfolio', [PortfolioController::class, 'index']);
 
 /**
  * Contact Page Routes
