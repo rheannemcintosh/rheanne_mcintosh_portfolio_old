@@ -1,18 +1,26 @@
 <x-app-layout>
     <div class="container mx-auto p-4">
         <div class="p-4 lg:px-24">
-            <div class="bg-rmgrey shadow rounded-md p-8">
-                <div class="grid grid-cols-3 bg-green-800">
-                    <div class="bg-red-200 col-span-1 p-8">
-                        <p>Test</p>
+            <div class="bg-rmgrey shadow rounded-md">
+                <div class="grid grid-cols-3">
+                    <div class="bg-rmBlue col-span-1 p-8">
+                        <div>
+                            <p>I'm a picture</p>
+                        </div>
+                        <div class="bg-yellow-400">
+                            <h1>Hi, I'm Rheanne</h1>
+                            <p>
+                                Summary About Rheanne: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            </p>
+                        </div>
+                        <div>
+                            @foreach ($skills as $skill)
+
+                            @endforeach
+                        </div>
                     </div>
                     <div class="bg-orange-200 col-span-2 p-8">
-                        <div class="bg-yellow-400">
-                        <h1>Hi, I'm Rheanne</h1>
-                        <p>
-                            Summary About Rheanne: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                        </p>
-                        </div>
+
                         <!-- Start of Experience Section -->
                         <div class="mt-4">
                             <h1 class="pt-2 pl-2 bg-rmBlue-light text-white font-bebas text-6xl">Experience</h1>
