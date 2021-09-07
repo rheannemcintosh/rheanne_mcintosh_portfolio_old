@@ -3,6 +3,7 @@
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
+use App\Models\Skill;
 
 class SkillSeeder extends Seeder
 {
@@ -17,122 +18,122 @@ class SkillSeeder extends Seeder
 
         Skill::create([
             'name' => 'PHP',
-            'skill_type' => 2,
-            'skill_proficiency' => 4,
+            'skill_type_id' => 2,
+            'skill_proficiency_id' => 4,
         ]);
 
         Skill::create([
             'name' => 'SQL',
-            'skill_type' => 2,
-            'skill_proficiency' => 4,
+            'skill_type_id' => 2,
+            'skill_proficiency_id' => 4,
         ]);
 
         Skill::create([
             'name' => 'MySQL',
-            'skill_type' => 6,
-            'skill_proficiency' => 4,
+            'skill_type_id' => 6,
+            'skill_proficiency_id' => 4,
         ]);
 
         Skill::create([
             'name' => 'Python',
-            'skill_type' => 2,
-            'skill_proficiency' => 3,
+            'skill_type_id' => 2,
+            'skill_proficiency_id' => 3,
         ]);
 
         Skill::create([
             'name' => 'JavaScript',
-            'skill_type' => 2,
-            'skill_proficiency' => 3,
+            'skill_type_id' => 2,
+            'skill_proficiency_id' => 3,
         ]);
 
         Skill::create([
             'name' => 'Java',
-            'skill_type' => 2,
-            'skill_proficiency' => 2,
+            'skill_type_id' => 2,
+            'skill_proficiency_id' => 2,
         ]);
 
         Skill::create([
             'name' => 'HTML',
-            'skill_type' => 2,
-            'skill_proficiency' => 4,
+            'skill_type_id' => 2,
+            'skill_proficiency_id' => 4,
         ]);
 
         Skill::create([
             'name' => 'CSS',
-            'skill_type' => 2,
-            'skill_proficiency' => 3,
+            'skill_type_id' => 2,
+            'skill_proficiency_id' => 3,
         ]);
 
         Skill::create([
             'name' => 'Laravel',
-            'skill_type' => 3,
-            'skill_proficiency' => 4,
+            'skill_type_id' => 3,
+            'skill_proficiency_id' => 4,
         ]);
 
         Skill::create([
             'name' => 'Git',
-            'skill_type' => 5,
-            'skill_proficiency' => 4,
+            'skill_type_id' => 5,
+            'skill_proficiency_id' => 4,
         ]);
 
         Skill::create([
             'name' => 'CodeIgniter',
-            'skill_type' => 3,
-            'skill_proficiency' => 3,
+            'skill_type_id' => 3,
+            'skill_proficiency_id' => 3,
         ]);
 
         Skill::create([
             'name' => 'Moodle',
-            'skill_type' => 8,
-            'skill_proficiency' => 2,
+            'skill_type_id' => 8,
+            'skill_proficiency_id' => 2,
         ]);
 
         Skill::create([
             'name' => 'React JS',
-            'skill_type' => 8,
-            'skill_proficiency' => 3,
+            'skill_type_id' => 8,
+            'skill_proficiency_id' => 3,
         ]);
 
         Skill::create([
             'name' => 'Flask',
-            'skill_type' => 3,
-            'skill_proficiency' => 2,
+            'skill_type_id' => 3,
+            'skill_proficiency_id' => 2,
         ]);
 
         Skill::create([
             'name' => 'Agile Methodologies',
-            'skill_type' => 5,
-            'skill_proficiency' => 4,
+            'skill_type_id' => 5,
+            'skill_proficiency_id' => 4,
         ]);
 
         Skill::create([
             'name' => 'WCAG',
-            'skill_type' => 5,
-            'skill_proficiency' => 3,
+            'skill_type_id' => 5,
+            'skill_proficiency_id' => 3,
         ]);
 
         Skill::create([
             'name' => 'Adobe Illustrator',
-            'skill_type' => 4,
-            'skill_proficiency' => 3,
+            'skill_type_id' => 4,
+            'skill_proficiency_id' => 3,
         ]);
 
         Skill::create([
             'name' => 'English',
-            'skill_type' => 1,
-            'skill_proficiency' => 4,
+            'skill_type_id' => 1,
+            'skill_proficiency_id' => 4,
         ]);
 
         Skill::create([
             'name' => 'French',
-            'skill_type' => 1,
-            'skill_proficiency' => 2,
+            'skill_type_id' => 1,
+            'skill_proficiency_id' => 2,
         ]);
 
         Skill::create([
             'name' => 'German',
-            'skill_type' => 1,
-            'skill_proficiency' => 2,
+            'skill_type_id' => 1,
+            'skill_proficiency_id' => 2,
         ]);
     }
 }
