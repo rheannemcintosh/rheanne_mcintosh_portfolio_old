@@ -9,6 +9,7 @@ use App\Models\TreehouseCourse;
 use Illuminate\Http\Request;
 use App\Models\Degree;
 use App\Models\ZTMCourse;
+use App\Models\Skill;
 
 class CVController extends Controller
 {
@@ -25,7 +26,8 @@ class CVController extends Controller
         $codecademy  = CodecademyPath::all();
         $ztmCourses  = ZTMCourse::all();
         $treehouseCourses = TreehouseCourse::all();
+        $skills = Skill::all();
 
-        return view('cv.index', compact('degrees', 'experiences', 'employers', 'ztmCourses', 'codecademy', 'treehouseCourses'));
+        return view('cv.index', compact('degrees', 'experiences', 'employers', 'ztmCourses', 'codecademy', 'treehouseCourses', 'skills'));
     }
 }
