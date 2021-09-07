@@ -4,18 +4,19 @@
             <div class="bg-rmgrey shadow rounded-md">
                 <div class="grid grid-cols-3">
                     <div class="bg-rmBlue col-span-1 p-8">
-                        <div>
-                            <p>I'm a picture</p>
+                        <div class="p-4">
+                            <div class="bg-purple-600 rounded-full h-24 w-24 flex items-center justify-center">Picture</div>
                         </div>
-                        <div class="bg-yellow-400">
-                            <h1>Hi, I'm Rheanne</h1>
-                            <p>
+                        <div class="pb-3">
+                            <h1 class="font-bebas text-4xl text-rmTeal-light">Summary</h1>
+                            <p class="text-white">
                                 Summary About Rheanne: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                             </p>
                         </div>
                         <div>
+                            <h1 class="font-bebas text-4xl text-rmTeal-light">Skills</h1>
                             @foreach ($skills as $skill)
-
+                                <p class="font-bebas text-white text-2xl">{{ $skill->name }}</p>
                             @endforeach
                         </div>
                     </div>
