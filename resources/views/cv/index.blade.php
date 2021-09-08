@@ -1,16 +1,22 @@
 <x-app-layout>
     <div class="container mx-auto p-4">
         <div class="p-4 lg:px-24">
-            <div class="bg-rmgrey shadow rounded-md">
+            <div class="bg-rmgrey shadow rounded-r-lg">
                 <div class="grid grid-cols-3">
-                    <div class="bg-rmBlue col-span-1 p-8">
+                    <div class="bg-rmBlue col-span-1 rounded-l-lg p-8">
                         <div class="p-4">
-                            <div class="bg-purple-600 rounded-full h-24 w-24 flex items-center justify-center">Picture</div>
+                            <img class="" src="{{url('/images/rm_circle.png')}}" alt="Image"/>
                         </div>
                         <div class="pb-3">
                             <h1 class="font-bebas text-4xl text-rmTeal-light">Summary</h1>
-                            <p class="text-white">
-                                Summary About Rheanne: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            <p class="text-white pb-3">
+                                Ambitious and self-motivated Software Developer specialising in PHP, Laravel and MySQL.
+                                Currently working as a Software Engineer in Product Discovery for Visualsoft Ltd.
+                            </p>
+                            <p class="text-white pb-3">
+                                A resourceful and well-organised individual who is always eager to learn. My interests are
+                                in UX Design and Gamification. I am currently trying to expand my skillset by improving on my Python
+                                as well as self teaching React.JS and Vue.
                             </p>
                         </div>
                         <div>
@@ -20,7 +26,7 @@
                             @endforeach
                         </div>
                     </div>
-                    <div class="bg-orange-200 col-span-2 p-8">
+                    <div class="col-span-2 p-8">
 
                         <!-- Start of Experience Section -->
                         <div class="mt-4">
