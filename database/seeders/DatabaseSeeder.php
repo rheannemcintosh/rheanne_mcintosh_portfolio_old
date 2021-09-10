@@ -22,6 +22,7 @@ class DatabaseSeeder extends Seeder
             CertificateSeeder::class,
             CodecademyPathSeeder::class,
             TreehouseTopicSeeder::class,
+            TreehouseTrackSeeder::class,
             ZTMCourseSeeder::class,
         ]);
     }
