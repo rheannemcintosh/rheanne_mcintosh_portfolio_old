@@ -3,6 +3,7 @@
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
+use App\Models\TreehouseActivity;
 
 class TreehouseActivitySeeder extends Seeder
 {
@@ -13,13 +14,15 @@ class TreehouseActivitySeeder extends Seeder
      */
     public function run()
     {
-        \DB::table('treehouse_actvities')->delete();
+        \DB::table('treehouse_activities')->delete();
 
         TreehouseActivity::create([
             'name' => 'Flask REST API',
             'activity_type' => 'Course',
             'percentage' => 30,
             'year' => 2021,
+            'treehouse_topic_id' => 3,
+            'out_of_date' => false,
         ]);
 
         TreehouseActivity::create([
@@ -27,6 +30,8 @@ class TreehouseActivitySeeder extends Seeder
             'activity_type' => 'Course',
             'percentage' => 100,
             'year' => 2021,
+            'treehouse_topic_id' => 3,
+            'out_of_date' => false,
         ]);
 
         TreehouseActivity::create([
@@ -34,6 +39,8 @@ class TreehouseActivitySeeder extends Seeder
             'activity_type' => 'Course',
             'percentage' => 33,
             'year' => 2021,
+            'treehouse_topic_id' => 3,
+            'out_of_date' => false,
         ]);
 
         TreehouseActivity::create([
@@ -41,6 +48,8 @@ class TreehouseActivitySeeder extends Seeder
             'activity_type' => 'Course',
             'percentage' => 100,
             'year' => 2021,
+            'treehouse_topic_id' => 1,
+            'out_of_date' => false,
         ]);
 
         TreehouseActivity::create([
@@ -48,6 +57,8 @@ class TreehouseActivitySeeder extends Seeder
             'activity_type' => 'Course',
             'percentage' => 14,
             'year' => 2021,
+            'treehouse_topic_id' => 1,
+            'out_of_date' => false,
         ]);
 
         TreehouseActivity::create([
@@ -55,6 +66,8 @@ class TreehouseActivitySeeder extends Seeder
             'activity_type' => 'Course',
             'percentage' => 100,
             'year' => 2021,
+            'treehouse_topic_id' => 2,
+            'out_of_date' => false,
         ]);
 
         TreehouseActivity::create([
@@ -62,6 +75,8 @@ class TreehouseActivitySeeder extends Seeder
             'activity_type' => 'Course',
             'percentage' => 26,
             'year' => 2021,
+            'treehouse_topic_id' => 13,
+            'out_of_date' => false,
         ]);
 
         TreehouseActivity::create([
@@ -69,6 +84,8 @@ class TreehouseActivitySeeder extends Seeder
             'activity_type' => 'Course',
             'percentage' => 25,
             'year' => 2021,
+            'treehouse_topic_id' => 2,
+            'out_of_date' => false,
         ]);
 
         TreehouseActivity::create([
@@ -76,6 +93,8 @@ class TreehouseActivitySeeder extends Seeder
             'activity_type' => 'Course',
             'percentage' => 100,
             'year' => 2021,
+            'treehouse_topic_id' => 2,
+            'out_of_date' => false,
         ]);
 
         TreehouseActivity::create([
@@ -83,6 +102,8 @@ class TreehouseActivitySeeder extends Seeder
             'activity_type' => 'Workshop',
             'percentage' => 100,
             'year' => 2021,
+            'treehouse_topic_id' => 1,
+            'out_of_date' => false,
         ]);
 
         TreehouseActivity::create([
@@ -90,6 +111,8 @@ class TreehouseActivitySeeder extends Seeder
             'activity_type' => 'Workshop',
             'percentage' => 100,
             'year' => 2021,
+            'treehouse_topic_id' => 1,
+            'out_of_date' => false,
         ]);
 
         TreehouseActivity::create([
@@ -97,6 +120,8 @@ class TreehouseActivitySeeder extends Seeder
             'activity_type' => 'Workshop',
             'percentage' => 100,
             'year' => 2021,
+            'treehouse_topic_id' => 1,
+            'out_of_date' => false,
         ]);
 
         TreehouseActivity::create([
@@ -104,6 +129,8 @@ class TreehouseActivitySeeder extends Seeder
             'activity_type' => 'Workshop',
             'percentage' => 100,
             'year' => 2021,
+            'treehouse_topic_id' => 5,
+            'out_of_date' => false,
         ]);
 
         TreehouseActivity::create([
@@ -111,6 +138,8 @@ class TreehouseActivitySeeder extends Seeder
             'activity_type' => 'Workshop',
             'percentage' => 100,
             'year' => 2021,
+            'treehouse_topic_id' => 1,
+            'out_of_date' => false,
         ]);
 
         TreehouseActivity::create([
@@ -118,6 +147,8 @@ class TreehouseActivitySeeder extends Seeder
             'activity_type' => 'Course',
             'percentage' => 100,
             'year' => 2021,
+            'treehouse_topic_id' => 1,
+            'out_of_date' => false,
         ]);
 
         TreehouseActivity::create([
@@ -125,6 +156,8 @@ class TreehouseActivitySeeder extends Seeder
             'activity_type' => 'Workshop',
             'percentage' => 100,
             'year' => 2021,
+            'treehouse_topic_id' => 1,
+            'out_of_date' => false,
         ]);
 
         TreehouseActivity::create([
@@ -132,6 +165,8 @@ class TreehouseActivitySeeder extends Seeder
             'activity_type' => 'Workshop',
             'percentage' => 100,
             'year' => 2021,
+            'treehouse_topic_id' => 1,
+            'out_of_date' => false,
         ]);
 
         TreehouseActivity::create([
@@ -139,6 +174,8 @@ class TreehouseActivitySeeder extends Seeder
             'activity_type' => 'Course',
             'percentage' => 100,
             'year' => 2021,
+            'treehouse_topic_id' => 1,
+            'out_of_date' => false,
         ]);
 
         TreehouseActivity::create([
@@ -146,6 +183,8 @@ class TreehouseActivitySeeder extends Seeder
             'activity_type' => 'Course',
             'percentage' => 100,
             'year' => 2021,
+            'treehouse_topic_id' => 15,
+            'out_of_date' => false,
         ]);
 
         TreehouseActivity::create([
@@ -153,6 +192,8 @@ class TreehouseActivitySeeder extends Seeder
             'activity_type' => 'Course',
             'percentage' => 70,
             'year' => 2021,
+            'treehouse_topic_id' => 14,
+            'out_of_date' => false,
         ]);
 
         TreehouseActivity::create([
@@ -160,6 +201,8 @@ class TreehouseActivitySeeder extends Seeder
             'activity_type' => 'Course',
             'percentage' => 100,
             'year' => 2021,
+            'treehouse_topic_id' => 1,
+            'out_of_date' => false,
         ]);
 
         TreehouseActivity::create([
@@ -167,6 +210,8 @@ class TreehouseActivitySeeder extends Seeder
             'activity_type' => 'Course',
             'percentage' => 100,
             'year' => 2021,
+            'treehouse_topic_id' => 1,
+            'out_of_date' => false,
         ]);
 
         TreehouseActivity::create([
@@ -174,6 +219,8 @@ class TreehouseActivitySeeder extends Seeder
             'activity_type' => 'Video',
             'percentage' => 100,
             'year' => 2021,
+            'treehouse_topic_id' => 17,
+            'out_of_date' => false,
         ]);
 
         TreehouseActivity::create([
@@ -181,6 +228,8 @@ class TreehouseActivitySeeder extends Seeder
             'activity_type' => 'Course',
             'percentage' => 100,
             'year' => 2021,
+            'treehouse_topic_id' => 1,
+            'out_of_date' => false,
         ]);
 
         TreehouseActivity::create([
@@ -188,6 +237,8 @@ class TreehouseActivitySeeder extends Seeder
             'activity_type' => 'Course',
             'percentage' => 100,
             'year' => 2021,
+            'treehouse_topic_id' => 1,
+            'out_of_date' => false,
         ]);
 
         TreehouseActivity::create([
@@ -195,6 +246,8 @@ class TreehouseActivitySeeder extends Seeder
             'activity_type' => 'Course',
             'percentage' => 100,
             'year' => 2021,
+            'treehouse_topic_id' => 9,
+            'out_of_date' => false,
         ]);
 
         TreehouseActivity::create([
@@ -202,6 +255,8 @@ class TreehouseActivitySeeder extends Seeder
             'activity_type' => 'Workshop',
             'percentage' => 100,
             'year' => 2021,
+            'treehouse_topic_id' => 1,
+            'out_of_date' => false,
         ]);
 
         TreehouseActivity::create([
@@ -209,6 +264,8 @@ class TreehouseActivitySeeder extends Seeder
             'activity_type' => 'Workshop',
             'percentage' => 100,
             'year' => 2021,
+            'treehouse_topic_id' => 17,
+            'out_of_date' => false,
         ]);
 
         TreehouseActivity::create([
@@ -216,6 +273,8 @@ class TreehouseActivitySeeder extends Seeder
             'activity_type' => 'Course',
             'percentage' => 100,
             'year' => 2021,
+            'treehouse_topic_id' => 4,
+            'out_of_date' => false,
         ]);
 
         TreehouseActivity::create([
@@ -223,6 +282,8 @@ class TreehouseActivitySeeder extends Seeder
             'activity_type' => 'Course',
             'percentage' => 100,
             'year' => 2021,
+            'treehouse_topic_id' => 8,
+            'out_of_date' => false,
         ]);
 
         TreehouseActivity::create([
@@ -230,6 +291,8 @@ class TreehouseActivitySeeder extends Seeder
             'activity_type' => 'Course',
             'percentage' => 100,
             'year' => 2021,
+            'treehouse_topic_id' => 8,
+            'out_of_date' => false,
         ]);
 
         TreehouseActivity::create([
@@ -237,6 +300,8 @@ class TreehouseActivitySeeder extends Seeder
             'activity_type' => 'Course',
             'percentage' => 100,
             'year' => 2021,
+            'treehouse_topic_id' => 8,
+            'out_of_date' => false,
         ]);
 
         TreehouseActivity::create([
@@ -244,6 +309,8 @@ class TreehouseActivitySeeder extends Seeder
             'activity_type' => 'Course',
             'percentage' => 100,
             'year' => 2021,
+            'treehouse_topic_id' => 1,
+            'out_of_date' => false,
         ]);
 
         TreehouseActivity::create([
@@ -251,6 +318,8 @@ class TreehouseActivitySeeder extends Seeder
             'activity_type' => 'Course',
             'percentage' => 100,
             'year' => 2021,
+            'treehouse_topic_id' => 8,
+            'out_of_date' => false,
         ]);
 
         TreehouseActivity::create([
@@ -258,6 +327,8 @@ class TreehouseActivitySeeder extends Seeder
             'activity_type' => 'Workshop',
             'percentage' => 100,
             'year' => 2021,
+            'treehouse_topic_id' => 1,
+            'out_of_date' => false,
         ]);
 
         TreehouseActivity::create([
@@ -265,6 +336,8 @@ class TreehouseActivitySeeder extends Seeder
             'activity_type' => 'Course',
             'percentage' => 100,
             'year' => 2021,
+            'treehouse_topic_id' => 1,
+            'out_of_date' => false,
         ]);
 
         TreehouseActivity::create([
@@ -272,6 +345,8 @@ class TreehouseActivitySeeder extends Seeder
             'activity_type' => 'Course',
             'percentage' => 100,
             'year' => 2021,
+            'treehouse_topic_id' => 1,
+            'out_of_date' => false,
         ]);
 
         TreehouseActivity::create([
@@ -279,6 +354,8 @@ class TreehouseActivitySeeder extends Seeder
             'activity_type' => 'Workshop',
             'percentage' => 100,
             'year' => 2021,
+            'treehouse_topic_id' => 3,
+            'out_of_date' => false,
         ]);
 
         TreehouseActivity::create([
@@ -286,6 +363,8 @@ class TreehouseActivitySeeder extends Seeder
             'activity_type' => 'Workshop',
             'percentage' => 100,
             'year' => 2021,
+            'treehouse_topic_id' => 3,
+            'out_of_date' => false,
         ]);
 
         TreehouseActivity::create([
@@ -293,6 +372,8 @@ class TreehouseActivitySeeder extends Seeder
             'activity_type' => 'Workshop',
             'percentage' => 100,
             'year' => 2021,
+            'treehouse_topic_id' => 1,
+            'out_of_date' => false,
         ]);
 
         TreehouseActivity::create([
@@ -300,6 +381,8 @@ class TreehouseActivitySeeder extends Seeder
             'activity_type' => 'Course',
             'percentage' => 100,
             'year' => 2021,
+            'treehouse_topic_id' => 1,
+            'out_of_date' => false,
         ]);
 
         TreehouseActivity::create([
@@ -307,6 +390,8 @@ class TreehouseActivitySeeder extends Seeder
             'activity_type' => 'Course',
             'percentage' => 100,
             'year' => 2021,
+            'treehouse_topic_id' => 1,
+            'out_of_date' => false,
         ]);
 
         TreehouseActivity::create([
@@ -314,6 +399,8 @@ class TreehouseActivitySeeder extends Seeder
             'activity_type' => 'Workshop',
             'percentage' => 14,
             'year' => 2021,
+            'treehouse_topic_id' => 12,
+            'out_of_date' => false,
         ]);
 
         TreehouseActivity::create([
@@ -321,6 +408,8 @@ class TreehouseActivitySeeder extends Seeder
             'activity_type' => 'Course',
             'percentage' => 35,
             'year' => 2021,
+            'treehouse_topic_id' => 2,
+            'out_of_date' => false,
         ]);
 
         TreehouseActivity::create([
@@ -328,6 +417,8 @@ class TreehouseActivitySeeder extends Seeder
             'activity_type' => 'Course',
             'percentage' => 21,
             'year' => 2021,
+            'treehouse_topic_id' => 2,
+            'out_of_date' => false,
         ]);
 
         TreehouseActivity::create([
@@ -335,6 +426,8 @@ class TreehouseActivitySeeder extends Seeder
             'activity_type' => 'Course',
             'percentage' => 100,
             'year' => 2021,
+            'treehouse_topic_id' => 2,
+            'out_of_date' => false,
         ]);
 
         TreehouseActivity::create([
@@ -342,6 +435,8 @@ class TreehouseActivitySeeder extends Seeder
             'activity_type' => 'Course',
             'percentage' => 100,
             'year' => 2021,
+            'treehouse_topic_id' => 11,
+            'out_of_date' => false,
         ]);
 
         TreehouseActivity::create([
@@ -349,6 +444,8 @@ class TreehouseActivitySeeder extends Seeder
             'activity_type' => 'Workshop',
             'percentage' => 100,
             'year' => 2021,
+            'treehouse_topic_id' => 5,
+            'out_of_date' => false,
         ]);
 
         TreehouseActivity::create([
@@ -356,6 +453,8 @@ class TreehouseActivitySeeder extends Seeder
             'activity_type' => 'Course',
             'percentage' => 100,
             'year' => 2021,
+            'treehouse_topic_id' => 2,
+            'out_of_date' => false,
         ]);
 
         TreehouseActivity::create([
@@ -363,6 +462,8 @@ class TreehouseActivitySeeder extends Seeder
             'activity_type' => 'Course',
             'percentage' => 100,
             'year' => 2021,
+            'treehouse_topic_id' => 13,
+            'out_of_date' => false,
         ]);
 
         TreehouseActivity::create([
@@ -370,6 +471,8 @@ class TreehouseActivitySeeder extends Seeder
             'activity_type' => 'Course',
             'percentage' => 100,
             'year' => 2021,
+            'treehouse_topic_id' => 8,
+            'out_of_date' => false,
         ]);
 
         TreehouseActivity::create([
@@ -377,13 +480,17 @@ class TreehouseActivitySeeder extends Seeder
             'activity_type' => 'Course',
             'percentage' => 100,
             'year' => 2021,
+            'treehouse_topic_id' => 13,
+            'out_of_date' => false,
         ]);
 
         TreehouseActivity::create([
             'name' => 'Build a Social Network with Flask',
-            'activity_type' => 'Out of Date',
+            'activity_type' => 'Course',
             'percentage' => 73,
             'year' => 2021,
+            'treehouse_topic_id' => 3,
+            'out_of_date' => true,
         ]);
 
         TreehouseActivity::create([
@@ -391,6 +498,8 @@ class TreehouseActivitySeeder extends Seeder
             'activity_type' => 'Course',
             'percentage' => 100,
             'year' => 2021,
+            'treehouse_topic_id' => 1,
+            'out_of_date' => false,
         ]);
 
         TreehouseActivity::create([
@@ -398,6 +507,8 @@ class TreehouseActivitySeeder extends Seeder
             'activity_type' => 'Course',
             'percentage' => 70,
             'year' => 2021,
+            'treehouse_topic_id' => 9,
+            'out_of_date' => false,
         ]);
 
         TreehouseActivity::create([
@@ -405,13 +516,17 @@ class TreehouseActivitySeeder extends Seeder
             'activity_type' => 'Workshop',
             'percentage' => 100,
             'year' => 2021,
+            'treehouse_topic_id' => 1,
+            'out_of_date' => false,
         ]);
 
         TreehouseActivity::create([
-            'name' => 'Java Arraus',
+            'name' => 'Java Arrays',
             'activity_type' => 'Course',
             'percentage' => 100,
             'year' => 2021,
+            'treehouse_topic_id' => 8,
+            'out_of_date' => false,
         ]);
 
         TreehouseActivity::create([
@@ -419,6 +534,8 @@ class TreehouseActivitySeeder extends Seeder
             'activity_type' => 'Workshop',
             'percentage' => 100,
             'year' => 2021,
+            'treehouse_topic_id' => 8,
+            'out_of_date' => false,
         ]);
 
         TreehouseActivity::create([
@@ -426,6 +543,8 @@ class TreehouseActivitySeeder extends Seeder
             'activity_type' => 'Course',
             'percentage' => 100,
             'year' => 2021,
+            'treehouse_topic_id' => 8,
+            'out_of_date' => false,
         ]);
 
         TreehouseActivity::create([
@@ -433,6 +552,8 @@ class TreehouseActivitySeeder extends Seeder
             'activity_type' => 'Course',
             'percentage' => 41,
             'year' => 2021,
+            'treehouse_topic_id' => 12,
+            'out_of_date' => false,
         ]);
 
         TreehouseActivity::create([
@@ -440,6 +561,8 @@ class TreehouseActivitySeeder extends Seeder
             'activity_type' => 'Course',
             'percentage' => 80,
             'year' => 2020,
+            'treehouse_topic_id' => 12,
+            'out_of_date' => false,
         ]);
 
         TreehouseActivity::create([
@@ -447,6 +570,8 @@ class TreehouseActivitySeeder extends Seeder
             'activity_type' => 'Course',
             'percentage' => 100,
             'year' => 2020,
+            'treehouse_topic_id' => 1,
+            'out_of_date' => false,
         ]);
 
         TreehouseActivity::create([
@@ -454,6 +579,8 @@ class TreehouseActivitySeeder extends Seeder
             'activity_type' => 'Workshop',
             'percentage' => 100,
             'year' => 2020,
+            'treehouse_topic_id' => 3,
+            'out_of_date' => false,
         ]);
 
         TreehouseActivity::create([
@@ -461,6 +588,8 @@ class TreehouseActivitySeeder extends Seeder
             'activity_type' => 'Workshop',
             'percentage' => 100,
             'year' => 2020,
+            'treehouse_topic_id' => 1,
+            'out_of_date' => false,
         ]);
 
         TreehouseActivity::create([
@@ -468,6 +597,8 @@ class TreehouseActivitySeeder extends Seeder
             'activity_type' => 'Course',
             'percentage' => 96,
             'year' => 2020,
+            'treehouse_topic_id' => 1,
+            'out_of_date' => false,
         ]);
 
         TreehouseActivity::create([
@@ -475,6 +606,8 @@ class TreehouseActivitySeeder extends Seeder
             'activity_type' => 'Workshop',
             'percentage' => 100,
             'year' => 2020,
+            'treehouse_topic_id' => 1,
+            'out_of_date' => false,
         ]);
 
         TreehouseActivity::create([
@@ -482,6 +615,8 @@ class TreehouseActivitySeeder extends Seeder
             'activity_type' => 'Workshop',
             'percentage' => 100,
             'year' => 2020,
+            'treehouse_topic_id' => 1,
+            'out_of_date' => false,
         ]);
 
         TreehouseActivity::create([
@@ -489,6 +624,8 @@ class TreehouseActivitySeeder extends Seeder
             'activity_type' => 'Course',
             'percentage' => 100,
             'year' => 2020,
+            'treehouse_topic_id' => 1,
+            'out_of_date' => false,
         ]);
 
         TreehouseActivity::create([
@@ -496,6 +633,8 @@ class TreehouseActivitySeeder extends Seeder
             'activity_type' => 'Course',
             'percentage' => 100,
             'year' => 2020,
+            'treehouse_topic_id' => 9,
+            'out_of_date' => false,
         ]);
 
         TreehouseActivity::create([
@@ -503,6 +642,8 @@ class TreehouseActivitySeeder extends Seeder
             'activity_type' => 'Course',
             'percentage' => 100,
             'year' => 2020,
+            'treehouse_topic_id' => 5,
+            'out_of_date' => false,
         ]);
 
         TreehouseActivity::create([
@@ -510,13 +651,17 @@ class TreehouseActivitySeeder extends Seeder
             'activity_type' => 'Course',
             'percentage' => 100,
             'year' => 2020,
+            'treehouse_topic_id' => 1,
+            'out_of_date' => false,
         ]);
 
         TreehouseActivity::create([
             'name' => 'CSS Layout Basics',
-            'activity_type' => 'Out of Date',
+            'activity_type' => null,
             'percentage' => 100,
             'year' => 2020,
+            'treehouse_topic_id' => 9,
+            'out_of_date' => true,
         ]);
 
         TreehouseActivity::create([
@@ -524,6 +669,8 @@ class TreehouseActivitySeeder extends Seeder
             'activity_type' => 'Course',
             'percentage' => 100,
             'year' => 2020,
+            'treehouse_topic_id' => 4,
+            'out_of_date' => false,
         ]);
 
         TreehouseActivity::create([
@@ -531,6 +678,8 @@ class TreehouseActivitySeeder extends Seeder
             'activity_type' => 'Course',
             'percentage' => 100,
             'year' => 2020,
+            'treehouse_topic_id' => 1,
+            'out_of_date' => false,
         ]);
 
         TreehouseActivity::create([
@@ -538,13 +687,17 @@ class TreehouseActivitySeeder extends Seeder
             'activity_type' => 'Course',
             'percentage' => 100,
             'year' => 2020,
+            'treehouse_topic_id' => 3,
+            'out_of_date' => false,
         ]);
 
         TreehouseActivity::create([
-            'name' => 'JavaScript and the DOM',
+            'name' => 'JavaScript and the DOM (Retiring)',
             'activity_type' => 'Course',
             'percentage' => 100,
             'year' => 2020,
+            'treehouse_topic_id' => 1,
+            'out_of_date' => false,
         ]);
 
         TreehouseActivity::create([
@@ -552,6 +705,8 @@ class TreehouseActivitySeeder extends Seeder
             'activity_type' => 'Workshop',
             'percentage' => 100,
             'year' => 2020,
+            'treehouse_topic_id' => 3,
+            'out_of_date' => false,
         ]);
 
         TreehouseActivity::create([
@@ -559,6 +714,8 @@ class TreehouseActivitySeeder extends Seeder
             'activity_type' => 'Workshop',
             'percentage' => 100,
             'year' => 2020,
+            'treehouse_topic_id' => 3,
+            'out_of_date' => false,
         ]);
 
         TreehouseActivity::create([
@@ -566,6 +723,8 @@ class TreehouseActivitySeeder extends Seeder
             'activity_type' => 'Course',
             'percentage' => 100,
             'year' => 2020,
+            'treehouse_topic_id' => 3,
+            'out_of_date' => false,
         ]);
 
         TreehouseActivity::create([
@@ -573,6 +732,8 @@ class TreehouseActivitySeeder extends Seeder
             'activity_type' => 'Workshop',
             'percentage' => 100,
             'year' => 2020,
+            'treehouse_topic_id' => 3,
+            'out_of_date' => false,
         ]);
 
         TreehouseActivity::create([
@@ -580,6 +741,8 @@ class TreehouseActivitySeeder extends Seeder
             'activity_type' => 'Workshop',
             'percentage' => 100,
             'year' => 2020,
+            'treehouse_topic_id' => 3,
+            'out_of_date' => false,
         ]);
 
         TreehouseActivity::create([
@@ -587,6 +750,8 @@ class TreehouseActivitySeeder extends Seeder
             'activity_type' => 'Course',
             'percentage' => 100,
             'year' => 2020,
+            'treehouse_topic_id' => 1,
+            'out_of_date' => false,
         ]);
 
         TreehouseActivity::create([
@@ -594,6 +759,8 @@ class TreehouseActivitySeeder extends Seeder
             'activity_type' => 'Course',
             'percentage' => 100,
             'year' => 2020,
+            'treehouse_topic_id' => 3,
+            'out_of_date' => false,
         ]);
 
         TreehouseActivity::create([
@@ -601,6 +768,8 @@ class TreehouseActivitySeeder extends Seeder
             'activity_type' => 'Workshop',
             'percentage' => 100,
             'year' => 2020,
+            'treehouse_topic_id' => 3,
+            'out_of_date' => false,
         ]);
 
         TreehouseActivity::create([
@@ -608,6 +777,8 @@ class TreehouseActivitySeeder extends Seeder
             'activity_type' => 'Course',
             'percentage' => 100,
             'year' => 2020,
+            'treehouse_topic_id' => 4,
+            'out_of_date' => false,
         ]);
 
         TreehouseActivity::create([
@@ -615,6 +786,8 @@ class TreehouseActivitySeeder extends Seeder
             'activity_type' => 'Course',
             'percentage' => 100,
             'year' => 2020,
+            'treehouse_topic_id' => 1,
+            'out_of_date' => false,
         ]);
 
         TreehouseActivity::create([
@@ -622,6 +795,8 @@ class TreehouseActivitySeeder extends Seeder
             'activity_type' => 'Course',
             'percentage' => 100,
             'year' => 2020,
+            'treehouse_topic_id' => 3,
+            'out_of_date' => false,
         ]);
 
         TreehouseActivity::create([
@@ -629,6 +804,8 @@ class TreehouseActivitySeeder extends Seeder
             'activity_type' => 'Course',
             'percentage' => 100,
             'year' => 2020,
+            'treehouse_topic_id' => 1,
+            'out_of_date' => false,
         ]);
 
         TreehouseActivity::create([
@@ -636,6 +813,8 @@ class TreehouseActivitySeeder extends Seeder
             'activity_type' => 'Workshop',
             'percentage' => 100,
             'year' => 2020,
+            'treehouse_topic_id' => 3,
+            'out_of_date' => false,
         ]);
 
         TreehouseActivity::create([
@@ -643,6 +822,8 @@ class TreehouseActivitySeeder extends Seeder
             'activity_type' => 'Course',
             'percentage' => 100,
             'year' => 2020,
+            'treehouse_topic_id' => 4,
+            'out_of_date' => false,
         ]);
 
         TreehouseActivity::create([
@@ -650,6 +831,8 @@ class TreehouseActivitySeeder extends Seeder
             'activity_type' => 'Workshop',
             'percentage' => 100,
             'year' => 2020,
+            'treehouse_topic_id' => 3,
+            'out_of_date' => false,
         ]);
 
         TreehouseActivity::create([
@@ -657,6 +840,8 @@ class TreehouseActivitySeeder extends Seeder
             'activity_type' => 'Course',
             'percentage' => 100,
             'year' => 2020,
+            'treehouse_topic_id' => 3,
+            'out_of_date' => false,
         ]);
 
         TreehouseActivity::create([
@@ -664,6 +849,8 @@ class TreehouseActivitySeeder extends Seeder
             'activity_type' => 'Course',
             'percentage' => 100,
             'year' => 2020,
+            'treehouse_topic_id' => 1,
+            'out_of_date' => false,
         ]);
 
         TreehouseActivity::create([
@@ -671,13 +858,8 @@ class TreehouseActivitySeeder extends Seeder
             'activity_type' => 'Course',
             'percentage' => 100,
             'year' => 2020,
-        ]);
-
-        TreehouseActivity::create([
-            'name' => '',
-            'activity_type' => 'Course',
-            'percentage' => 100,
-            'year' => 2020,
+            'treehouse_topic_id' => 1,
+            'out_of_date' => false,
         ]);
 
         TreehouseActivity::create([
@@ -685,6 +867,8 @@ class TreehouseActivitySeeder extends Seeder
             'activity_type' => 'Course',
             'percentage' => 100,
             'year' => 2020,
+            'treehouse_topic_id' => 1,
+            'out_of_date' => false,
         ]);
 
         TreehouseActivity::create([
@@ -692,6 +876,8 @@ class TreehouseActivitySeeder extends Seeder
             'activity_type' => 'Course',
             'percentage' => 100,
             'year' => 2020,
+            'treehouse_topic_id' => 1,
+            'out_of_date' => false,
         ]);
 
         TreehouseActivity::create([
@@ -699,6 +885,8 @@ class TreehouseActivitySeeder extends Seeder
             'activity_type' => 'Course',
             'percentage' => 100,
             'year' => 2020,
+            'treehouse_topic_id' => 4,
+            'out_of_date' => false,
         ]);
 
         TreehouseActivity::create([
@@ -706,6 +894,8 @@ class TreehouseActivitySeeder extends Seeder
             'activity_type' => 'Course',
             'percentage' => 100,
             'year' => 2020,
+            'treehouse_topic_id' => 4,
+            'out_of_date' => false,
         ]);
 
         TreehouseActivity::create([
@@ -713,6 +903,8 @@ class TreehouseActivitySeeder extends Seeder
             'activity_type' => 'Course',
             'percentage' => 100,
             'year' => 2020,
+            'treehouse_topic_id' => 3,
+            'out_of_date' => false,
         ]);
 
         TreehouseActivity::create([
@@ -720,6 +912,8 @@ class TreehouseActivitySeeder extends Seeder
             'activity_type' => 'Course',
             'percentage' => 100,
             'year' => 2020,
+            'treehouse_topic_id' => 3,
+            'out_of_date' => false,
         ]);
 
         TreehouseActivity::create([
@@ -727,6 +921,8 @@ class TreehouseActivitySeeder extends Seeder
             'activity_type' => 'Course',
             'percentage' => 100,
             'year' => 2020,
+            'treehouse_topic_id' => 3,
+            'out_of_date' => false,
         ]);
 
         TreehouseActivity::create([
@@ -734,6 +930,8 @@ class TreehouseActivitySeeder extends Seeder
             'activity_type' => 'Course',
             'percentage' => 100,
             'year' => 2020,
+            'treehouse_topic_id' => 3,
+            'out_of_date' => false,
         ]);
 
         TreehouseActivity::create([
@@ -741,6 +939,8 @@ class TreehouseActivitySeeder extends Seeder
             'activity_type' => 'Course',
             'percentage' => 100,
             'year' => 2020,
+            'treehouse_topic_id' => 3,
+            'out_of_date' => false,
         ]);
 
         TreehouseActivity::create([
@@ -748,6 +948,8 @@ class TreehouseActivitySeeder extends Seeder
             'activity_type' => 'Course',
             'percentage' => 100,
             'year' => 2020,
+            'treehouse_topic_id' => 3,
+            'out_of_date' => false,
         ]);
 
         TreehouseActivity::create([
@@ -755,6 +957,8 @@ class TreehouseActivitySeeder extends Seeder
             'activity_type' => 'Course',
             'percentage' => 100,
             'year' => 2020,
+            'treehouse_topic_id' => 3,
+            'out_of_date' => false,
         ]);
 
         TreehouseActivity::create([
@@ -762,6 +966,8 @@ class TreehouseActivitySeeder extends Seeder
             'activity_type' => 'Course',
             'percentage' => 100,
             'year' => 2020,
+            'treehouse_topic_id' => 3,
+            'out_of_date' => false,
         ]);
 
         TreehouseActivity::create([
@@ -769,6 +975,8 @@ class TreehouseActivitySeeder extends Seeder
             'activity_type' => 'Course',
             'percentage' => 100,
             'year' => 2020,
+            'treehouse_topic_id' => 3,
+            'out_of_date' => false,
         ]);
 
         TreehouseActivity::create([
@@ -776,6 +984,8 @@ class TreehouseActivitySeeder extends Seeder
             'activity_type' => 'Course',
             'percentage' => 100,
             'year' => 2020,
+            'treehouse_topic_id' => 3,
+            'out_of_date' => false,
         ]);
 
         TreehouseActivity::create([
@@ -783,6 +993,8 @@ class TreehouseActivitySeeder extends Seeder
             'activity_type' => 'Course',
             'percentage' => 100,
             'year' => 2019,
+            'treehouse_topic_id' => 7,
+            'out_of_date' => false,
         ]);
 
         TreehouseActivity::create([
@@ -790,6 +1002,8 @@ class TreehouseActivitySeeder extends Seeder
             'activity_type' => 'Course',
             'percentage' => 100,
             'year' => 2019,
+            'treehouse_topic_id' => 11,
+            'out_of_date' => false,
         ]);
 
         TreehouseActivity::create([
@@ -797,13 +1011,17 @@ class TreehouseActivitySeeder extends Seeder
             'activity_type' => 'Course',
             'percentage' => 100,
             'year' => 2019,
+            'treehouse_topic_id' => 11,
+            'out_of_date' => false,
         ]);
 
         TreehouseActivity::create([
             'name' => 'Debugging a Web App with Chrome Dev Tools',
-            'activity_type' => 'Out of Date',
+            'activity_type' => null,
             'percentage' => 100,
             'year' => 2019,
+            'treehouse_topic_id' => null,
+            'out_of_date' => true,
         ]);
 
         TreehouseActivity::create([
@@ -811,6 +1029,8 @@ class TreehouseActivitySeeder extends Seeder
             'activity_type' => 'Course',
             'percentage' => 100,
             'year' => 2019,
+            'treehouse_topic_id' => 1,
+            'out_of_date' => false,
         ]);
 
         TreehouseActivity::create([
@@ -818,6 +1038,8 @@ class TreehouseActivitySeeder extends Seeder
             'activity_type' => 'Course',
             'percentage' => 62,
             'year' => 2019,
+            'treehouse_topic_id' => 5,
+            'out_of_date' => false,
         ]);
 
         TreehouseActivity::create([
@@ -825,6 +1047,8 @@ class TreehouseActivitySeeder extends Seeder
             'activity_type' => 'Course',
             'percentage' => 100,
             'year' => 2019,
+            'treehouse_topic_id' => 5,
+            'out_of_date' => false,
         ]);
 
         TreehouseActivity::create([
@@ -832,6 +1056,8 @@ class TreehouseActivitySeeder extends Seeder
             'activity_type' => 'Course',
             'percentage' => 100,
             'year' => 2019,
+            'treehouse_topic_id' => 5,
+            'out_of_date' => false,
         ]);
 
         TreehouseActivity::create([
@@ -839,6 +1065,8 @@ class TreehouseActivitySeeder extends Seeder
             'activity_type' => 'Course',
             'percentage' => 100,
             'year' => 2019,
+            'treehouse_topic_id' => 2,
+            'out_of_date' => false,
         ]);
 
         TreehouseActivity::create([
@@ -846,6 +1074,8 @@ class TreehouseActivitySeeder extends Seeder
             'activity_type' => 'Course',
             'percentage' => 100,
             'year' => 2019,
+            'treehouse_topic_id' => 5,
+            'out_of_date' => false,
         ]);
 
         TreehouseActivity::create([
@@ -853,6 +1083,8 @@ class TreehouseActivitySeeder extends Seeder
             'activity_type' => 'Course',
             'percentage' => 100,
             'year' => 2019,
+            'treehouse_topic_id' => 2,
+            'out_of_date' => false,
         ]);
 
         TreehouseActivity::create([
@@ -860,6 +1092,8 @@ class TreehouseActivitySeeder extends Seeder
             'activity_type' => 'Workshop',
             'percentage' => 100,
             'year' => 2019,
+            'treehouse_topic_id' => 5,
+            'out_of_date' => false,
         ]);
 
         TreehouseActivity::create([
@@ -867,6 +1101,8 @@ class TreehouseActivitySeeder extends Seeder
             'activity_type' => 'Workshop',
             'percentage' => 100,
             'year' => 2019,
+            'treehouse_topic_id' => 5,
+            'out_of_date' => false,
         ]);
 
         TreehouseActivity::create([
@@ -874,6 +1110,8 @@ class TreehouseActivitySeeder extends Seeder
             'activity_type' => 'Workshop',
             'percentage' => 100,
             'year' => 2019,
+            'treehouse_topic_id' => 7,
+            'out_of_date' => false,
         ]);
 
         TreehouseActivity::create([
@@ -881,6 +1119,8 @@ class TreehouseActivitySeeder extends Seeder
             'activity_type' => 'Course',
             'percentage' => 100,
             'year' => 2019,
+            'treehouse_topic_id' => 2,
+            'out_of_date' => false,
         ]);
 
         TreehouseActivity::create([
@@ -888,6 +1128,8 @@ class TreehouseActivitySeeder extends Seeder
             'activity_type' => 'Workshop',
             'percentage' => 100,
             'year' => 2019,
+            'treehouse_topic_id' => 2,
+            'out_of_date' => false,
         ]);
 
         TreehouseActivity::create([
@@ -895,13 +1137,17 @@ class TreehouseActivitySeeder extends Seeder
             'activity_type' => 'Workshop',
             'percentage' => 100,
             'year' => 2019,
+            'treehouse_topic_id' => 2,
+            'out_of_date' => false,
         ]);
 
         TreehouseActivity::create([
-            'name' => 'Practice Hashing with Passwords in PHP',
+            'name' => 'Practice Hashing Passwords in PHP',
             'activity_type' => 'Workshop',
             'percentage' => 100,
             'year' => 2019,
+            'treehouse_topic_id' => 2,
+            'out_of_date' => false,
         ]);
 
         TreehouseActivity::create([
@@ -909,6 +1155,8 @@ class TreehouseActivitySeeder extends Seeder
             'activity_type' => 'Workshop',
             'percentage' => 100,
             'year' => 2019,
+            'treehouse_topic_id' => 2,
+            'out_of_date' => false,
         ]);
 
         TreehouseActivity::create([
@@ -916,6 +1164,8 @@ class TreehouseActivitySeeder extends Seeder
             'activity_type' => 'Course',
             'percentage' => 5,
             'year' => 2019,
+            'treehouse_topic_id' => 18,
+            'out_of_date' => false,
         ]);
 
         TreehouseActivity::create([
@@ -923,6 +1173,8 @@ class TreehouseActivitySeeder extends Seeder
             'activity_type' => 'Course',
             'percentage' => 20,
             'year' => 2019,
+            'treehouse_topic_id' => 2,
+            'out_of_date' => false,
         ]);
 
         TreehouseActivity::create([
@@ -930,6 +1182,8 @@ class TreehouseActivitySeeder extends Seeder
             'activity_type' => 'Course',
             'percentage' => 100,
             'year' => 2019,
+            'treehouse_topic_id' => 2,
+            'out_of_date' => false,
         ]);
 
         TreehouseActivity::create([
@@ -937,6 +1191,8 @@ class TreehouseActivitySeeder extends Seeder
             'activity_type' => 'Workshop',
             'percentage' => 100,
             'year' => 2019,
+            'treehouse_topic_id' => 2,
+            'out_of_date' => false,
         ]);
 
         TreehouseActivity::create([
@@ -944,6 +1200,8 @@ class TreehouseActivitySeeder extends Seeder
             'activity_type' => 'Course',
             'percentage' => 100,
             'year' => 2019,
+            'treehouse_topic_id' => 2,
+            'out_of_date' => false,
         ]);
 
         TreehouseActivity::create([
@@ -951,6 +1209,8 @@ class TreehouseActivitySeeder extends Seeder
             'activity_type' => 'Course',
             'percentage' => 100,
             'year' => 2019,
+            'treehouse_topic_id' => 5,
+            'out_of_date' => false,
         ]);
 
         TreehouseActivity::create([
@@ -958,6 +1218,8 @@ class TreehouseActivitySeeder extends Seeder
             'activity_type' => 'Course',
             'percentage' => 11,
             'year' => 2019,
+            'treehouse_topic_id' => 5,
+            'out_of_date' => false,
         ]);
 
         TreehouseActivity::create([
@@ -965,6 +1227,8 @@ class TreehouseActivitySeeder extends Seeder
             'activity_type' => 'Course',
             'percentage' => 100,
             'year' => 2019,
+            'treehouse_topic_id' => 5,
+            'out_of_date' => false,
         ]);
 
         TreehouseActivity::create([
@@ -972,13 +1236,17 @@ class TreehouseActivitySeeder extends Seeder
             'activity_type' => 'Course',
             'percentage' => 100,
             'year' => 2019,
+            'treehouse_topic_id' => 2,
+            'out_of_date' => false,
         ]);
 
         TreehouseActivity::create([
             'name' => 'Laravel 4 Basics',
-            'activity_type' => 'Out of Date',
+            'activity_type' => 'Course',
             'percentage' => 14,
             'year' => 2019,
+            'treehouse_topic_id' => 2,
+            'out_of_date' => true,
         ]);
 
         TreehouseActivity::create([
@@ -986,6 +1254,8 @@ class TreehouseActivitySeeder extends Seeder
             'activity_type' => 'Workshop',
             'percentage' => 100,
             'year' => 2019,
+            'treehouse_topic_id' => 2,
+            'out_of_date' => false,
         ]);
 
         TreehouseActivity::create([
@@ -993,6 +1263,8 @@ class TreehouseActivitySeeder extends Seeder
             'activity_type' => 'Workshop',
             'percentage' => 100,
             'year' => 2019,
+            'treehouse_topic_id' => 2,
+            'out_of_date' => false,
         ]);
 
         TreehouseActivity::create([
@@ -1000,6 +1272,8 @@ class TreehouseActivitySeeder extends Seeder
             'activity_type' => 'Course',
             'percentage' => 100,
             'year' => 2019,
+            'treehouse_topic_id' => 2,
+            'out_of_date' => false,
         ]);
 
         TreehouseActivity::create([
@@ -1007,6 +1281,8 @@ class TreehouseActivitySeeder extends Seeder
             'activity_type' => 'Course',
             'percentage' => 100,
             'year' => 2019,
+            'treehouse_topic_id' => 2,
+            'out_of_date' => false,
         ]);
 
         TreehouseActivity::create([
@@ -1014,6 +1290,8 @@ class TreehouseActivitySeeder extends Seeder
             'activity_type' => 'Course',
             'percentage' => 100,
             'year' => 2019,
+            'treehouse_topic_id' => 5,
+            'out_of_date' => false,
         ]);
 
         TreehouseActivity::create([
@@ -1021,6 +1299,8 @@ class TreehouseActivitySeeder extends Seeder
             'activity_type' => 'Course',
             'percentage' => 94,
             'year' => 2019,
+            'treehouse_topic_id' => 2,
+            'out_of_date' => false,
         ]);
 
         TreehouseActivity::create([
@@ -1028,6 +1308,8 @@ class TreehouseActivitySeeder extends Seeder
             'activity_type' => 'Course',
             'percentage' => 100,
             'year' => 2019,
+            'treehouse_topic_id' => 2,
+            'out_of_date' => false,
         ]);
 
         TreehouseActivity::create([
@@ -1035,6 +1317,8 @@ class TreehouseActivitySeeder extends Seeder
             'activity_type' => 'Course',
             'percentage' => 100,
             'year' => 2019,
+            'treehouse_topic_id' => 2,
+            'out_of_date' => false,
         ]);
 
         TreehouseActivity::create([
@@ -1042,6 +1326,8 @@ class TreehouseActivitySeeder extends Seeder
             'activity_type' => 'Course',
             'percentage' => 100,
             'year' => 2019,
+            'treehouse_topic_id' => 2,
+            'out_of_date' => false,
         ]);
 
         TreehouseActivity::create([
@@ -1049,6 +1335,8 @@ class TreehouseActivitySeeder extends Seeder
             'activity_type' => 'Workshop',
             'percentage' => 100,
             'year' => 2019,
+            'treehouse_topic_id' => 7,
+            'out_of_date' => false,
         ]);
 
         TreehouseActivity::create([
@@ -1056,6 +1344,8 @@ class TreehouseActivitySeeder extends Seeder
             'activity_type' => 'Course',
             'percentage' => 100,
             'year' => 2019,
+            'treehouse_topic_id' => 7,
+            'out_of_date' => false,
         ]);
 
         TreehouseActivity::create([
@@ -1063,6 +1353,8 @@ class TreehouseActivitySeeder extends Seeder
             'activity_type' => 'Course',
             'percentage' => 100,
             'year' => 2019,
+            'treehouse_topic_id' => 7,
+            'out_of_date' => false,
         ]);
 
         TreehouseActivity::create([
@@ -1070,6 +1362,8 @@ class TreehouseActivitySeeder extends Seeder
             'activity_type' => 'Course',
             'percentage' => 100,
             'year' => 2019,
+            'treehouse_topic_id' => 7,
+            'out_of_date' => false,
         ]);
 
         TreehouseActivity::create([
@@ -1077,6 +1371,8 @@ class TreehouseActivitySeeder extends Seeder
             'activity_type' => 'Course',
             'percentage' => 100,
             'year' => 2019,
+            'treehouse_topic_id' => 7,
+            'out_of_date' => false,
         ]);
 
         TreehouseActivity::create([
@@ -1084,6 +1380,8 @@ class TreehouseActivitySeeder extends Seeder
             'activity_type' => 'Workshop',
             'percentage' => 100,
             'year' => 2019,
+            'treehouse_topic_id' => 7,
+            'out_of_date' => false,
         ]);
 
         TreehouseActivity::create([
@@ -1091,6 +1389,8 @@ class TreehouseActivitySeeder extends Seeder
             'activity_type' => 'Workshop',
             'percentage' => 100,
             'year' => 2019,
+            'treehouse_topic_id' => 7,
+            'out_of_date' => false,
         ]);
 
         TreehouseActivity::create([
@@ -1098,6 +1398,8 @@ class TreehouseActivitySeeder extends Seeder
             'activity_type' => 'Course',
             'percentage' => 100,
             'year' => 2019,
+            'treehouse_topic_id' => 7,
+            'out_of_date' => false,
         ]);
 
         TreehouseActivity::create([
@@ -1105,6 +1407,8 @@ class TreehouseActivitySeeder extends Seeder
             'activity_type' => 'Course',
             'percentage' => 100,
             'year' => 2019,
+            'treehouse_topic_id' => 6,
+            'out_of_date' => false,
         ]);
 
         TreehouseActivity::create([
@@ -1112,13 +1416,17 @@ class TreehouseActivitySeeder extends Seeder
             'activity_type' => 'Workshop',
             'percentage' => 100,
             'year' => 2019,
+            'treehouse_topic_id' => 2,
+            'out_of_date' => false,
         ]);
 
         TreehouseActivity::create([
             'name' => 'Building Websites with PHP',
-            'activity_type' => 'Out of Date',
+            'activity_type' => 'Course',
             'percentage' => 100,
             'year' => 2019,
+            'treehouse_topic_id' => 2,
+            'out_of_date' => true,
         ]);
 
         TreehouseActivity::create([
@@ -1126,6 +1434,8 @@ class TreehouseActivitySeeder extends Seeder
             'activity_type' => 'Workshop',
             'percentage' => 100,
             'year' => 2019,
+            'treehouse_topic_id' => 2,
+            'out_of_date' => false,
         ]);
 
         TreehouseActivity::create([
@@ -1133,6 +1443,8 @@ class TreehouseActivitySeeder extends Seeder
             'activity_type' => 'Course',
             'percentage' => 100,
             'year' => 2019,
+            'treehouse_topic_id' => 6,
+            'out_of_date' => false,
         ]);
 
         TreehouseActivity::create([
@@ -1140,6 +1452,8 @@ class TreehouseActivitySeeder extends Seeder
             'activity_type' => 'Course',
             'percentage' => 100,
             'year' => 2019,
+            'treehouse_topic_id' => 12,
+            'out_of_date' => false,
         ]);
 
         TreehouseActivity::create([
@@ -1147,48 +1461,62 @@ class TreehouseActivitySeeder extends Seeder
             'activity_type' => 'Course',
             'percentage' => 100,
             'year' => 2019,
+            'treehouse_topic_id' => 6,
+            'out_of_date' => false,
         ]);
 
         TreehouseActivity::create([
-            'name' => 'C# Basics',
+            'name' => 'C# Basics (Retired)',
             'activity_type' => 'Course',
             'percentage' => 100,
             'year' => 2019,
+            'treehouse_topic_id' => 6,
+            'out_of_date' => false,
         ]);
 
         TreehouseActivity::create([
             'name' => 'CSS Basics (2014)',
-            'activity_type' => 'Out of Date',
+            'activity_type' => 'Course',
             'percentage' => 97,
             'year' => 2019,
+            'treehouse_topic_id' => 1,
+            'out_of_date' => true,
         ]);
 
         TreehouseActivity::create([
             'name' => 'How to Build a WordPress Plugin',
-            'activity_type' => 'Out of Date',
+            'activity_type' => null,
             'percentage' => 100,
             'year' => 2019,
+            'treehouse_topic_id' => 2,
+            'out_of_date' => true,
         ]);
 
         TreehouseActivity::create([
             'name' => 'The WordPress Template Hierarchy',
-            'activity_type' => 'Out of Date',
+            'activity_type' => null,
             'percentage' => 100,
             'year' => 2019,
+            'treehouse_topic_id' => 2,
+            'out_of_date' => true,
         ]);
 
         TreehouseActivity::create([
             'name' => 'Customizing the WordPress Admin Area',
-            'activity_type' => 'Out of Date',
+            'activity_type' => null,
             'percentage' => 100,
             'year' => 2019,
+            'treehouse_topic_id' => 2,
+            'out_of_date' => true,
         ]);
 
         TreehouseActivity::create([
             'name' => 'WordPress Hooks - Actions and Filters',
-            'activity_type' => 'Out of Date',
+            'activity_type' => null,
             'percentage' => 100,
             'year' => 2019,
+            'treehouse_topic_id' => 2,
+            'out_of_date' => true,
         ]);
 
         TreehouseActivity::create([
@@ -1196,13 +1524,17 @@ class TreehouseActivitySeeder extends Seeder
             'activity_type' => 'Course',
             'percentage' => 100,
             'year' => 2019,
+            'treehouse_topic_id' => 4,
+            'out_of_date' => false,
         ]);
 
         TreehouseActivity::create([
             'name' => 'WordPress Theme Development',
-            'activity_type' => 'Out of Date',
+            'activity_type' => null,
             'percentage' => 100,
             'year' => 2019,
+            'treehouse_topic_id' => 2,
+            'out_of_date' => true,
         ]);
 
         TreehouseActivity::create([
@@ -1210,6 +1542,8 @@ class TreehouseActivitySeeder extends Seeder
             'activity_type' => 'Course',
             'percentage' => 100,
             'year' => 2018,
+            'treehouse_topic_id' => 8,
+            'out_of_date' => false,
         ]);
 
         TreehouseActivity::create([
@@ -1217,27 +1551,35 @@ class TreehouseActivitySeeder extends Seeder
             'activity_type' => 'Workshop',
             'percentage' => 100,
             'year' => 2018,
+            'treehouse_topic_id' => 8,
+            'out_of_date' => false,
         ]);
 
         TreehouseActivity::create([
             'name' => 'PHP for WordPress',
-            'activity_type' => 'Out of Date',
+            'activity_type' => null,
             'percentage' => 100,
             'year' => 2018,
+            'treehouse_topic_id' => 2,
+            'out_of_date' => true,
         ]);
 
         TreehouseActivity::create([
             'name' => 'Migrating for WordPress',
-            'activity_type' => 'Out of Date',
+            'activity_type' => null,
             'percentage' => 100,
             'year' => 2018,
+            'treehouse_topic_id' => 2,
+            'out_of_date' => true,
         ]);
 
         TreehouseActivity::create([
             'name' => 'Installing WordPress Locally',
-            'activity_type' => 'Out of Date',
+            'activity_type' => null,
             'percentage' => 100,
             'year' => 2018,
+            'treehouse_topic_id' => 2,
+            'out_of_date' => true,
         ]);
 
         TreehouseActivity::create([
@@ -1245,13 +1587,17 @@ class TreehouseActivitySeeder extends Seeder
             'activity_type' => 'Course',
             'percentage' => 44,
             'year' => 2018,
+            'treehouse_topic_id' => 4,
+            'out_of_date' => false,
         ]);
 
         TreehouseActivity::create([
             'name' => 'Build a Basic PHP Website (2018)',
-            'activity_type' => 'Out of Date',
+            'activity_type' => 'Course',
             'percentage' => 100,
             'year' => 2018,
+            'treehouse_topic_id' => 2,
+            'out_of_date' => true,
         ]);
 
         TreehouseActivity::create([
@@ -1259,6 +1605,8 @@ class TreehouseActivitySeeder extends Seeder
             'activity_type' => 'Workshop',
             'percentage' => 100,
             'year' => 2018,
+            'treehouse_topic_id' => 2,
+            'out_of_date' => false,
         ]);
 
         TreehouseActivity::create([
@@ -1266,6 +1614,8 @@ class TreehouseActivitySeeder extends Seeder
             'activity_type' => 'Workshop',
             'percentage' => 100,
             'year' => 2018,
+            'treehouse_topic_id' => 2,
+            'out_of_date' => false,
         ]);
 
         TreehouseActivity::create([
@@ -1273,6 +1623,8 @@ class TreehouseActivitySeeder extends Seeder
             'activity_type' => 'Course',
             'percentage' => 100,
             'year' => 2018,
+            'treehouse_topic_id' => 2,
+            'out_of_date' => false,
         ]);
 
         TreehouseActivity::create([
@@ -1280,6 +1632,8 @@ class TreehouseActivitySeeder extends Seeder
             'activity_type' => 'Course',
             'percentage' => 100,
             'year' => 2018,
+            'treehouse_topic_id' => 2,
+            'out_of_date' => false,
         ]);
 
         TreehouseActivity::create([
@@ -1287,29 +1641,35 @@ class TreehouseActivitySeeder extends Seeder
             'activity_type' => 'Course',
             'percentage' => 100,
             'year' => 2018,
+            'treehouse_topic_id' => 2,
+            'out_of_date' => false,
         ]);
-
-
 
         TreehouseActivity::create([
             'name' => 'Android Lists and Adapters (2015)',
-            'activity_type' => 'Out of Date',
+            'activity_type' => null,
             'percentage' => 2,
             'year' => 2018,
+            'treehouse_topic_id' => 10,
+            'out_of_date' => true,
         ]);
 
         TreehouseActivity::create([
             'name' => 'Build a Weather App (2015)',
-            'activity_type' => 'Out of Date',
+            'activity_type' => null,
             'percentage' => 83,
             'year' => 2018,
+            'treehouse_topic_id' => null,
+            'out_of_date' => true,
         ]);
 
         TreehouseActivity::create([
             'name' => 'How to Make a Video Game',
-            'activity_type' => 'Out of Date',
+            'activity_type' => null,
             'percentage' => 7,
             'year' => 2018,
+            'treehouse_topic_id' => null,
+            'out_of_date' => true,
         ]);
 
         TreehouseActivity::create([
@@ -1317,6 +1677,8 @@ class TreehouseActivitySeeder extends Seeder
             'activity_type' => 'Workshop',
             'percentage' => 100,
             'year' => 2018,
+            'treehouse_topic_id' => 10,
+            'out_of_date' => false,
         ]);
 
         TreehouseActivity::create([
@@ -1324,13 +1686,17 @@ class TreehouseActivitySeeder extends Seeder
             'activity_type' => 'Workshop',
             'percentage' => 20,
             'year' => 2018,
+            'treehouse_topic_id' => 10,
+            'out_of_date' => false,
         ]);
 
         TreehouseActivity::create([
             'name' => 'Git Basics',
-            'activity_type' => 'Out of Date',
+            'activity_type' => null,
             'percentage' => 2,
             'year' => 2018,
+            'treehouse_topic_id' => null,
+            'out_of_date' => true,
         ]);
 
         TreehouseActivity::create([
@@ -1338,6 +1704,8 @@ class TreehouseActivitySeeder extends Seeder
             'activity_type' => 'Course',
             'percentage' => 51,
             'year' => 2017,
+            'treehouse_topic_id' => 10,
+            'out_of_date' => false,
         ]);
 
         TreehouseActivity::create([
@@ -1345,6 +1713,8 @@ class TreehouseActivitySeeder extends Seeder
             'activity_type' => 'Workshop',
             'percentage' => 100,
             'year' => 2017,
+            'treehouse_topic_id' => 10,
+            'out_of_date' => false,
         ]);
 
         TreehouseActivity::create([
@@ -1352,62 +1722,80 @@ class TreehouseActivitySeeder extends Seeder
             'activity_type' => 'Course',
             'percentage' => 100,
             'year' => 2017,
+            'treehouse_topic_id' => 10,
+            'out_of_date' => false,
         ]);
 
         TreehouseActivity::create([
             'name' => 'Build a Website with WordPress',
-            'activity_type' => 'Out of Date',
+            'activity_type' => null,
             'percentage' => 83,
             'year' => 2017,
+            'treehouse_topic_id' => 2,
+            'out_of_date' => true,
         ]);
 
         TreehouseActivity::create([
             'name' => 'Local WordPress Development',
-            'activity_type' => 'Out of Date',
+            'activity_type' => null,
             'percentage' => 100,
             'year' => 2017,
+            'treehouse_topic_id' => 2,
+            'out_of_date' => true,
         ]);
 
         TreehouseActivity::create([
             'name' => 'WordPress User Roles',
-            'activity_type' => 'Out of Date',
+            'activity_type' => null,
             'percentage' => 100,
             'year' => 2017,
+            'treehouse_topic_id' => 2,
+            'out_of_date' => true,
         ]);
 
         TreehouseActivity::create([
             'name' => 'WordPress Basics',
-            'activity_type' => 'Out of Date',
+            'activity_type' => null,
             'percentage' => 100,
             'year' => 2017,
+            'treehouse_topic_id' => 2,
+            'out_of_date' => true,
         ]);
 
         TreehouseActivity::create([
             'name' => 'How to Install WordPress on Your Computer',
-            'activity_type' => 'Out of Date',
+            'activity_type' => null,
             'percentage' => 100,
             'year' => 2017,
+            'treehouse_topic_id' => 2,
+            'out_of_date' => true,
         ]);
 
         TreehouseActivity::create([
             'name' => 'What Is WordPress?',
-            'activity_type' => 'Out of Date',
+            'activity_type' => null,
             'percentage' => 100,
             'year' => 2017,
+            'treehouse_topic_id' => 2,
+            'out_of_date' => true,
         ]);
 
         TreehouseActivity::create([
             'name' => 'How to Make a Website',
-            'activity_type' => 'Out of Date',
+            'activity_type' => null,
             'percentage' => 55,
             'year' => 2016,
+            'treehouse_topic_id' => null,
+            'out_of_date' => true,
         ]);
 
         TreehouseActivity::create([
             'name' => 'JavaScript Foundations',
-            'activity_type' => 'Out of Date',
+            'activity_type' => null,
             'percentage' => 1,
             'year' => 2014,
+            'treehouse_topic_id' => 1,
+            'out_of_date' => true,
         ]);
 
         TreehouseActivity::create([
@@ -1415,21 +1803,26 @@ class TreehouseActivitySeeder extends Seeder
             'activity_type' => 'Show',
             'percentage' => 100,
             'year' => '2013',
+            'treehouse_topic_id' => null,
+            'out_of_date' => true,
         ]);
 
         TreehouseActivity::create([
             'name' => 'HTML',
-            'activity_type' => 'Out of Date',
+            'activity_type' => null,
             'percentage' => 48,
             'year' => 2013,
+            'treehouse_topic_id' => 4,
+            'out_of_date' => true,
         ]);
 
         TreehouseActivity::create([
             'name' => 'Build a Simple Website',
-            'activity_type' => 'Out of Date',
+            'activity_type' => null,
             'percentage' => 100,
             'year' => 2013,
+            'treehouse_topic_id' => null,
+            'out_of_date' => true,
         ]);
-        
     }
 }
