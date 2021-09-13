@@ -22,9 +22,9 @@ class CreateTreehouseActivitiesTable extends Migration
             $table->foreignId('treehouse_topic_id')->nullable()->constrained();
             $table->boolean('out_of_date');
             $table->date('date')->nullable()->default(null);
-            $table->boolean('checked_activity_type')->default(0);
-            $table->boolean('checked_badges')->default(0);
-            $table->boolean('checked_portfolio')->default(0);
+            $table->boolean('checked_activity_type')->nullable()->default(null);
+            $table->boolean('checked_badges')->nullable()->default(null);
+            $table->boolean('checked_portfolio')->nullable()->default(null);
             $table->timestamps();
         });
     }
