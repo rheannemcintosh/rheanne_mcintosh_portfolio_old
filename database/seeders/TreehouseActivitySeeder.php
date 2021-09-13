@@ -1809,7 +1809,7 @@ class TreehouseActivitySeeder extends Seeder
 
         TreehouseActivity::create([
             'name' => 'HTML',
-            'activity_type' => null,
+            'activity_type' => 'Course',
             'percentage' => 48,
             'year' => 2013,
             'treehouse_topic_id' => 4,
@@ -1818,7 +1818,7 @@ class TreehouseActivitySeeder extends Seeder
 
         TreehouseActivity::create([
             'name' => 'Build a Simple Website',
-            'activity_type' => null,
+            'activity_type' => 'Course',
             'percentage' => 100,
             'year' => 2013,
             'treehouse_topic_id' => null,
