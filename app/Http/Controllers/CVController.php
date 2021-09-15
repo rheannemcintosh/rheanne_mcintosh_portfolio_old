@@ -30,4 +30,9 @@ class CVController extends Controller
 
         return view('cv.index', compact('degrees', 'experiences', 'employers', 'ztmCourses', 'codecademy', 'treehouseCourses', 'skills'));
     }
+
+    public function summary()
+    {
+        return view('errors.index');
+    }
 }
