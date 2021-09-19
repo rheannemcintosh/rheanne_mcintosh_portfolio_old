@@ -25,7 +25,7 @@ module.exports = {
                     DEFAULT: '#295D6F',
                     dark: '#184249',
                 },
-                rhe: {
+                rmYellow: {
                     DEFAULT: '#DBAB3A',
                 }
             },
