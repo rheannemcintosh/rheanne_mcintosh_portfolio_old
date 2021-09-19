@@ -24,4 +24,12 @@ class SkillType extends Model
     protected $fillable = [
         'type',
     ];
+
+    /**
+     * Get the skills for each skill type.
+     */
+    public function skills()
+    {
+        return $this->hasMany(Skill::class);
+    }
 }
