@@ -10,6 +10,7 @@ use Illuminate\Http\Request;
 use App\Models\Degree;
 use App\Models\ZTMCourse;
 use App\Models\Skill;
+use App\Models\SkillType;
 
 class CVController extends Controller
 {
@@ -27,8 +28,9 @@ class CVController extends Controller
         $ztmCourses  = ZTMCourse::all();
         $treehouseCourses = TreehouseCourse::all();
         $skills = Skill::all();
+        $skill_types = SkillType::all();
 
-        return view('cv.index', compact('degrees', 'experiences', 'employers', 'ztmCourses', 'codecademy', 'treehouseCourses', 'skills'));
+        return view('cv.index', compact('degrees', 'experiences', 'employers', 'ztmCourses', 'codecademy', 'treehouseCourses', 'skills', 'skill_types'));
     }
 
     public function summary()
