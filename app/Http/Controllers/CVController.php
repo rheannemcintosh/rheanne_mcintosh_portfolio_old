@@ -9,7 +9,6 @@ use App\Models\TreehouseCourse;
 use Illuminate\Http\Request;
 use App\Models\Degree;
 use App\Models\ZTMCourse;
-use App\Models\Skill;
 use App\Models\SkillType;
 
 class CVController extends Controller
@@ -27,10 +26,11 @@ class CVController extends Controller
         $codecademy  = CodecademyPath::all();
         $ztmCourses  = ZTMCourse::all();
         $treehouseCourses = TreehouseCourse::all();
-        $skills = Skill::all();
-        $skill_types = SkillType::all();
+        $skill_types = SkillType::where('cv_flag', '=', true)->orderBy('ordering')->get();
 
-        return view('cv.index', compact('degrees', 'experiences', 'employers', 'ztmCourses', 'codecademy', 'treehouseCourses', 'skills', 'skill_types'));
+
+
+        return view('cv.index', compact('degrees', 'experiences', 'employers', 'ztmCourses', 'codecademy', 'treehouseCourses', 'skill_types'));
     }
 
     public function summary()
