@@ -17,35 +17,51 @@ class SkillTypeSeeder extends Seeder
         \DB::table('skill_types')->delete();
 
         SkillType::create([
-            'type' => 'Language',
+            'type' => 'Languages',
+            'ordering' => 6,
+            'cv_flag' => true,
         ]);
 
         SkillType::create([
-            'type' => 'Programming Language',
+            'type' => 'Programming Languages',
+            'ordering' => 1,
+            'cv_flag' => true,
         ]);
 
         SkillType::create([
-            'type' => 'Framework',
+            'type' => 'Libraries and Frameworks',
+            'ordering' => 2,
+            'cv_flag' => true,
         ]);
 
         SkillType::create([
-            'type' => 'Software',
+            'type' => 'Tools and Technologies',
+            'ordering' => 3,
+            'cv_flag' => true,
         ]);
 
         SkillType::create([
             'type' => 'Industry Knowledge',
+            'ordering' => 4,
+            'cv_flag' => true,
         ]);
 
         SkillType::create([
-            'type' => 'Technologies',
+            'type' => 'Design',
+            'ordering' => 5,
+            'cv_flag' => true,
         ]);
 
         SkillType::create([
             'type' => 'Interpersonal Skills',
+            'ordering' => 7,
+            'cv_flag' => false,
         ]);
 
         SkillType::create([
             'type' => 'Other',
+            'ordering' => 8,
+            'cv_flag' => false,
         ]);
     }
 }

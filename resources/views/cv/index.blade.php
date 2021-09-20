@@ -21,8 +21,11 @@
                         </div>
                         <div>
                             <h1 class="font-bebas text-4xl text-rmTeal-light">Skills</h1>
-                            @foreach ($skills as $skill)
-                                <p class="font-bebas text-white text-2xl">{{ $skill->name }}</p>
+                            @foreach ($skill_types as $skill_type)
+                                <p class="font-bebas text-rmYellow text-3xl pt-4">{{ $skill_type->type }}</p>
+                                @foreach ($skill_type->skills as $skill)
+                                    <p class="font-bebas text-white text-2xl">{{ $skill->name }}</p>
+                                @endforeach
                             @endforeach
                         </div>
                     </div>

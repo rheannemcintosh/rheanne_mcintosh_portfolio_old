@@ -24,7 +24,8 @@ class Skill extends Model
     protected $fillable = [
         'name',
         'skill_type',
-        'skill_proficiency'
+        'skill_proficiency',
+        'cv_flag',
     ];
 
     /**

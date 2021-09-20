@@ -18,6 +18,7 @@ class CreateSkillsTable extends Migration
             $table->string('name');
             $table->foreignId('skill_type_id')->constrained();
             $table->foreignId('skill_proficiency_id')->constrained();
+            $table->boolean('cv_flag');
             $table->timestamps();
         });
     }
