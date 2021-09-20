@@ -23,6 +23,8 @@ class SkillType extends Model
      */
     protected $fillable = [
         'type',
+        'ordering',
+        'cv_flag',
     ];
 
     /**
