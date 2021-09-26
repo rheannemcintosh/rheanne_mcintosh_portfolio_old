@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use App\Models\TreehouseActivity;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
@@ -24,6 +25,11 @@ class DatabaseSeeder extends Seeder
             TreehouseTopicSeeder::class,
             TreehouseTrackSeeder::class,
             ZTMCourseSeeder::class,
+            LinkTypeSeeder::class,
+            SkillProficiencySeeder::class,
+            SkillTypeSeeder::class,
+            SkillSeeder::class,
+            TreehouseActivitySeeder::class,
         ]);
     }
 }
