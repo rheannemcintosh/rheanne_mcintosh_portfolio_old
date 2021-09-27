@@ -20,11 +20,11 @@
 
             <div class="menu">
                 <ul>
-                    <li class="rm-font-nav rm-c-dark-blue text-white"><a href="{{ url('/') }}">Home</a></li>
-                    <li class="rm-font-nav rm-c-light-teal text-white"><a href="{{ url('/cv') }}">About</a></li>
-                    <li class="rm-font-nav rm-c-yellow text-white"><a href="{{ url('/portfolio') }}">Portfolio</a></li>
-                    <li class="rm-font-nav rm-c-dark-teal text-white"><a href="{{ url('/contact') }}">Contact</a></li>
-                    <li class="rm-font-nav rm-c-yellow text-white"><a href="{{ url('/blog') }}">Blog</a></li>
+                    <li class="rm-font-nav text-white"><a class="hover:bg-rmTeal-dark" href="{{ url('/') }}">Home</a></li>
+                    <li class="rm-font-nav text-white"><a class="hover:bg-rmYellow" href="{{ url('/cv') }}">About</a></li>
+                    <li class="rm-font-nav text-white"><a class="hover:bg-rmTeal" href="{{ url('/portfolio') }}">Portfolio</a></li>
+                    <li class="rm-font-nav text-white"><a class="hover:bg-rmBlue" href="{{ url('/contact') }}">Contact</a></li>
+                    <li class="rm-font-nav text-white"><a class="hover:bg-rmTeal-light" href="{{ url('/blog') }}">Blog</a></li>
                 </ul>
             </div>
         </nav>
