@@ -35,6 +35,10 @@ module.exports = {
             },
             fontSize: {
                 '10xl': '14rem',
+            },
+            backgroundImage: {
+                'rm': "url('/images/rm_background.png')",
+                'rm-muted': "url('/images/rm_background_muted.png')",
             }
         },
     },
