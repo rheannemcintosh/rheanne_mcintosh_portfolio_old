@@ -36,9 +36,7 @@
                     <div class="p-4 lg:px-24">
                         <div class="p-8">
                             <h1 class="text-rmWhite text-center text-10xl font-bebas">Hi, I'm Rheanne!</h1>
-                            <div class="py-10 my-4">
-                                <h2 class="italic text-white"><!-- Space to enter sub-heading-->></h2>
-                            </div>
+                            <div class="py-8 my-4"></div>
                             <div class="grid mb-4 sm:grid-cols-4 grid-cols-1 gap-10">
                                 <div class="py-4 border-4 border-rmWhite hover:bg-rmBlue-light">
                                     <h3 class="text-3xl font-bebas text-center text-white">About</h3>
