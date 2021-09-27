@@ -10,24 +10,25 @@ module.exports = {
     theme: {
         extend: {
             colors: {
-                rmgrey: {
-                    light: '#F7FAFC',
+                rmWhite: {
+                    DEFAULT: '#F7FAFC',
+                },
+                rmGrey: {
                     DEFAULT: '#EAEAEA',
-                    dark: '#D8D8D8',
-                },
-                rmBlue: {
-                    light: '#193965',
-                    DEFAULT: '#0F2344',
-                    dark: '#0B1928'
-                },
-                rmTeal: {
-                    light: '#377F8A',
-                    DEFAULT: '#295D6F',
-                    dark: '#184249',
                 },
                 rmYellow: {
                     DEFAULT: '#DBAB3A',
-                }
+                },
+                rmBlue: {
+                    light: '#06396C',
+                    DEFAULT: '#021F4B',
+                    dark: '#0B1928'
+                },
+                rmTeal: {
+                    light: '#017182',
+                    DEFAULT: '#015A68',
+                    dark: '#012C37',
+                },
             },
             fontFamily: {
                 sans: ['Nunito', ...defaultTheme.fontFamily.sans],
