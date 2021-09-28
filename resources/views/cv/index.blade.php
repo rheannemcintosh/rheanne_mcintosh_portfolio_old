@@ -82,11 +82,18 @@
                                     </h3>
                                     <div class="px-5 py-2">
                                         <ul class="px-5 list-disc list-outside">
+                                            <li>First class honours degree in Computing (Graphics and Animation).</li>
+                                            <li>Award for Academic Excellence in Stage 4 (2018).</li>
+                                            <li>ConocoPhillips Award for Academic Excellence in Stage 2 (2016).</li>
+                                            <li>Dissertation in “The Effects of Following the User Experience Design Process
+                                                in the Development of a Mobile Application”.</li>
+                                            {{--
                                             @foreach ($degree->modules as $module)
                                                 @if ($module->cv_flag == true)
                                                     <li><span class="font-bold">({{ $module->grade }})</span> {{ $module->name }}</li>
                                                 @endif
                                             @endforeach
+                                            --}}
                                         </ul>
                                     </div>
                                 </div>
