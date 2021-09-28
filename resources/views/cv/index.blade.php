@@ -1,7 +1,7 @@
 <x-app-layout>
     <div class="container mx-auto p-4">
         <div class="p-4 lg:px-24">
-            <div class="bg-rmgrey shadow rounded-r-lg">
+            <div class="bg-rmWhite shadow rounded-r-lg">
                 <div class="grid grid-cols-3">
                     <div class="bg-rmBlue col-span-1 rounded-l-lg p-8">
                         <div class="p-4">

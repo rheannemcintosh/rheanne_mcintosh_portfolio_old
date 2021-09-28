@@ -5,7 +5,7 @@
     @include('includes.head')
 
     <!-- Body -->
-    <body class="font-sans antialiased">
+    <body class="bg-rmGrey font-sans antialiased">
 
     @include('includes.nav')
 
