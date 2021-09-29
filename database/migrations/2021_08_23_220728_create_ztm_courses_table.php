@@ -18,8 +18,9 @@ class CreateZtmCoursesTable extends Migration
             $table->string('course');
             $table->text('description');
             $table->string('instructor');
-            $table->float('length');
+            $table->float('length_hours')->nullable();
             $table->integer('percentage');
+            $table->boolean('cv_flag');
             $table->timestamps();
         });
     }
