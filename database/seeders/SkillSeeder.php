@@ -169,5 +169,26 @@ class SkillSeeder extends Seeder
             'skill_proficiency_id' => 3,
             'cv_flag' => true,
         ]);
+
+        Skill::create([
+            'name' => 'Autodesk 3DS Max',
+            'skill_type_id' => 9,
+            'skill_proficiency_id' => 3,
+            'cv_flag' => true,
+        ]);
+
+        Skill::create([
+            'name' => 'Unity',
+            'skill_type_id' => 9,
+            'skill_proficiency_id' => 2,
+            'cv_flag' => true,
+        ]);
+
+        Skill::create([
+            'name' => 'ActionScript',
+            'skill_type_id' => 9,
+            'skill_proficiency_id' => 2,
+            'cv_flag' => true,
+        ]);
     }
 }

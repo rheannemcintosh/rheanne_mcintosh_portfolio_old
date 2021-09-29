@@ -18,6 +18,7 @@ class CreateTreehouseTracksTable extends Migration
             $table->string('track');
             $table->foreignId('treehouse_topic_id')->constrained();
             $table->integer('percentage');
+            $table->float('length_hours')->nullable();
             $table->boolean('cv_flag');
             $table->timestamps();
         });

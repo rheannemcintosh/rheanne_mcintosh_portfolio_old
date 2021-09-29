@@ -18,6 +18,8 @@ class CreateCodecademyPathsTable extends Migration
             $table->string('name');
             $table->string('path');
             $table->integer('percentage');
+            $table->float('length_hours')->nullable();
+            $table->boolean('cv_flag');
             $table->timestamps();
         });
     }

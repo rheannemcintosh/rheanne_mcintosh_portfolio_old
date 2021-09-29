@@ -10,10 +10,11 @@
 
     <div class="menu">
         <ul>
-            <li class="rm-font-nav rm-c-dark-blue"><a href="{{ url('/') }}">Home</a></li>
-            <li class="rm-font-nav rm-c-light-teal"><a href="{{ url('/cv') }}">About</a></li>
-            <li class="rm-font-nav rm-c-yellow"><a href="{{ url('/portfolio') }}">Portfolio</a></li>
-            <li class="rm-font-nav rm-c-dark-teal"><a href="{{ url('/contact') }}">Contact Me</a></li>
+            <li class="rm-font-nav text-rmBlue-dark"><a class="hover:bg-rmTeal-dark hover:text-rmWhite" href="{{ url('/') }}">Home</a></li>
+            <li class="rm-font-nav text-rmBlue-dark"><a class="hover:bg-rmYellow hover:text-rmWhite" href="{{ url('/cv') }}">About</a></li>
+            <li class="rm-font-nav text-rmBlue-dark"><a class="hover:bg-rmTeal hover:text-rmWhite" href="{{ url('/portfolio') }}">Portfolio</a></li>
+            <li class="rm-font-nav text-rmBlue-dark"><a class="hover:bg-rmBlue hover:text-rmWhite" href="{{ url('/contact') }}">Contact</a></li>
+            <li class="rm-font-nav text-rmBlue-dark"><a class="hover:bg-rmTeal-light hover:text-rmWhite" href="{{ url('/blog') }}">Blog</a></li>
         </ul>
     </div>
 </nav>

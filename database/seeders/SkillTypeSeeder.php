@@ -18,7 +18,7 @@ class SkillTypeSeeder extends Seeder
 
         SkillType::create([
             'type' => 'Languages',
-            'ordering' => 6,
+            'ordering' => 7,
             'cv_flag' => true,
         ]);
 
@@ -54,14 +54,20 @@ class SkillTypeSeeder extends Seeder
 
         SkillType::create([
             'type' => 'Interpersonal Skills',
-            'ordering' => 7,
+            'ordering' => 8,
             'cv_flag' => false,
         ]);
 
         SkillType::create([
             'type' => 'Other',
-            'ordering' => 8,
+            'ordering' => 9,
             'cv_flag' => false,
+        ]);
+
+        SkillType::create([
+            'type' => 'Animation',
+            'ordering' => 6,
+            'cv_flag' => true,
         ]);
     }
 }

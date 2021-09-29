@@ -17,6 +17,38 @@ class ExperienceDetailSeeder extends Seeder
         \DB::table('experience_details')->delete();
 
         ExperienceDetail::create([
+            'experience_id' => 1,
+            'detail' =>
+                'Assisted in the migration from a waterfall to an agile approach for development. Strong proficiency in agile methodologies, and regularly engaged in all aspects of planning, refinement sessions and retrospectives.'
+            ,
+            'cv_flag' => true,
+        ]);
+
+        ExperienceDetail::create([
+            'experience_id' => 1,
+            'detail' =>
+                'Maintained, supported and improved an existing large eCommerce platform, using PHP.'
+            ,
+            'cv_flag' => true,
+        ]);
+
+        ExperienceDetail::create([
+            'experience_id' => 1,
+            'detail' =>
+                'Worked as part of the Product Discovery team to implement Elasticsearch within an eCommerce application, and utilised Kibana to explore the search data.'
+            ,
+            'cv_flag' => true,
+        ]);
+
+        ExperienceDetail::create([
+            'experience_id' => 1,
+            'detail' =>
+                'Adapted comprehensive SQL queries to support a legacy search system.'
+            ,
+            'cv_flag' => true,
+        ]);
+
+        ExperienceDetail::create([
             'experience_id' => 2,
             'detail' =>
                 'Develop new, efficient and well-tested applications using the Laravel framework, and integrate the applications with existing systems.'

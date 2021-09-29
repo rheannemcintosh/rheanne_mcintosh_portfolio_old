@@ -23,7 +23,7 @@ img.logo {
 nav ul {
     background: rgba(0, 0, 0, 0);
     margin: 0;
-    padding: 0, 40px, 0, 0;
+    padding: 0px 40px 0px 0px;
     line-height: 60px;
     text-align: right;
     list-style: none;
@@ -46,24 +46,8 @@ nav div.menu ul li a:hover {
     text-decoration: none;
 }
 
-nav div.menu ul li.rm-c-dark-blue a:hover {
-    background-color: $rm-dark-blue;
-}
-
-nav div.menu ul li.rm-c-light-teal a:hover {
-    background-color: $rm-light-teal;
-}
-
-nav div.menu ul li.rm-c-yellow a:hover {
-    background-color: $rm-yellow;
-}
-
-nav div.menu ul li.rm-c-dark-teal a:hover {
-    background-color: $rm-dark-teal;
-}
-
 nav.scroll ul {
-    background: $rm-dark-grey;
+    background: $rm-medium-grey;
 }
 
 .menu-icon {
