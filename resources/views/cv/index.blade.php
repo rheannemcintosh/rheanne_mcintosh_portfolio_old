@@ -33,13 +33,13 @@
 
                         <!-- Start of Experience Section -->
                         <div class="mt-4">
-                            <h1 class="pt-2 pl-2 bg-rmBlue-light text-white font-bebas text-6xl">Experience</h1>
+                            <h1 class="pt-2 pl-2 bg-rmBlue text-white font-bebas text-6xl">Experience</h1>
                             @foreach ($employers as $employer)
                                 <div class="mt-4">
                                     <h1 class="font-bebas font-medium text-rmBlue-light text-5xl">{{ $employer->employer_name }}</h1>
                                     @foreach ($employer->experiences as $experience)
                                         <h2 class="font-bebas font-medium text-rmTeal text-3xl">{{ $experience->role }}</h2>
-                                        <h3 class="font-bebas text-xl italic">
+                                        <h3 class="font-bebas text-rmBlue-dark text-xl italic">
                                             {{ $experience->start_date->format('F Y') }} -
                                             @if ($experience->end_date == null)
                                                 Present
@@ -67,12 +67,12 @@
 
                         <!-- Start of Education Section -->
                         <div class="mt-4">
-                            <h1 class="pt-2 pl-2 bg-rmBlue-light text-white font-bebas text-6xl">Education</h1>
+                            <h1 class="pt-2 pl-2 bg-rmBlue text-white font-bebas text-6xl">Education</h1>
                             @foreach ($degrees as $degree)
                                 <div class="mt-4">
                                     <h1 class="font-bebas font-medium text-rmBlue-light text-5xl">{{ $degree->degree_type }} {{ $degree->degree_name }}</h1>
                                     <h2 class="font-bebas font-medium text-rmTeal text-3xl">{{ $degree->university_name }} ({{ $degree->degree_classification }})</h2>
-                                    <h3 class="font-bebas text-xl italic">
+                                    <h3 class="font-bebas text-rmBlue-dark text-xl italic">
                                         {{ $degree->start_date->format('Y') }} -
                                         @if ($degree->end_date == null)
                                             Present
@@ -103,42 +103,48 @@
 
                         <!-- Start of Personal Development Section -->
                         <div class="mt-4">
-                            <h1 class="pt-2 pl-2 bg-rmBlue-light text-white font-bebas text-6xl">Personal Development</h1>
+                            <h1 class="pt-2 pl-2 bg-rmBlue text-white font-bebas text-6xl">Personal Development</h1>
                             <div class="mt-4">
                                 <h1 class="font-bebas font-medium text-rmBlue-light text-5xl"><a href="https://teamtreehouse.com/">Team Treehouse</a></h1>
-                                <h3 class="font-bebas text-xl italic">
+                                <h3 class="font-bebas text-rmBlue-dark text-xl italic">
                                     2013 - Present
                                 </h3>
                                 <div class="px-5 py-2">
-                                    <ul class="px-5 list-disc list-outside">
-                                        @foreach ($treehouseCourses as $treehouse)
-                                            <li>{{ $treehouse->track }}</li>
+                                    <div class="grid sm:grid-cols-2 grid-cols-1 gap-x-10">
+                                        @foreach ($treehouseTracks->chunk(2) as $chunk)
+                                                @foreach ($chunk as $track)
+                                                <li>{{ $track->track }} <span class="font-bold text-rmTeal italic text-sm">({{ $track->length_hours }} hours)</span></li>
+                                                @endforeach
                                         @endforeach
-                                    </ul>
+                                    </div>
                                 </div>
                             </div>
+
                             <div class="mt-4">
                                 <h1 class="font-bebas font-medium text-rmBlue-light text-5xl">Zero to Mastery</h1>
-                                <h3 class="font-bebas text-xl italic">
+                                <h3 class="font-bebas text-rmBlue-dark text-xl italic">
                                     2021 - Present
                                 </h3>
                                 <div class="px-5 py-2">
-                                    <ul class="px-5 list-disc list-outside">
-                                        @foreach ($ztmCourses as $ztmCourse)
-                                            <li>{{ $ztmCourse->course }}</li>
+                                    <div class="grid sm:grid-cols-2 grid-cols-1 gap-x-10">
+                                        @foreach ($ztmCourses->chunk(2) as $chunk)
+                                            @foreach ($chunk as $ztmCourse)
+                                                <li>{{ $ztmCourse->course }} <span class="font-bold text-rmTeal italic text-sm">({{ $ztmCourse->length_hours }} hours)</span></li>
+                                            @endforeach
                                         @endforeach
-                                    </ul>
+                                    </div>
                                 </div>
                             </div>
+
                             <div class="mt-4">
                                 <h1 class="font-bebas font-medium text-rmBlue-light text-5xl">CodeCademy</h1>
-                                <h3 class="font-bebas text-xl italic">
+                                <h3 class="font-bebas text-rmBlue-dark text-xl italic">
                                     2021 - Present
                                 </h3>
                                 <div class="px-5 py-2">
                                     <ul class="px-5 list-disc list-outside">
                                         @foreach ($codecademy as $path)
-                                            <li>{{ $path->name }}</li>
+                                            <li>{{ $path->name }} <span class="font-bold text-rmTeal italic text-sm">({{ $path->length_hours }} hours)</span></li>
                                         @endforeach
                                     </ul>
                                 </div>
