@@ -23,7 +23,7 @@ img.logo {
 nav ul {
     background: rgba(0, 0, 0, 0);
     margin: 0;
-    padding: 0, 40px, 0, 0;
+    padding: 0px 40px 0px 0px;
     line-height: 60px;
     text-align: right;
     list-style: none;
@@ -47,7 +47,7 @@ nav div.menu ul li a:hover {
 }
 
 nav.scroll ul {
-    background: $rm-dark-grey;
+    background: $rm-medium-grey;
 }
 
 .menu-icon {
