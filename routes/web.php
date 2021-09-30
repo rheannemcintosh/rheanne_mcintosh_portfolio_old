@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\BlogController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\CVController;
 use App\Http\Controllers\ExperienceController;
@@ -49,6 +50,11 @@ Route::get('/portfolio', [PortfolioController::class, 'index']);
  * Contact Page Routes
  */
 Route::get('/contact', [ContactController::class, 'index']);
+
+/*
+ * Blog Routes
+ */
+Route::get('/blog', [BlogController::class, 'index']);
 
 //Route::get('/dashboard', function () {
 //    return view('dashboard');
