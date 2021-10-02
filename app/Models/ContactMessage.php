@@ -26,7 +26,7 @@ class ContactMessage extends Model
         'last_name',
         'email',
         'subject',
-        'message',
+        'message_content',
         'type'
     ];
 }
