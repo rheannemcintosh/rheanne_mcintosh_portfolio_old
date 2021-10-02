@@ -50,6 +50,7 @@ Route::get('/portfolio', [PortfolioController::class, 'index']);
  * Contact Page Routes
  */
 Route::get('/contact', [ContactController::class, 'index']);
+Route::post('/contact', [ContactController::class, 'storeContactMessage']);
 
 /*
  * Blog Routes
