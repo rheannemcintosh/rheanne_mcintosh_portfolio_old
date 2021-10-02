@@ -1,19 +1,29 @@
 <x-app-layout>
     <div class="container mx-auto p-4">
         <div class="p-4 lg:px-24">
-            <form action="#" method="POST">
+            @if(Session::has('success'))
+                <div class="alert alert-success">
+                    {{ Session::get('success') }}
+                    @php
+                        Session::forget('success');
+                    @endphp
+                </div>
+            @endif
+            <form action="{{ url('/contact') }}" method="POST">
+                {{ csrf_field() }}
                 <div class="bg-rmgrey shadow rounded-md p-8">
                     <h1 class="text-5xl mb-4">Contact Me!</h1>
+
                     <p class="mb-8"> Feel free to contact me below! Whether it be for freelance work, job opportunities, fellow nerds or if you just want a chat!</p>
                     <div class="">
                         <div id="name" class="grid mb-4 sm:grid-cols-2 grid-cols-1 gap-4">
                             <div id="firstname">
-                                <label for="firstname" class="block">First Name</label>
-                                <input type="text" name="firstname" class="focus:shadow-none text-sm w-full rounded-md shadow-md">
+                                <label for="first_name" class="block">First Name</label>
+                                <input type="text" name="first_name" class="focus:shadow-none text-sm w-full rounded-md shadow-md">
                             </div>
                             <div id="lastname">
-                                <label for="lastname">Last Name</label>
-                                <input type="text" class="text-sm w-full rounded-md shadow-md">
+                                <label for="last_name">Last Name</label>
+                                <input type="text" name="last_name" class="text-sm w-full rounded-md shadow-md">
                             </div>
                         </div>
                         <div id="email" class="mb-4">
@@ -25,8 +35,8 @@
                             <input type="text" name="subject" class="text-sm w-full rounded-md shadow-md">
                         </div>
                         <div id="message" class="mb-4">
-                            <label class="mb-1" for="message">Message</label>
-                            <textarea name="message" rows="3" class="text-sm w-full text-sm rounded-md shadow-md"></textarea>
+                            <label class="mb-1" for="message_content">Message</label>
+                            <textarea name="message_content" rows="3" class="text-sm w-full text-sm rounded-md shadow-md"></textarea>
                         </div>
                         <div id="reason" class="block mb-4">
                             <span class="text-gray-700">Checkboxes</span>
