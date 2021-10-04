@@ -13,54 +13,54 @@
                                 <div id="name" class="form-group grid mb-4 sm:grid-cols-2 grid-cols-1 gap-4">
                                     <div id="first_name">
                                         <label for="first_name" class="block text-lg text-rmBlue font-bebas">First
-                                            Name</label>
+                                            Name *</label>
                                         <input type="text" name="first_name"
-                                               class="form-control rounded-md shadow-md w-full focus:ring-2 focus:ring-rmTeal-light focus:shadow-none focus:border-transparent"
+                                               class="@if ($errors->has('first_name')) ring-2 ring-red-600 border-transparent @endif form-control rounded-md shadow-md w-full focus:ring-2 focus:ring-rmTeal-light focus:shadow-none focus:border-transparent"
                                                placeholder="First Name" value="{{ old('first_name') }}">
                                         @if ($errors->has('first_name'))
-                                            <span class="">{{ $errors->first('first_name') }}</span>
+                                            <div class="mt-2 text-red-600">{{ $errors->first('first_name') }}</div>
                                         @endif
                                     </div>
                                     <div id="last_name">
                                         <label for="last_name" class="block text-lg text-rmBlue font-bebas">Last
-                                            Name</label>
+                                            Name *</label>
                                         <input type="text" name="last_name"
-                                               class="form-control rounded-md shadow-md w-full focus:ring-2 focus:ring-rmTeal-light focus:shadow-none focus:border-transparent"
+                                               class="@if ($errors->has('first_name')) ring-2 ring-red-600 border-transparent @endif form-control rounded-md shadow-md w-full focus:ring-2 focus:ring-rmTeal-light focus:shadow-none focus:border-transparent"
                                                placeholder="Last Name" value="{{ old('last_name') }}">
                                         @if ($errors->has('last_name'))
-                                            <span class="">{{ $errors->first('last_name') }}</span>
+                                            <div class="mt-2 text-red-600">{{ $errors->first('last_name') }}</div>
                                         @endif
                                     </div>
                                 </div>
                                 <div id="email" class="mb-4">
                                     <label for="email"
-                                           class="block text-lg text-rmBlue font-bebas">Email</label>
+                                           class="block text-lg text-rmBlue font-bebas">Email *</label>
                                     <input type="text" name="email"
-                                           class="form-control rounded-md shadow-md w-full focus:ring-2 focus:ring-rmTeal-light focus:shadow-none focus:border-transparent"
+                                           class="@if ($errors->has('first_name')) ring-2 ring-red-600 border-transparent @endif form-control rounded-md shadow-md w-full focus:ring-2 focus:ring-rmTeal-light focus:shadow-none focus:border-transparent"
                                            placeholder="Email" value="{{ old('email') }}">
                                     @if ($errors->has('email'))
-                                        <span class="">{{ $errors->first('email') }}</span>
+                                        <div class="mt-2 text-red-600">{{ $errors->first('email') }}</div>
                                     @endif
                                 </div>
                                 <div id="subject" class="mb-4">
                                     <label for="subject"
-                                           class="block text-lg text-rmBlue font-bebas">Subject</label>
+                                           class="block text-lg text-rmBlue font-bebas">Subject *</label>
                                     <input type="text" name="subject"
-                                           class="form-control rounded-md shadow-md w-full focus:ring-2 focus:ring-rmTeal-light focus:shadow-none focus:border-transparent"
+                                           class="@if ($errors->has('first_name')) ring-2 ring-red-600 border-transparent @endif form-control rounded-md shadow-md w-full focus:ring-2 focus:ring-rmTeal-light focus:shadow-none focus:border-transparent"
                                            placeholder="Subject" value="{{ old('subject') }}">
-                                    @if ($errors->has('email'))
-                                        <span class="">{{ $errors->first('email') }}</span>
+                                    @if ($errors->has('subject'))
+                                        <div class="mt-2 text-red-600">{{ $errors->first('subject') }}</div>
                                     @endif
                                 </div>
                                 <div id="message" class="mb-4">
                                     <label for="message_content"
-                                           class="mb-1  text-lg text-rmBlue block font-bebas">Message</label>
+                                           class="mb-1  text-lg text-rmBlue block font-bebas">Message *</label>
                                     <textarea name="message_content" rows="3"
-                                              class="form-control rounded-md shadow-md w-full focus:ring-2 focus:ring-rmTeal-light focus:shadow-none focus:border-transparent"
+                                              class="@if ($errors->has('first_name')) ring-2 ring-red-600 border-transparent @endif form-control rounded-md shadow-md w-full focus:ring-2 focus:ring-rmTeal-light focus:shadow-none focus:border-transparent"
                                               placeholder="Message"
                                               value="{{ old('message_content') }}"></textarea>
                                     @if ($errors->has('message_content'))
-                                        <span class="">{{ $errors->first('message_content') }}</span>
+                                        <div class="mt-2 text-red-600">{{ $errors->first('message_content') }}</div>
                                     @endif
                                 </div>
                                 <div id="reason" class="block mb-4">
