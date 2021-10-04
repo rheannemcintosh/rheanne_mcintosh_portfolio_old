@@ -8,4 +8,5 @@ Name:  {{ $first_name }} {{$last_name }}<br>
 Email:  {{ $email }}<br>
 Subject:  {{ $subject }}<br>
 Message: {{ $message_content }}<br><br>
+Types: @isset ($ctype) @foreach ($ctype as $type) {{ $type }}@endforeach @endisset<br><br>
 Thanks
