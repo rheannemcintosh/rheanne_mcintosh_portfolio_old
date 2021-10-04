@@ -21,7 +21,6 @@ class ContactController extends Controller
             'email' => 'required|email',
             'subject' => 'required',
             'message_content' => 'required',
-            //'type' => 'required'
         ]);
 
         $input = $request->all();
@@ -35,7 +34,7 @@ class ContactController extends Controller
             'email' => $input['email'],
             'subject' => $input['subject'],
             'message_content' => $input['message_content'],
-            //'type' => $input['type']
+            'ctype' => $input['ctype'] ?? null,
         ), function($message) use ($request){
             $message->from($request->email);
             $message->to('rheannemcintosh@gmail.com', 'Admin')->subject($request->get('subject'));
