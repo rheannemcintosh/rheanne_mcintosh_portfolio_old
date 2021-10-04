@@ -84,25 +84,25 @@
                                     <div class="grid mb-4 lg:grid-cols-4 sm:grid-cols-2 grid-cols-1 gap-x-4 mt-2">
                                         <div>
                                             <label class="inline-flex items-center">
-                                                <input type="checkbox" class="form-checkbox">
+                                                <input name=ctype[] type="checkbox" class="text-rmTeal-light form-checkbox focus:ring-transparent focus:outline-none" value="freelance">
                                                 <span class="ml-2">Freelance Enquiry</span>
                                             </label>
                                         </div>
                                         <div>
                                             <label class="inline-flex items-center">
-                                                <input type="checkbox" class="form-checkbox">
+                                                <input name=ctype[] type="checkbox" class="text-rmTeal-light form-checkbox focus:ring-transparent focus:outline-none" value="job">
                                                 <span class="ml-2">Job Opportunity</span>
                                             </label>
                                         </div>
                                         <div>
                                             <label class="inline-flex items-center">
-                                                <input type="checkbox" class="form-checkbox">
+                                                <input name=ctype[] type="checkbox" class="text-rmTeal-light form-checkbox focus:ring-transparent focus:outline-none" value="nerd">
                                                 <span class="ml-2">Fellow Nerds</span>
                                             </label>
                                         </div>
                                         <div>
                                             <label class="inline-flex items-center">
-                                                <input type="checkbox" class="form-checkbox">
+                                                <input name=ctype[] type="checkbox" class="text-rmTeal-light form-checkbox focus:ring-transparent focus:outline-none" value="chat">
                                                 <span class="ml-2">Casual Chat</span>
                                             </label>
                                         </div>
