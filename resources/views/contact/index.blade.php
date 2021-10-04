@@ -7,9 +7,24 @@
                         {{ csrf_field() }}
                         <div class="xl:px-20">
                             <h1 class="pt-2 pl-2 text-rmBlue font-bebas text-9xl">Contact Me!</h1>
-                            <p class="mb-8"> Feel free to contact me below! Whether it be for freelance work,
+                            <p class="mb-4"> Feel free to contact me below! Whether it be for freelance work,
                                 job opportunities, fellow nerds or if you just want a chat!</p>
-                            <div class="">
+                            <div>
+                                @if(Session::has('success'))
+                                    <div class="p-4 mb-4 bg-green-200 border-2 border-green-600 rounded-md">
+                                        <p>{{ Session::get('success') }}</p>
+                                    </div>
+                                    @php
+                                        Session::forget('success');
+                                    @endphp
+                                @endif
+                                @if(Session::has('errors'))
+                                    <div class="p-4 mb-4 bg-red-200 border-2 border-red-600 rounded-md">
+                                        <p>Sorry! Please double check your form!</p>
+                                    </div>
+                                @endif
+
+
                                 <div id="name" class="form-group grid mb-4 sm:grid-cols-2 grid-cols-1 gap-4">
                                     <div id="first_name">
                                         <label for="first_name" class="block text-lg text-rmBlue font-bebas">First
