@@ -1,9 +1,9 @@
 <x-app-layout>
-    <div class="container mx-auto p-4">
-        <div class="p-4 lg:px-24">
-            <div class="bg-rmWhite shadow rounded-r-lg">
-                <div class="grid grid-cols-3">
-                    <div class="bg-rmBlue col-span-1 rounded-l-lg p-8">
+    <div class="container mx-auto sm:p-4">
+        <div class="sm:p-4 lg:px-24">
+            <div class="bg-rmWhite shadow sm:rounded-r-lg">
+                <div class="grid sm:grid-cols-3 grid-cols-1">
+                    <div class="bg-rmBlue col-span-1 sm:rounded-l-lg p-8">
                         <div class="p-4">
                             <img class="" src="{{url('/images/rm_circle.png')}}" alt="Image"/>
                         </div>
