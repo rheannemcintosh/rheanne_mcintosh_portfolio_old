@@ -35,20 +35,20 @@
                 <div class="container mx-auto p-4">
                     <div class="p-4 lg:px-24">
                         <div class="p-8">
-                            <h1 class="text-rmWhite text-center text-10xl font-bebas">Hi, I'm Rheanne!</h1>
-                            <div class="py-8 my-4"></div>
+                            <h1 class="text-rmWhite text-center sm:text-10xl text-5xl font-bebas">Hi, I'm Rheanne!</h1>
+                            <div class="sm:py-8 py-4 sm:my-4 my-2"></div>
                             <div class="grid mb-4 sm:grid-cols-4 grid-cols-1 gap-10">
                                 <div class="py-4 border-4 border-rmWhite hover:bg-rmBlue-light">
-                                    <h3 class="text-3xl font-bebas text-center text-white">About</h3>
+                                    <h3 class="sm:text-3xl text-xl font-bebas text-center text-white">About</h3>
                                 </div>
                                 <div class="py-4 border-4 border-rmWhite hover:bg-rmBlue-light">
-                                    <h3 class="text-3xl font-bebas text-center text-rmWhite">Portfolio</h3>
+                                    <h3 class="sm:text-3xl text-xl font-bebas text-center text-rmWhite">Portfolio</h3>
                                 </div>
                                 <div class="py-4 border-4 border-rmWhite hover:bg-rmBlue-light">
-                                    <h3 class="text-3xl font-bebas text-center text-rmWhite">Contact</h3>
+                                    <h3 class="sm:text-3xl text-xl font-bebas text-center text-rmWhite">Contact</h3>
                                 </div>
                                 <div class="py-4 border-4 border-rmWhite hover:bg-rmBlue-light">
-                                    <h3 class="text-3xl font-bebas text-center text-rmWhite">Blog</h3>
+                                    <h3 class="sm:text-3xl text-xl font-bebas text-center text-rmWhite">Blog</h3>
                                 </div>
                             </div>
                         </div>
