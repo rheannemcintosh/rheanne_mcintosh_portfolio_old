@@ -1,12 +1,12 @@
 <x-app-layout>
     <div class="container mx-auto p-4">
         <div class="p-4 lg:px-24">
-            <div class="bg-rmWhite shadow rounded-md p-8">
+            <div class="sm:bg-rmWhite sm:shadow sm:rounded-md sm:p-8">
                 <div class="mt-4">
                     <form action="{{ url('/contact') }}" method="POST">
                         {{ csrf_field() }}
                         <div class="xl:px-20">
-                            <h1 class="pt-2 pl-2 text-rmBlue font-bebas text-9xl">Contact Me!</h1>
+                            <h1 class="sm:pt-2 sm:pl-2 text-rmBlue font-bebas sm:text-9xl text-6xl">Contact Me!</h1>
                             <p class="mb-4"> Feel free to contact me below! Whether it be for freelance work,
                                 job opportunities, fellow nerds or if you just want a chat!</p>
                             <div>
