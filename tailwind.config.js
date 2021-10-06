@@ -35,11 +35,15 @@ module.exports = {
                 bebas: ['Bebas Neue', ...defaultTheme.fontFamily.sans],
             },
             fontSize: {
-                '10xl': '14rem',
+                '10xl': '10rem',
+                '12xl': '14rem',
             },
             backgroundImage: {
                 'rm': "url('/images/rm_background.png')",
                 'rmMuted': "url('/images/rm_background_muted.png')",
+            },
+            outline: {
+                blue: '2px solid #ff0000'
             }
         },
     },
