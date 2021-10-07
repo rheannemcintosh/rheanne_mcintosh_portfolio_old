@@ -5,7 +5,7 @@
 
     <div class="logo">
         <!-- This logo image will be updated in the future -->
-        <img class="logo" src="{{url('/images/logo.png')}}" alt="Image"/>
+        <img class="logo" src="{{url('/images/rm_patterned_logo.png')}}" alt="Image"/>
     </div>
 
     <div class="menu">
