@@ -11,7 +11,7 @@ class LinkType extends Model
 
     /**
      * The table associated with the model.
-     * 
+     *
      * @var string
      */
     protected $table = 'link_types';

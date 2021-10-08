@@ -11,7 +11,7 @@ class TreehouseCourse extends Model
 
     /**
      * The table associated with the model.
-     * 
+     *
      * @var string
      */
     protected $table = 'treehouse_courses';

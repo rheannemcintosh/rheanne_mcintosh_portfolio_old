@@ -115,12 +115,5 @@ class ExperienceSeeder extends Seeder
           'cv_flag' => false,
           'example' => false,
         ]);
-
-
-
-
-
-
-
     }
 }

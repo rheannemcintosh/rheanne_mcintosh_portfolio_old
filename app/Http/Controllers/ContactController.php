@@ -35,7 +35,7 @@ class ContactController extends Controller
             'subject' => $input['subject'],
             'message_content' => $input['message_content'],
             'ctype' => $input['ctype'] ?? null,
-        ), function($message) use ($request){
+        ), function ($message) use ($request) {
             $message->from($request->email);
             $message->to('rheannemcintosh@gmail.com', 'Admin')->subject($request->get('subject'));
         });

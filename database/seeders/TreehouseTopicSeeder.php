@@ -135,6 +135,5 @@ class TreehouseTopicSeeder extends Seeder
             'name'   => 'Ruby',
             'points' => 0
         ]);
-
     }
 }

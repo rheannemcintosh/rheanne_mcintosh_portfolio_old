@@ -17,7 +17,7 @@ class ExperienceController extends Controller
     {
         $employers   = ExperienceEmployer::all();
         $experiences = Experience::all();
-        
+
         return view('experiences.index', compact('experiences', 'employers'));
     }
 

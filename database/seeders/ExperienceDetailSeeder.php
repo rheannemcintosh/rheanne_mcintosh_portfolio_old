@@ -19,7 +19,9 @@ class ExperienceDetailSeeder extends Seeder
         ExperienceDetail::create([
             'experience_id' => 1,
             'detail' =>
-                'Assisted in the migration from a waterfall to an agile approach for development. Strong proficiency in agile methodologies, and regularly engaged in all aspects of planning, refinement sessions and retrospectives.'
+                'Assisted in the migration from a waterfall to an agile approach for development. 
+                Strong proficiency in agile methodologies, and regularly engaged in all aspects of planning, 
+                refinement sessions and retrospectives.'
             ,
             'cv_flag' => true,
         ]);
@@ -35,7 +37,8 @@ class ExperienceDetailSeeder extends Seeder
         ExperienceDetail::create([
             'experience_id' => 1,
             'detail' =>
-                'Worked as part of the Product Discovery team to implement Elasticsearch within an eCommerce application, and utilised Kibana to explore the search data.'
+                'Worked as part of the Product Discovery team to implement Elasticsearch within an 
+                eCommerce application, and utilised Kibana to explore the search data.'
             ,
             'cv_flag' => true,
         ]);
@@ -51,7 +54,8 @@ class ExperienceDetailSeeder extends Seeder
         ExperienceDetail::create([
             'experience_id' => 2,
             'detail' =>
-                'Develop new, efficient and well-tested applications using the Laravel framework, and integrate the applications with existing systems.'
+                'Develop new, efficient and well-tested applications using the Laravel framework, and integrate
+                 the applications with existing systems.'
             ,
             'cv_flag' => true,
         ]);
@@ -59,7 +63,8 @@ class ExperienceDetailSeeder extends Seeder
         ExperienceDetail::create([
             'experience_id' => 2,
             'detail' =>
-                'Manage the implementation of accessibility considerations by supervising a new employee and following Web Content Accessibility Guidelines.'
+                'Manage the implementation of accessibility considerations by supervising a new employee and
+                 following Web Content Accessibility Guidelines.'
             ,
             'cv_flag' => true,
         ]);
@@ -83,7 +88,8 @@ class ExperienceDetailSeeder extends Seeder
         ExperienceDetail::create([
             'experience_id' => 2,
             'detail' =>
-                'Oversee an audit on the department’s documentation and wiki to ensure it is up-to-date, relevant and straightforward to understand for newly hired employees.'
+                'Oversee an audit on the department’s documentation and wiki to ensure it is up-to-date,
+                 relevant and straightforward to understand for newly hired employees.'
             ,
             'cv_flag' => true,
         ]);
@@ -91,7 +97,8 @@ class ExperienceDetailSeeder extends Seeder
         ExperienceDetail::create([
             'experience_id' => 2,
             'detail' =>
-                'Provide daily support to a variety of users and participate in the training of a large number of users.'
+                'Provide daily support to a variety of users and participate in the training of a 
+                large number of users.'
             ,
             'cv_flag' => true,
         ]);
@@ -99,7 +106,8 @@ class ExperienceDetailSeeder extends Seeder
         ExperienceDetail::create([
             'experience_id' => 2,
             'detail' =>
-                'Modifiy and upgrade existing applications to correct coding errors; upgrade interfaces; and, improve overall performance.'
+                'Modify and upgrade existing applications to correct coding errors; upgrade interfaces; 
+                and, improve overall performance.'
             ,
             'cv_flag' => true,
         ]);
@@ -107,7 +115,8 @@ class ExperienceDetailSeeder extends Seeder
         ExperienceDetail::create([
             'experience_id' => 2,
             'detail' =>
-                'Implement and test enhancement feature requests to improve product functionality and extend performance.'
+                'Implement and test enhancement feature requests to improve product functionality 
+                and extend performance.'
             ,
             'cv_flag' => true,
         ]);
@@ -123,7 +132,8 @@ class ExperienceDetailSeeder extends Seeder
         ExperienceDetail::create([
             'experience_id' => 2,
             'detail' =>
-                'Complete QA on an array of products, ensuring code conforms to PSR standards, and unit testing is implemented successfully.'
+                'Complete QA on an array of products, ensuring code conforms to PSR standards, 
+                and unit testing is implemented successfully.'
             ,
             'cv_flag' => true,
         ]);
