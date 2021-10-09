@@ -191,6 +191,5 @@ class TreehouseTrackSeeder extends Seeder
             'length_hours' => 28,
             'cv_flag' => false,
         ]);
-
     }
 }

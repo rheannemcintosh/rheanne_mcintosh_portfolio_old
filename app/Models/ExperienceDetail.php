@@ -11,7 +11,7 @@ class ExperienceDetail extends Model
 
      /**
      * The table associated with the model.
-     * 
+     *
      * @var string
      */
     protected $table = 'experience_details';
