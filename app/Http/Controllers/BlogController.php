@@ -13,6 +13,6 @@ class BlogController extends Controller
      */
     public function index()
     {
-        return view('blog.construction');
+        return view('blog.index');
     }
 }
