@@ -9,9 +9,10 @@
                         <h3 class="mb-4 text-rmBlue-light font-bebas">By {{ $blogPost->user_name }}</h3>
                         <div>
                             {!! $blogPost->content !!}
-                            <img class="p-8 w-3/6" src="{{url('/images/rm_patterned_logo.png')}}" alt="Image"/>
+                            <br>
+                            <p>Thanks, Rheanne</p>
+                            <img class="p-8 w-1/5" src="{{url('/images/rm_patterned_logo.png')}}" alt="Image"/>
                         </div>
-                        <hr>
                     </div>
                 </div>
             </div>

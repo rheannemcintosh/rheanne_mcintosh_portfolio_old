@@ -36,10 +36,10 @@
                                 my progress with others. Look out for my next blog post, where I'll share how I
                                 developed the first launch of my portfolio!
                             </p>
+                            <br>
                             <p>Thanks, Rheanne</p>
-                            <img class="p-8 w-3/6" src="{{url('/images/rm_patterned_logo.png')}}" alt="Image"/>
+                            <img class="p-8 w-1/5" src="{{url('/images/rm_patterned_logo.png')}}" alt="Image"/>
                         </div>
-                        <hr>
                     </div>
                 </div>
             </div>
