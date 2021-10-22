@@ -21,6 +21,7 @@ class CreateBlogPostsTable extends Migration
             $table->string('user_name')->default('Rheanne McIntosh');
             $table->boolean('published')->default(true);
             $table->boolean('archived')->default(false);
+            $table->timestamp('posted_at')->useCurrent();
             $table->timestamps();
         });
     }

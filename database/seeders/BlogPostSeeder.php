@@ -48,6 +48,7 @@ class BlogPostSeeder extends Seeder
             'category' => null,
             'published' => true,
             'archived' => true,
+            'posted_at' => '2021-10-15 22:00:00'
         ]);
 
         BlogPost::create([

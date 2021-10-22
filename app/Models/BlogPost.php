@@ -17,6 +17,13 @@ class BlogPost extends Model
     protected $table = 'blog_posts';
 
     /**
+     * The attributes that should be mutated to dates.
+     *
+     * @var array
+     */
+    protected $dates = ['posted_at'];
+
+    /**
      * The attributes that are mass assignable.
      *
      * @var array
@@ -28,5 +35,6 @@ class BlogPost extends Model
         'user_name',
         'published',
         'archived',
+        'posted_at',
     ];
 }
