@@ -5,7 +5,7 @@
                 <div class="mt-4">
                     <div class="xl:px-20">
                         <h1 class="m:pt-2 text-rmTeal font-bebas sm:text-9xl text-6xl">{{ $blogPost->title }}</h1>
-                        <h2 class="text-rmBlue-dark text-2xl font-bebas">{{ $blogPost->created_at }}</h2>
+                        <h2 class="text-rmBlue-dark text-2xl font-bebas">{{ $blogPost->posted_at->format('l jS F Y') }}</h2>
                         <h3 class="mb-4 text-rmBlue-light font-bebas">By {{ $blogPost->user_name }}</h3>
                         <div>
                             {!! $blogPost->content !!}
