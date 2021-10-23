@@ -14,7 +14,16 @@ class BlogController extends Controller
      */
     public function index()
     {
-        return view('blog.index');
+
+        $latestBlogPost = BlogPost::all()
+            ->sortByDesc('posted_at')
+            ->first();
+
+        $blogPosts = BlogPost::where('id', '!=', $latestBlogPost->id)
+            ->orderBy('posted_at', 'desc')
+            ->get();
+
+        return view('blog.index', compact('latestBlogPost', 'blogPosts'));
     }
 
     /**
