@@ -15,21 +15,22 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
         $this->call([
+            BlogPostSeeder::class,
+            CertificateSeeder::class,
+            CodecademyPathSeeder::class,
+            DegreeSeeder::class,
+            DegreeModuleSeeder::class,
             ExperienceEmployerSeeder::class,
             ExperienceSeeder::class,
             ExperienceDetailSeeder::class,
-            DegreeSeeder::class,
-            DegreeModuleSeeder::class,
-            CertificateSeeder::class,
-            CodecademyPathSeeder::class,
-            TreehouseTopicSeeder::class,
-            TreehouseTrackSeeder::class,
-            ZTMCourseSeeder::class,
             LinkTypeSeeder::class,
             SkillProficiencySeeder::class,
             SkillTypeSeeder::class,
             SkillSeeder::class,
+            TreehouseTopicSeeder::class,
+            TreehouseTrackSeeder::class,
             TreehouseActivitySeeder::class,
+            ZTMCourseSeeder::class,
         ]);
     }
 }
