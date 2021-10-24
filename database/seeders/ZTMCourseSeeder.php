@@ -24,8 +24,8 @@ class ZTMCourseSeeder extends Seeder
             ,
             'instructor' => 'Andrei Neagoie / Mo Binni',
             'length_hours' => '28',
-            'percentage' => 0,
-            'cv_flag' => false,
+            'percentage' => 5,
+            'cv_flag' => true,
         ]);
 
         ZTMCourse::create([
@@ -48,7 +48,7 @@ class ZTMCourseSeeder extends Seeder
             ,
             'instructor' => 'Andrei Neagoie',
             'length_hours' => '30.5',
-            'percentage' => 25,
+            'percentage' => 30,
             'cv_flag' => true,
         ]);
 
@@ -73,6 +73,18 @@ class ZTMCourseSeeder extends Seeder
             'instructor' => 'Andrei Neagoie / Luis Ramirez Jr',
             'length_hours' => '30.5',
             'percentage' => 25,
+            'cv_flag' => true,
+        ]);
+
+        ZTMCourse::create([
+            'course' => 'The Complete Junior to Senior Developer Roadmap',
+            'description' =>
+                'UGo from Junior Developer to Senior Developer.
+                Learn all the technical skills Senior Web Developers know!'
+            ,
+            'instructor' => 'Andrei Neagoie',
+            'length_hours' => '37',
+            'percentage' => 5,
             'cv_flag' => true,
         ]);
     }
