@@ -14,7 +14,6 @@ class BlogController extends Controller
      */
     public function index()
     {
-
         $latestBlogPost = BlogPost::all()
             ->sortByDesc('posted_at')
             ->first();
