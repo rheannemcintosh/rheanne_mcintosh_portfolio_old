@@ -3801,22 +3801,7 @@ module.exports = {
 // Require Files
 __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
-__webpack_require__(/*! alpinejs */ "./node_modules/alpinejs/dist/alpine.js"); // Toggle Mobile Hamburger Menu
-
-
-$(document).ready(function () {
-  $(".menu-icon").on("click", function () {
-    $("nav ul").toggleClass("showing");
-  });
-}); // Toggle Scrolling Effect
-
-$(window).on("scroll", function () {
-  if ($(window).scrollTop()) {
-    $('nav').addClass('scroll');
-  } else {
-    $('nav').removeClass('scroll');
-  }
-});
+__webpack_require__(/*! alpinejs */ "./node_modules/alpinejs/dist/alpine.js");
 
 /***/ }),
 
