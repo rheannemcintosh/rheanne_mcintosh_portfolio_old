@@ -5,29 +5,18 @@
     @include('includes.head')
 
     <!-- Body -->
-    <body class="bg-rmMuted bg-cover font-sans antialiased">
+    <body
+            class="bg-rmMuted bg-cover font-sans antialiased"
+            x-data="{navOpen: false, scrolledFromTop: false}"
+            x-init="window.pageYOffset >= 50 ? scrolledFromTop = true : scrolledFromTop = false"
+            @scroll.window="window.pageYOffset >= 50 ? scrolledFromTop = true : scrolledFromTop = false"
+            :class="{
+            'overflow-hidden': navOpen,
+            'overflow-scroll': !navOpen
+        }"
+    >
 
-        <!-- Nav -->
-        <nav>
-            <div class="menu-icon">
-                <i class="fa fa-bars fa-2x"></i>
-            </div>
-
-            <div class="logo">
-                <!-- This logo image will be updated in the future -->
-                <img class="logo" src="{{url('/images/rm_white_logo.png')}}" alt="Image"/>
-            </div>
-
-            <div class="menu">
-                <ul>
-                    <li class="rm-font-nav text-white"><a class="hover:bg-rmTeal-dark" href="{{ url('/') }}">Home</a></li>
-                    <li class="rm-font-nav text-white"><a class="hover:bg-rmYellow" href="{{ url('/cv') }}">About</a></li>
-                    <li class="rm-font-nav text-white"><a class="hover:bg-rmTeal" href="{{ url('/portfolio') }}">Portfolio</a></li>
-                    <li class="rm-font-nav text-white"><a class="hover:bg-rmBlue" href="{{ url('/contact') }}">Contact</a></li>
-                    <li class="rm-font-nav text-white"><a class="hover:bg-rmTeal-light" href="{{ url('/blog') }}">Blog</a></li>
-                </ul>
-            </div>
-        </nav>
+    @include('includes.nav-home')
 
         <!-- Page Content -->
         <div class="page-wrap min-h-screen pt-20">
