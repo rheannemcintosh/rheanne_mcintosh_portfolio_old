@@ -39,9 +39,4 @@ class CVController extends Controller
             'skill_types'
         ));
     }
-
-    public function summary()
-    {
-        return view('errors.index');
-    }
 }

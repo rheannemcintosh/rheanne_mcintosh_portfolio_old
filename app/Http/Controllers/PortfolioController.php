@@ -13,6 +13,6 @@ class PortfolioController extends Controller
      */
     public function index()
     {
-        return view('portfolio.construction');
+        return view('errors.oops-github');
     }
 }
