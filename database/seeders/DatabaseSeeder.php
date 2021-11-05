@@ -24,6 +24,7 @@ class DatabaseSeeder extends Seeder
             ExperienceSeeder::class,
             ExperienceDetailSeeder::class,
             LinkTypeSeeder::class,
+            PortfolioSeeder::class,
             SkillProficiencySeeder::class,
             SkillTypeSeeder::class,
             SkillSeeder::class,
