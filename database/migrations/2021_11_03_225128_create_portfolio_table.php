@@ -16,7 +16,9 @@ class CreatePortfolioTable extends Migration
         Schema::create('portfolio', function (Blueprint $table) {
             $table->id();
             $table->string('name');
+            $table->string('colour');
             $table->string('language');
+            $table->string('language_colour');
             $table->string('image_path')->nullable();
             $table->string('github_url')->nullable();
             $table->string('url')->nullable();

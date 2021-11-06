@@ -18,7 +18,9 @@ class PortfolioSeeder extends Seeder
 
         Portfolio::create([
             'name' => 'Rheanne McIntosh Portfolio',
+            'colour' => 'bg-rmBlue-dark',
             'language' => 'PHP',
+            'language_colour' => 'bg-rmTeal',
             'image_path' => null,
             'github_url' => 'https://github.com/rheannemcintosh/rheanne_mcintosh_portfolio',
             'url' => null,
@@ -26,7 +28,9 @@ class PortfolioSeeder extends Seeder
 
         Portfolio::create([
             'name' => 'London Cocktail Week Scraper',
+            'colour' => 'bg-rmTeal',
             'language' => 'Python',
+            'language_colour' => 'bg-rmYellow',
             'image_path' => null,
             'github_url' => 'https://github.com/rheannemcintosh/london-cocktail-week-scraper',
             'url' => null,
@@ -34,7 +38,9 @@ class PortfolioSeeder extends Seeder
 
         Portfolio::create([
             'name' => 'JustClothing',
+            'colour' => 'bg-rmYellow',
             'language' => 'React',
+            'language_colour' => 'bg-rmBlue-light',
             'image_path' => null,
             'github_url' => 'https://github.com/rheannemcintosh/JustClothing',
             'url' => null,
@@ -42,7 +48,9 @@ class PortfolioSeeder extends Seeder
 
         Portfolio::create([
             'name' => 'Gif Finder',
+            'colour' => 'bg-rmTeal-dark',
             'language' => 'React',
+            'language_colour' => 'bg-rmBlue-light',
             'image_path' => null,
             'github_url' => 'https://github.com/rheannemcintosh/th-gif-finder',
             'url' => null,
@@ -50,7 +58,9 @@ class PortfolioSeeder extends Seeder
 
         Portfolio::create([
             'name' => 'JustSnecks',
+            'colour' => 'bg-rmYellow',
             'language' => 'PHP',
+            'language_colour' => 'bg-rmTeal',
             'image_path' => null,
             'github_url' => 'https://github.com/rheannemcintosh/JustSnecks',
             'url' => null,
@@ -58,7 +68,9 @@ class PortfolioSeeder extends Seeder
 
         Portfolio::create([
             'name' => 'Shape Maker',
+            'colour' => 'bg-rmBlue',
             'language' => 'Vue',
+            'language_colour' => 'bg-rmBlue-dark',
             'image_path' => null,
             'github_url' => 'https://github.com/rheannemcintosh/css-playground',
             'url' => null,
