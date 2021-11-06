@@ -190,5 +190,12 @@ class SkillSeeder extends Seeder
             'skill_proficiency_id' => 2,
             'cv_flag' => true,
         ]);
+
+        Skill::create([
+            'name' => 'Vue',
+            'skill_type_id' => 3,
+            'skill_proficiency_id' => 2,
+            'cv_flag' => true,
+        ]);
     }
 }
