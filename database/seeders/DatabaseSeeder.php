@@ -16,6 +16,7 @@ class DatabaseSeeder extends Seeder
     {
         $this->call([
             BlogPostSeeder::class,
+            ColourSeeder::class,
             CertificateSeeder::class,
             CodecademyPathSeeder::class,
             DegreeSeeder::class,
@@ -28,6 +29,7 @@ class DatabaseSeeder extends Seeder
             SkillProficiencySeeder::class,
             SkillTypeSeeder::class,
             SkillSeeder::class,
+            SkillColourSeeder::class,
             TreehouseTopicSeeder::class,
             TreehouseTrackSeeder::class,
             TreehouseActivitySeeder::class,
