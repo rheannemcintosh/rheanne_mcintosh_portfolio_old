@@ -23,7 +23,9 @@ class Portfolio extends Model
      */
     protected $fillable = [
         'name',
+        'colour',
         'language',
+        'language_colour',
         'image_path',
         'github_url',
         'url',
