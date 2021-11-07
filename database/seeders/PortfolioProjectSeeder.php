@@ -2,10 +2,10 @@
 
 namespace Database\Seeders;
 
-use App\Models\Portfolio;
+use App\Models\PortfolioProject;
 use Illuminate\Database\Seeder;
 
-class PortfolioSeeder extends Seeder
+class PortfolioProjectSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -16,61 +16,55 @@ class PortfolioSeeder extends Seeder
     {
         \DB::table('portfolio')->delete();
 
-        Portfolio::create([
+        PortfolioProject::create([
             'name' => 'Rheanne McIntosh Portfolio',
-            'colour' => 'bg-rmBlue-dark',
-            'language' => 'PHP',
-            'language_colour' => 'bg-rmTeal',
+            'colour_id' => 6,
+            'skill_id' => 4,
             'image_path' => null,
             'github_url' => 'https://github.com/rheannemcintosh/rheanne_mcintosh_portfolio',
             'url' => null,
         ]);
 
-        Portfolio::create([
+        PortfolioProject::create([
             'name' => 'London Cocktail Week Scraper',
-            'colour' => 'bg-rmTeal',
-            'language' => 'Python',
-            'language_colour' => 'bg-rmYellow',
+            'colour_id' => 7,
+            'skill_id' => 6,
             'image_path' => null,
             'github_url' => 'https://github.com/rheannemcintosh/london-cocktail-week-scraper',
             'url' => null,
         ]);
 
-        Portfolio::create([
+        PortfolioProject::create([
             'name' => 'JustClothing',
-            'colour' => 'bg-rmYellow',
-            'language' => 'React',
-            'language_colour' => 'bg-rmBlue-light',
+            'colour_id' => 3,
+            'skill_id' => 15,
             'image_path' => null,
             'github_url' => 'https://github.com/rheannemcintosh/JustClothing',
             'url' => null,
         ]);
 
-        Portfolio::create([
+        PortfolioProject::create([
             'name' => 'Gif Finder',
-            'colour' => 'bg-rmTeal-dark',
-            'language' => 'React',
-            'language_colour' => 'bg-rmBlue-light',
+            'colour_id' => 9,
+            'skill_id' => 15,
             'image_path' => null,
             'github_url' => 'https://github.com/rheannemcintosh/th-gif-finder',
             'url' => null,
         ]);
 
-        Portfolio::create([
+        PortfolioProject::create([
             'name' => 'JustSnecks',
-            'colour' => 'bg-rmYellow',
-            'language' => 'PHP',
-            'language_colour' => 'bg-rmTeal',
+            'colour_id' => 3,
+            'skill_id' => 4,
             'image_path' => null,
             'github_url' => 'https://github.com/rheannemcintosh/JustSnecks',
             'url' => null,
         ]);
 
-        Portfolio::create([
+        PortfolioProject::create([
             'name' => 'Shape Maker',
-            'colour' => 'bg-rmBlue',
-            'language' => 'Vue',
-            'language_colour' => 'bg-rmBlue-dark',
+            'colour_id' => 4,
+            'skill_id' => 26,
             'image_path' => null,
             'github_url' => 'https://github.com/rheannemcintosh/css-playground',
             'url' => null,

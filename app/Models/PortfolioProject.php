@@ -5,7 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Portfolio extends Model
+class PortfolioProject extends Model
 {
     use HasFactory;
 
@@ -14,7 +14,7 @@ class Portfolio extends Model
      *
      * @var string
      */
-    protected $table = 'portfolio';
+    protected $table = 'portfolio_projects';
 
     /**
      * The attributes that are mass assignable.
@@ -23,11 +23,20 @@ class Portfolio extends Model
      */
     protected $fillable = [
         'name',
-        'colour',
-        'language',
-        'language_colour',
+        'colour_id',
+        'skill_id',
         'image_path',
         'github_url',
         'url',
     ];
+
+    public function colour()
+    {
+        return $this->belongsTo(Colour::class);
+    }
+
+    public function skill()
+    {
+        return $this->belongsTo(Skill::class);
+    }
 }

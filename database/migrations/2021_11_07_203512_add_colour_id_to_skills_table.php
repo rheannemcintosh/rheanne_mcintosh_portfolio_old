@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateSkillColoursTable extends Migration
+class AddColourIdToSkillsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,11 +13,8 @@ class CreateSkillColoursTable extends Migration
      */
     public function up()
     {
-        Schema::create('skill_colours', function (Blueprint $table) {
-            $table->id();
-            $table->foreignId('skill_id')->constrained();
-            $table->foreignId('colour_id')->constrained();
-            $table->timestamps();
+        Schema::table('skills', function (Blueprint $table) {
+            $table->foreignId('colour_id')->nullable()->after('skill_proficiency_id')->constrained();
         });
     }
 
@@ -28,6 +25,8 @@ class CreateSkillColoursTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('skill_colours');
+        Schema::table('skills', function (Blueprint $table) {
+            $table->dropColumn('colour_id');
+        });
     }
 }
