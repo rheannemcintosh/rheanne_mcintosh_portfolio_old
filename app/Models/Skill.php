@@ -25,6 +25,7 @@ class Skill extends Model
         'name',
         'skill_type',
         'skill_proficiency',
+        'colour',
         'cv_flag',
     ];
 
@@ -42,5 +43,10 @@ class Skill extends Model
     public function proficiency()
     {
         return $this->hasOne(SkillProficiency::class);
+    }
+
+    public function colour()
+    {
+        return $this->belongsTo(Colour::class);
     }
 }

@@ -20,6 +20,7 @@ class SkillSeeder extends Seeder
             'name' => 'English',
             'skill_type_id' => 1,
             'skill_proficiency_id' => 4,
+            'colour_id' => null,
             'cv_flag' => true,
         ]);
 
@@ -27,6 +28,7 @@ class SkillSeeder extends Seeder
             'name' => 'French',
             'skill_type_id' => 1,
             'skill_proficiency_id' => 2,
+            'colour_id' => null,
             'cv_flag' => true,
         ]);
 
@@ -34,6 +36,7 @@ class SkillSeeder extends Seeder
             'name' => 'German',
             'skill_type_id' => 1,
             'skill_proficiency_id' => 2,
+            'colour_id' => null,
             'cv_flag' => true,
         ]);
 
@@ -41,6 +44,7 @@ class SkillSeeder extends Seeder
             'name' => 'PHP',
             'skill_type_id' => 2,
             'skill_proficiency_id' => 4,
+            'colour_id' => 7,
             'cv_flag' => true,
         ]);
 
@@ -48,6 +52,7 @@ class SkillSeeder extends Seeder
             'name' => 'SQL',
             'skill_type_id' => 2,
             'skill_proficiency_id' => 4,
+            'colour_id' => null,
             'cv_flag' => true,
         ]);
 
@@ -55,6 +60,7 @@ class SkillSeeder extends Seeder
             'name' => 'Python',
             'skill_type_id' => 2,
             'skill_proficiency_id' => 3,
+            'colour_id' => 3,
             'cv_flag' => true,
         ]);
 
@@ -62,6 +68,7 @@ class SkillSeeder extends Seeder
             'name' => 'JavaScript',
             'skill_type_id' => 2,
             'skill_proficiency_id' => 3,
+            'colour_id' => null,
             'cv_flag' => true,
         ]);
 
@@ -69,6 +76,7 @@ class SkillSeeder extends Seeder
             'name' => 'Java',
             'skill_type_id' => 2,
             'skill_proficiency_id' => 2,
+            'colour_id' => null,
             'cv_flag' => true,
         ]);
 
@@ -76,6 +84,7 @@ class SkillSeeder extends Seeder
             'name' => 'HTML',
             'skill_type_id' => 2,
             'skill_proficiency_id' => 4,
+            'colour_id' => null,
             'cv_flag' => true,
         ]);
 
@@ -83,6 +92,7 @@ class SkillSeeder extends Seeder
             'name' => 'CSS',
             'skill_type_id' => 2,
             'skill_proficiency_id' => 3,
+            'colour_id' => null,
             'cv_flag' => true,
         ]);
 
@@ -90,6 +100,7 @@ class SkillSeeder extends Seeder
             'name' => 'Sass',
             'skill_type_id' => 2,
             'skill_proficiency_id' => 3,
+            'colour_id' => null,
             'cv_flag' => true,
         ]);
 
@@ -97,6 +108,7 @@ class SkillSeeder extends Seeder
             'name' => 'Laravel',
             'skill_type_id' => 3,
             'skill_proficiency_id' => 4,
+            'colour_id' => null,
             'cv_flag' => true,
         ]);
 
@@ -104,6 +116,7 @@ class SkillSeeder extends Seeder
             'name' => 'CodeIgniter',
             'skill_type_id' => 3,
             'skill_proficiency_id' => 3,
+            'colour_id' => null,
             'cv_flag' => true,
         ]);
 
@@ -111,6 +124,7 @@ class SkillSeeder extends Seeder
             'name' => 'Flask',
             'skill_type_id' => 3,
             'skill_proficiency_id' => 2,
+            'colour_id' => null,
             'cv_flag' => true,
         ]);
 
@@ -118,6 +132,7 @@ class SkillSeeder extends Seeder
             'name' => 'React JS',
             'skill_type_id' => 3,
             'skill_proficiency_id' => 3,
+            'colour_id' => 4,
             'cv_flag' => true,
         ]);
 
@@ -125,6 +140,7 @@ class SkillSeeder extends Seeder
             'name' => 'MySQL',
             'skill_type_id' => 4,
             'skill_proficiency_id' => 4,
+            'colour_id' => null,
             'cv_flag' => true,
         ]);
 
@@ -132,6 +148,7 @@ class SkillSeeder extends Seeder
             'name' => 'Git',
             'skill_type_id' => 4,
             'skill_proficiency_id' => 4,
+            'colour_id' => null,
             'cv_flag' => true,
         ]);
 
@@ -139,6 +156,7 @@ class SkillSeeder extends Seeder
             'name' => 'Moodle',
             'skill_type_id' => 4,
             'skill_proficiency_id' => 2,
+            'colour_id' => null,
             'cv_flag' => true,
         ]);
 
@@ -146,6 +164,7 @@ class SkillSeeder extends Seeder
             'name' => 'Agile Methodologies',
             'skill_type_id' => 5,
             'skill_proficiency_id' => 4,
+            'colour_id' => null,
             'cv_flag' => true,
         ]);
 
@@ -153,6 +172,7 @@ class SkillSeeder extends Seeder
             'name' => 'WCAG',
             'skill_type_id' => 5,
             'skill_proficiency_id' => 3,
+            'colour_id' => null,
             'cv_flag' => true,
         ]);
 
@@ -160,6 +180,7 @@ class SkillSeeder extends Seeder
             'name' => 'Adobe Illustrator',
             'skill_type_id' => 6,
             'skill_proficiency_id' => 3,
+            'colour_id' => null,
             'cv_flag' => true,
         ]);
 
@@ -167,6 +188,7 @@ class SkillSeeder extends Seeder
             'name' => 'Adobe InDesign',
             'skill_type_id' => 6,
             'skill_proficiency_id' => 3,
+            'colour_id' => null,
             'cv_flag' => true,
         ]);
 
@@ -174,6 +196,7 @@ class SkillSeeder extends Seeder
             'name' => 'Autodesk 3DS Max',
             'skill_type_id' => 9,
             'skill_proficiency_id' => 3,
+            'colour_id' => null,
             'cv_flag' => true,
         ]);
 
@@ -181,6 +204,7 @@ class SkillSeeder extends Seeder
             'name' => 'Unity',
             'skill_type_id' => 9,
             'skill_proficiency_id' => 2,
+            'colour_id' => null,
             'cv_flag' => true,
         ]);
 
@@ -188,6 +212,7 @@ class SkillSeeder extends Seeder
             'name' => 'ActionScript',
             'skill_type_id' => 9,
             'skill_proficiency_id' => 2,
+            'colour_id' => null,
             'cv_flag' => true,
         ]);
 
@@ -195,6 +220,7 @@ class SkillSeeder extends Seeder
             'name' => 'Vue',
             'skill_type_id' => 3,
             'skill_proficiency_id' => 2,
+            'colour_id' => 6,
             'cv_flag' => true,
         ]);
     }
