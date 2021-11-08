@@ -9,8 +9,17 @@
                                 <div class="bg-{{$project->colour->colour}} p-4 2xl:text-6xl lg:text-5xl text-5xl h-60 mb-2">
                                     <h1 class="text-white font-bebas">{{$project->name}}</h1>
                                 </div>
-                                <div class="inline-block bg-{{$project->skill->colour->colour}} text-white font-bebas py-0.5 px-4 rounded-full">
-                                    <h1>{{$project->skill->name}}</h1>
+                                <div class="flex">
+                                    <div class="flex-none inline-block bg-{{$project->skill->colour->colour}} text-white font-bebas py-0.5 px-4 rounded-full">
+                                        <h1>{{$project->skill->name}}</h1>
+                                    </div>
+                                    <div class="flex-auto float-right py-0.5 px-4">
+                                        @if (isset($project->completion_date))
+                                            <p class="text-gray-500 float-right">{{$project->completion_date->format('F Y')}}</p>
+                                        @else
+                                            <p class="text-gray-500 float-right">Ongoing Project</p>
+                                        @endisset
+                                    </div>
                                 </div>
                             </div>
                         </a>
