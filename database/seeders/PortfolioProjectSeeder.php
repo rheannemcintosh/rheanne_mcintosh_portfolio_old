@@ -14,12 +14,13 @@ class PortfolioProjectSeeder extends Seeder
      */
     public function run()
     {
-        \DB::table('portfolio')->delete();
+        \DB::table('portfolio_projects')->delete();
 
         PortfolioProject::create([
             'name' => 'Rheanne McIntosh Portfolio',
             'colour_id' => 6,
             'skill_id' => 4,
+            'completion_date' => null,
             'image_path' => null,
             'github_url' => 'https://github.com/rheannemcintosh/rheanne_mcintosh_portfolio',
             'url' => null,
@@ -29,6 +30,7 @@ class PortfolioProjectSeeder extends Seeder
             'name' => 'London Cocktail Week Scraper',
             'colour_id' => 7,
             'skill_id' => 6,
+            'completion_date' => '2021-11-02 00:00:00',
             'image_path' => null,
             'github_url' => 'https://github.com/rheannemcintosh/london-cocktail-week-scraper',
             'url' => null,
@@ -38,6 +40,7 @@ class PortfolioProjectSeeder extends Seeder
             'name' => 'JustClothing',
             'colour_id' => 3,
             'skill_id' => 15,
+            'completion_date' => null,
             'image_path' => null,
             'github_url' => 'https://github.com/rheannemcintosh/JustClothing',
             'url' => null,
@@ -47,6 +50,7 @@ class PortfolioProjectSeeder extends Seeder
             'name' => 'Gif Finder',
             'colour_id' => 9,
             'skill_id' => 15,
+            'completion_date' => '2021-05-18 00:00:00',
             'image_path' => null,
             'github_url' => 'https://github.com/rheannemcintosh/th-gif-finder',
             'url' => null,
@@ -56,6 +60,7 @@ class PortfolioProjectSeeder extends Seeder
             'name' => 'JustSnecks',
             'colour_id' => 3,
             'skill_id' => 4,
+            'completion_date' => '2021-03-07 00:00:00',
             'image_path' => null,
             'github_url' => 'https://github.com/rheannemcintosh/JustSnecks',
             'url' => null,
@@ -65,6 +70,7 @@ class PortfolioProjectSeeder extends Seeder
             'name' => 'Shape Maker',
             'colour_id' => 4,
             'skill_id' => 26,
+            'completion_date' => '2021-05-05 00:00:00',
             'image_path' => null,
             'github_url' => 'https://github.com/rheannemcintosh/css-playground',
             'url' => null,
