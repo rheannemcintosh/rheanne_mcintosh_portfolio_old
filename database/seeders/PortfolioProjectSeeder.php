@@ -14,7 +14,7 @@ class PortfolioProjectSeeder extends Seeder
      */
     public function run()
     {
-        \DB::table('portfolio')->delete();
+        \DB::table('portfolio_projects')->delete();
 
         PortfolioProject::create([
             'name' => 'Rheanne McIntosh Portfolio',
