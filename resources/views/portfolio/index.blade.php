@@ -13,6 +13,9 @@
                                     <div class="flex-none inline-block bg-{{$project->skill->colour->colour}} text-white font-bebas py-0.5 px-4 rounded-full">
                                         <h1>{{$project->skill->name}}</h1>
                                     </div>
+                                    <div class="ml-2 flex-none inline-block bg-rmGrey text-rmBlue-dark font-bebas pb-0.5 pt-1 px-4 rounded-full">
+                                        <h1 class="hover:opacity-100 opacity-75">View on Github <ion-icon class="align-middle text-xl" name="logo-github"></ion-icon></h1>
+                                    </div>
                                     <div class="flex-auto float-right py-0.5 px-4">
                                         @if (isset($project->completion_date))
                                             <p class="text-gray-500 float-right">{{$project->completion_date->format('F Y')}}</p>
