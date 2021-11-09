@@ -18,9 +18,9 @@
                                     </div>
                                     <div class="flex-auto float-right py-0.5 px-4">
                                         @if (isset($project->completion_date))
-                                            <p class="text-gray-500 float-right">{{$project->completion_date->format('F Y')}}</p>
+                                            <p class="2xl:block lg:hidden text-gray-500 float-right">{{$project->completion_date->format('F Y')}}</p>
                                         @else
-                                            <p class="text-gray-500 float-right">Ongoing Project</p>
+                                            <p class="2xl:block lg:hidden text-gray-500 float-right">Ongoing Project </p>
                                         @endisset
                                     </div>
                                 </div>
