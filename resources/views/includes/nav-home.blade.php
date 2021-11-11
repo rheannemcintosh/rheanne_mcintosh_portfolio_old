@@ -9,6 +9,7 @@
         md:px-12
         transition-all
         duration-200
+        z-50
         h-24
      "
         :class="{'h-24': !scrolledFromTop, 'h-14 bg-rmGrey shadow-lg': scrolledFromTop}"
