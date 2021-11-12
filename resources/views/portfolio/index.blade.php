@@ -6,6 +6,10 @@
                     @foreach ($portfolio_projects as $project)
                         <div class="bg-rmWhite rounded-lg shadow p-4 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110">
                             <div class="bg-{{$project->colour->colour}} p-4 2xl:text-6xl lg:text-5xl text-5xl h-60 mb-4">
+                                @if ($project->starred_flag)
+                                    <ion-icon class="flex-auto float-right align-middle text-xl text-white" name="star"></ion-icon>
+                                    <span class="tooltiptext bg-rmWhite flex-auto float-right text-sm z-40">Rheanne's Personal Favourite</span>
+                                @endif
                                 <h1 class="text-white font-bebas">{{$project->name}}</h1>
                             </div>
                             <div class="flex">
