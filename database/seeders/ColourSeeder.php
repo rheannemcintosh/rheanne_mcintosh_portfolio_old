@@ -17,47 +17,47 @@ class ColourSeeder extends Seeder
         \DB::table('colours')->delete();
 
         Colour::create([
-            'colour' => 'rmWhite',
+            'colour' => 'bg-rmWhite',
             'hex' => '#F7FAFC',
         ]);
 
         Colour::create([
-            'colour' => 'rmGrey',
+            'colour' => 'bg-rmGrey',
             'hex' => '#EAEAEA',
         ]);
 
         Colour::create([
-            'colour' => 'rmYellow',
+            'colour' => 'bg-rmYellow',
             'hex' => '#DBAB3A',
         ]);
 
         Colour::create([
-            'colour' => 'rmBlue',
+            'colour' => 'bg-rmBlue',
             'hex' => '#021F4B',
         ]);
 
         Colour::create([
-            'colour' => 'rmBlue-light',
+            'colour' => 'bg-rmBlue-light',
             'hex' => '#06396C',
         ]);
 
         Colour::create([
-            'colour' => 'rmBlue-dark',
+            'colour' => 'bg-rmBlue-dark',
             'hex' => '#0B1928',
         ]);
 
         Colour::create([
-            'colour' => 'rmTeal',
+            'colour' => 'bg-rmTeal',
             'hex' => '#021F4B',
         ]);
 
         Colour::create([
-            'colour' => 'rmTeal-light',
+            'colour' => 'bg-rmTeal-light',
             'hex' => '#015A68',
         ]);
 
         Colour::create([
-            'colour' => 'rmTeal-dark',
+            'colour' => 'bg-rmTeal-dark',
             'hex' => '#012C37',
         ]);
     }
