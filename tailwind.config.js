@@ -1,12 +1,24 @@
 const defaultTheme = require('tailwindcss/defaultTheme');
 
 module.exports = {
-    purge: [
-        './vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php',
-        './storage/framework/views/*.php',
-        './resources/views/**/*.blade.php',
-    ],
-
+    purge: {
+        content: [
+            './vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php',
+            './storage/framework/views/*.php',
+            './resources/views/**/*.blade.php',
+        ],
+        options: {
+            safelist: [
+                'bg-rmBlue-light',
+                'bg-rmBlue',
+                'bg-rmBlue-dark',
+                'bg-rmTeal-light',
+                'bg-rmTeal',
+                'bg-rmTeal-dark',
+                'bg-rmYellow',
+            ],
+        },
+    },
     theme: {
         extend: {
             colors: {
@@ -22,7 +34,7 @@ module.exports = {
                 rmBlue: {
                     light: '#06396C',
                     DEFAULT: '#021F4B',
-                    dark: '#0B1928'
+                    dark: '#0B1928',
                 },
                 rmTeal: {
                     light: '#017182',
