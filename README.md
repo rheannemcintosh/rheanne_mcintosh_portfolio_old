@@ -1,25 +1,46 @@
-# Rheanne McIntosh Portfolio
+# Rheanne McIntosh Portfolio :eyes:
 
-<!-- Completion Checklist | (Add Completion) -->
-<!-- :black_square_button: for not complete -->
-<!-- :white_check_mark: for complete -->
-## Completion Checklist
-:black_square_button: Upload Code
+## Project Overview
+My personal portfolio application, is my biggest project to date! The application showcases some of my work, displays an online CV and has a small blog. This project is a work in progress, and hopefully has lots of exciting work to come! The portfolio is developed using Laravel, with a MySQL database and tailwindcss.
 
-:black_square_button: Format Code
+<!-- ### Inspiration -->
 
-:black_square_button: Update README
+<!-- ### Customising the Application -->
 
-:black_square_button: Update Repository
+## Repository Checklist
+- [ ] Upload Code
+- [ ] Format Code
+- [ ] Update Repository
+- [ ] Update README
+- [ ] Create Future Ideas
+- [ ] Write Application Setup / Commands
+- [ ] Launch Website
+- [ ] Create Card on Portfolio
+- [ ] Create Page on Portfolio
+- [ ] Archive Repository
 
-:black_square_button: Post on Instagram
+## Future Ideas
+- :bulb: Launch website to rheannemcintosh.com
+- :bulb: Add a WYSIWYG Editor for Blog Posts
+- :bulb: Link skills throughout site
 
-:black_square_button: Update Wiki
-
-<!-- Repository Notes -->
 ## Notes
 - **Language:** PHP
+- **Tags:** Laravel, PHP, MySQL, TailwindCSS
 - **Author:** Rheanne McIntosh
+
+<!--
+## Application Setup / Commands
+1. Run the following command:
+```
+python3 server.py
+```
+2. An up-to-date csv should appear in the `bar_csvs` folder with todays date
+
+<hr>
+
+If you have any questions or can suggest any improvements, please let me know!
+-->
 
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
 
