@@ -1,5 +1,7 @@
 # Rheanne McIntosh Portfolio :eyes:
 
+![PHP](https://img.shields.io/badge/php-%23777BB4.svg?style=for-the-badge&logo=php&logoColor=white) ![Laravel](https://img.shields.io/badge/laravel-%23FF2D20.svg?style=for-the-badge&logo=laravel&logoColor=white)
+
 ## Project Overview
 My personal portfolio application, is my biggest project to date! The application showcases some of my work, displays an online CV and has a small blog. This project is a work in progress, and hopefully has lots of exciting work to come! The portfolio is developed using Laravel, with a MySQL database and tailwindcss.
 
